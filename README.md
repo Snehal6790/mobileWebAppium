@@ -40,7 +40,7 @@
        ``` brew update
         brew doctor
         xcode-select --install```
-# [Install Intellij][https://www.jetbrains.com/idea/download/#section=mac]
+# [Install Intellij] (https://www.jetbrains.com/idea/download/#section=mac]
         
         
        
