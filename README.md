@@ -18,11 +18,11 @@
  # Install Appium GUI 
       # Appium Installation on Windows
  ## Download the following before you start the installation process-
-    [Android Studio][http://developer.android.com/sdk/installing/index.html]
-    [Appium Jar files for Java][https://search.maven.org/search?q=g:io.appium%20AND%20a:java-client]
-    [Latest Appium Client Library][https://docs.seleniumhq.org/download/]
-    Appium Server[https://appium.io/]
-    Java[https://www.oracle.com/technetwork/java/javase/downloads/index.html]
+    [Android Studio](http://developer.android.com/sdk/installing/index.html)
+    [Appium Jar files for Java](https://search.maven.org/search?q=g:io.appium%20AND%20a:java-client)
+    [Latest Appium Client Library](https://docs.seleniumhq.org/download/)
+    Appium Server(https://appium.io/)
+    Java(https://www.oracle.com/technetwork/java/javase/downloads/index.html)
  Install Java on your system. Don’t forget to set the environment variables!
  Install Android Studio on your system by running the installer and then create a new project.       
  
