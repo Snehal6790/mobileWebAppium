@@ -38,10 +38,11 @@
          ``` /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"```
           
    5.After the above code has run completely run the following commands.
-       ``` 
-        brew update
-        brew doctor
-        xcode-select --install```
+                                   ``` 
+                                    brew update
+                                    brew doctor
+                                    xcode-select --install
+                                    ```
 # [Install Intellij] (https://www.jetbrains.com/idea/download/#section=mac]
         
         
