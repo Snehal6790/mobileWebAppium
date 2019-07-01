@@ -1,0 +1,238 @@
+2019-07-01 11:28:32:780 [Appium] Welcome to Appium v1.13.0
+2019-07-01 11:28:32:782 [Appium] Non-default server args:
+2019-07-01 11:28:32:782 [Appium]   logFile: /Users/snehal/compefinassignement/AppiumLogFile.txt
+2019-07-01 11:28:32:836 [Appium] Appium REST http interface listener started on 0.0.0.0:4723
+2019-07-01 11:28:32:902 [HTTP] --> GET /wd/hub/status
+2019-07-01 11:28:32:902 [HTTP] {}
+2019-07-01 11:28:32:906 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2019-07-01 11:28:32:908 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.13.0"}}
+2019-07-01 11:28:32:913 [HTTP] <-- GET /wd/hub/status 200 8 ms - 68
+2019-07-01 11:28:32:913 [HTTP] 
+2019-07-01 11:28:33:592 [HTTP] --> POST /wd/hub/session
+2019-07-01 11:28:33:593 [HTTP] {"desiredCapabilities":{"automationName":"UiAutomator2","browserName":"Chrome","platformName":"Android","deviceName":"ZY3222CJF8","platformVersion":"8.1.0"},"capabilities":{"alwaysMatch":{"appium:automationName":"UiAutomator2","browserName":"Chrome","appium:deviceName":"ZY3222CJF8","platformName":"android","appium:platformVersion":"8.1.0"},"firstMatch":[{}]}}
+2019-07-01 11:28:33:595 [W3C] Calling AppiumDriver.createSession() with args: [{"automationName":"UiAutomator2","browserName":"Chrome","platformName":"Android","deviceName":"ZY3222CJF8","platformVersion":"8.1.0"},null,{"alwaysMatch":{"appium:automationName":"UiAutomator2","browserName":"Chrome","appium:deviceName":"ZY3222CJF8","platformName":"android","appium:platformVersion":"8.1.0"},"firstMatch":[{}]}]
+2019-07-01 11:28:33:596 [BaseDriver] Event 'newSessionRequested' logged at 1561980513596 (16:58:33 GMT+0530 (India Standard Time))
+2019-07-01 11:28:33:804 [Appium] Appium v1.13.0 creating new AndroidUiautomator2Driver (v1.33.1) session
+2019-07-01 11:28:33:804 [Appium] Capabilities:
+2019-07-01 11:28:33:804 [Appium]   browserName: Chrome
+2019-07-01 11:28:33:804 [Appium]   platformName: android
+2019-07-01 11:28:33:805 [Appium]   automationName: UiAutomator2
+2019-07-01 11:28:33:805 [Appium]   deviceName: ZY3222CJF8
+2019-07-01 11:28:33:805 [Appium]   platformVersion: 8.1.0
+2019-07-01 11:28:33:809 [BaseDriver] W3C capabilities {"alwaysMatch":{"browserNam... and MJSONWP desired capabilities {"automationName":"UiAutoma... were provided
+2019-07-01 11:28:33:811 [BaseDriver] Creating session with W3C capabilities: {"alwaysMatch":{"browserNam...
+2019-07-01 11:28:33:820 [BaseDriver] Session created with session id: 5d0ded8c-c83c-4b10-b37f-c7068373e552
+2019-07-01 11:28:33:820 [UiAutomator2] We're going to run a Chrome-based session
+2019-07-01 11:28:33:821 [UiAutomator2] Chrome-type package and activity are com.android.chrome and com.google.android.apps.chrome.Main
+2019-07-01 11:28:33:859 [ADB] Found 1 'build-tools' folders under '/Users/snehal/Library/Android/sdk' (newest first):
+2019-07-01 11:28:33:860 [ADB]     /Users/snehal/Library/Android/sdk/build-tools/27.0.3
+2019-07-01 11:28:33:860 [ADB] Using 'adb' from '/Users/snehal/Library/Android/sdk/platform-tools/adb'
+2019-07-01 11:28:33:860 [AndroidDriver] Retrieving device list
+2019-07-01 11:28:33:861 [ADB] Trying to find a connected android device
+2019-07-01 11:28:33:861 [ADB] Getting connected devices...
+2019-07-01 11:28:33:885 [ADB] 1 device(s) connected
+2019-07-01 11:28:33:886 [AndroidDriver] Looking for a device with Android '8.1.0'
+2019-07-01 11:28:33:886 [ADB] Setting device id to ZY3222CJF8
+2019-07-01 11:28:33:886 [ADB] Getting device platform version
+2019-07-01 11:28:33:889 [ADB] Running '/Users/snehal/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY3222CJF8 shell getprop ro.build.version.release'
+2019-07-01 11:28:33:981 [ADB] Current device property 'ro.build.version.release': 8.1.0
+2019-07-01 11:28:33:982 [AndroidDriver] Using device: ZY3222CJF8
+2019-07-01 11:28:33:983 [ADB] Using 'adb' from '/Users/snehal/Library/Android/sdk/platform-tools/adb'
+2019-07-01 11:28:33:984 [ADB] Setting device id to ZY3222CJF8
+2019-07-01 11:28:33:984 [ADB] Running '/Users/snehal/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY3222CJF8 shell getprop ro.build.version.sdk'
+2019-07-01 11:28:34:070 [ADB] Current device property 'ro.build.version.sdk': 27
+2019-07-01 11:28:34:071 [ADB] Device API level: 27
+2019-07-01 11:28:34:073 [AndroidDriver] No app sent in, not parsing package/activity
+2019-07-01 11:28:34:075 [ADB] Running '/Users/snehal/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY3222CJF8 wait-for-device'
+2019-07-01 11:28:34:117 [ADB] Running '/Users/snehal/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY3222CJF8 shell echo ping'
+2019-07-01 11:28:34:175 [AndroidDriver] Pushing settings apk to device...
+2019-07-01 11:28:34:177 [ADB] Getting install status for io.appium.settings
+2019-07-01 11:28:34:177 [ADB] Running '/Users/snehal/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY3222CJF8 shell dumpsys package io.appium.settings'
+2019-07-01 11:28:34:295 [ADB] 'io.appium.settings' is installed
+2019-07-01 11:28:34:295 [ADB] Getting package info for 'io.appium.settings'
+2019-07-01 11:28:34:296 [ADB] Running '/Users/snehal/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY3222CJF8 shell dumpsys package io.appium.settings'
+2019-07-01 11:28:34:415 [ADB] Using 'aapt' from '/Users/snehal/Library/Android/sdk/build-tools/27.0.3/aapt'
+2019-07-01 11:28:34:438 [ADB] The version name of the installed 'io.appium.settings' is greater or equal to the application version name ('2.14.0' >= '2.14.0')
+2019-07-01 11:28:34:438 [ADB] There is no need to install/upgrade '/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/io.appium.settings/apks/settings_apk-debug.apk'
+2019-07-01 11:28:34:439 [ADB] Getting IDs of all 'io.appium.settings' processes
+2019-07-01 11:28:34:440 [ADB] Running '/Users/snehal/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY3222CJF8 shell 'pgrep --help; echo $?''
+2019-07-01 11:28:34:536 [ADB] Running '/Users/snehal/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY3222CJF8 shell pgrep -f io\\.appium\\.settings'
+2019-07-01 11:28:34:760 [AndroidDriver] io.appium.settings is already running. There is no need to reset its permissions.
+2019-07-01 11:28:34:761 [ADB] Running '/Users/snehal/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY3222CJF8 shell appops set io.appium.settings android\:mock_location allow'
+2019-07-01 11:28:34:897 [Logcat] Starting logcat capture
+2019-07-01 11:28:34:985 [ADB] Getting install status for io.appium.uiautomator2.server
+2019-07-01 11:28:34:985 [ADB] Running '/Users/snehal/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY3222CJF8 shell dumpsys package io.appium.uiautomator2.server'
+2019-07-01 11:28:35:117 [ADB] 'io.appium.uiautomator2.server' is installed
+2019-07-01 11:28:35:117 [ADB] Getting package info for 'io.appium.uiautomator2.server'
+2019-07-01 11:28:35:118 [ADB] Running '/Users/snehal/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY3222CJF8 shell dumpsys package io.appium.uiautomator2.server'
+2019-07-01 11:28:35:236 [ADB] The version name of the installed 'io.appium.uiautomator2.server' is greater or equal to the application version name ('3.5.1' >= '3.5.1')
+2019-07-01 11:28:35:237 [UiAutomator2] io.appium.uiautomator2.server installation state: sameVersionInstalled
+2019-07-01 11:28:35:240 [ADB] Checking app cert for /Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v3.5.1.apk
+2019-07-01 11:28:35:246 [ADB] Using 'apksigner' from '/Users/snehal/Library/Android/sdk/build-tools/27.0.3/apksigner'
+2019-07-01 11:28:35:247 [ADB] Starting '/Users/snehal/Library/Android/sdk/build-tools/27.0.3/apksigner' with args '["verify","--print-certs","/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v3.5.1.apk"]'
+2019-07-01 11:28:35:853 [ADB] apksigner stdout: Signer #1 certificate DN: EMAILADDRESS=android@android.com, CN=Android, OU=Android, O=Android, L=Mountain View, ST=California, C=US
+2019-07-01 11:28:35:853 [ADB] Signer #1 certificate SHA-256 digest: a40da80a59d170caa950cf15c18c454d47a39b26989d8b640ecd745ba71bf5dc
+2019-07-01 11:28:35:853 [ADB] Signer #1 certificate SHA-1 digest: 61ed377e85d386a8dfee6b864bd85b0bfaa5af81
+2019-07-01 11:28:35:853 [ADB] Signer #1 certificate MD5 digest: e89b158e4bcf988ebd09eb83f5378e87
+2019-07-01 11:28:35:853 [ADB] 
+2019-07-01 11:28:35:854 [ADB] '/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v3.5.1.apk' is already signed.
+2019-07-01 11:28:35:854 [ADB] Getting install status for io.appium.uiautomator2.server.test
+2019-07-01 11:28:35:854 [ADB] Running '/Users/snehal/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY3222CJF8 shell dumpsys package io.appium.uiautomator2.server.test'
+2019-07-01 11:28:35:981 [ADB] 'io.appium.uiautomator2.server.test' is installed
+2019-07-01 11:28:35:981 [ADB] Checking app cert for /Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk
+2019-07-01 11:28:35:982 [ADB] Starting '/Users/snehal/Library/Android/sdk/build-tools/27.0.3/apksigner' with args '["verify","--print-certs","/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk"]'
+2019-07-01 11:28:36:461 [ADB] apksigner stdout: Signer #1 certificate DN: EMAILADDRESS=android@android.com, CN=Android, OU=Android, O=Android, L=Mountain View, ST=California, C=US
+2019-07-01 11:28:36:462 [ADB] Signer #1 certificate SHA-256 digest: a40da80a59d170caa950cf15c18c454d47a39b26989d8b640ecd745ba71bf5dc
+2019-07-01 11:28:36:462 [ADB] Signer #1 certificate SHA-1 digest: 61ed377e85d386a8dfee6b864bd85b0bfaa5af81
+2019-07-01 11:28:36:462 [ADB] Signer #1 certificate MD5 digest: e89b158e4bcf988ebd09eb83f5378e87
+2019-07-01 11:28:36:462 [ADB] 
+2019-07-01 11:28:36:462 [ADB] '/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk' is already signed.
+2019-07-01 11:28:36:462 [UiAutomator2] Server packages are not going to be (re)installed
+2019-07-01 11:28:36:472 [UiAutomator2] Waiting up to 30000ms for services to be available
+2019-07-01 11:28:36:473 [ADB] Running '/Users/snehal/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY3222CJF8 shell pm list instrumentation'
+2019-07-01 11:28:37:419 [UiAutomator2] Instrumentation target 'io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner' is available
+2019-07-01 11:28:37:420 [UiAutomator2] Forwarding UiAutomator2 Server port 6790 to 8200
+2019-07-01 11:28:37:420 [ADB] Forwarding system: 8200 to device: 6790
+2019-07-01 11:28:37:421 [ADB] Running '/Users/snehal/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY3222CJF8 forward tcp\:8200 tcp\:6790'
+2019-07-01 11:28:37:439 [UiAutomator2] No app capability. Assuming it is already on the device
+2019-07-01 11:28:37:440 [ADB] Getting install status for com.android.chrome
+2019-07-01 11:28:37:440 [ADB] Running '/Users/snehal/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY3222CJF8 shell dumpsys package com.android.chrome'
+2019-07-01 11:28:37:563 [ADB] 'com.android.chrome' is installed
+2019-07-01 11:28:37:564 [ADB] Running '/Users/snehal/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY3222CJF8 shell am force-stop com.android.chrome'
+2019-07-01 11:28:37:730 [ADB] Running '/Users/snehal/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY3222CJF8 shell pm clear com.android.chrome'
+2019-07-01 11:28:38:830 [AndroidDriver] Performed fast reset on the installed 'com.android.chrome' application (stop and clear)
+2019-07-01 11:28:38:832 [UiAutomator2] Performing shallow cleanup of automation leftovers
+2019-07-01 11:28:38:852 [UiAutomator2] No obsolete sessions have been detected (Error: read ECONNRESET)
+2019-07-01 11:28:38:852 [ADB] Running '/Users/snehal/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY3222CJF8 shell am force-stop io.appium.uiautomator2.server.test'
+2019-07-01 11:28:38:995 [UiAutomator2] Starting UIAutomator2 server 3.5.1
+2019-07-01 11:28:38:995 [UiAutomator2] Using UIAutomator2 server from '/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v3.5.1.apk' and test from '/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk'
+2019-07-01 11:28:38:996 [UiAutomator2] Waiting up to 30000ms for UiAutomator2 to be online...
+2019-07-01 11:28:38:997 [ADB] Creating ADB subprocess with args: ["-P",5037,"-s","ZY3222CJF8","shell","am","instrument","-w","io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner"]
+2019-07-01 11:28:40:009 [WD Proxy] Matched '/status' to command name 'getStatus'
+2019-07-01 11:28:40:010 [WD Proxy] Proxying [GET /status] to [GET http://localhost:8200/wd/hub/status] with no body
+2019-07-01 11:28:40:021 [WD Proxy] Got an unexpected response: {"errno":"ECONNRESET","code":"ECONNRESET","syscall":"read"}
+2019-07-01 11:28:41:025 [WD Proxy] Matched '/status' to command name 'getStatus'
+2019-07-01 11:28:41:026 [WD Proxy] Proxying [GET /status] to [GET http://localhost:8200/wd/hub/status] with no body
+2019-07-01 11:28:41:037 [WD Proxy] Got an unexpected response: {"errno":"ECONNRESET","code":"ECONNRESET","syscall":"read"}
+2019-07-01 11:28:41:880 [Instrumentation] io.appium.uiautomator2.server.test.AppiumUiAutomator2Server:
+2019-07-01 11:28:42:042 [WD Proxy] Matched '/status' to command name 'getStatus'
+2019-07-01 11:28:42:042 [WD Proxy] Proxying [GET /status] to [GET http://localhost:8200/wd/hub/status] with no body
+2019-07-01 11:28:42:058 [WD Proxy] Got an unexpected response: {"errno":"ECONNRESET","code":"ECONNRESET","syscall":"read"}
+2019-07-01 11:28:43:063 [WD Proxy] Matched '/status' to command name 'getStatus'
+2019-07-01 11:28:43:064 [WD Proxy] Proxying [GET /status] to [GET http://localhost:8200/wd/hub/status] with no body
+2019-07-01 11:28:43:076 [WD Proxy] Got an unexpected response: {"errno":"ECONNRESET","code":"ECONNRESET","syscall":"read"}
+2019-07-01 11:28:44:078 [WD Proxy] Matched '/status' to command name 'getStatus'
+2019-07-01 11:28:44:080 [WD Proxy] Proxying [GET /status] to [GET http://localhost:8200/wd/hub/status] with no body
+2019-07-01 11:28:44:250 [WD Proxy] Got response with status 200: "{\"sessionId\":\"None\",\"status\":0,\"value\":\"Status Invoked\"}"
+2019-07-01 11:28:44:251 [WD Proxy] Determined that the downstream protocol for proxy is MJSONWP
+2019-07-01 11:28:44:252 [UiAutomator2] The initialization of the instrumentation process took 5256ms
+2019-07-01 11:28:44:254 [WD Proxy] Matched '/session' to command name 'createSession'
+2019-07-01 11:28:44:255 [WD Proxy] Proxying [POST /session] to [POST http://localhost:8200/wd/hub/session] with body: {"desiredCapabilities":{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"browserName":"Chrome","platformName":"android","automationName":"UiAutomator2","deviceName":"ZY3222CJF8","platformVersion":"8.1.0"},"browserName":"Chrome","platformName":"android","automationName":"UiAutomator2","deviceName":"ZY3222CJF8","platformVersion":"8.1.0","appPackage":"com.android.chrome","appActivity":"com.google.android.apps.chrome.Main","deviceUDID":"ZY3222CJF8"}}
+2019-07-01 11:28:44:328 [WD Proxy] Got response with status 200: {"sessionId":"8cd59e80-d08d-46a3-8b64-8b427676ac5b","status":0,"value":"Created Session"}
+2019-07-01 11:28:44:338 [WD Proxy] Proxying [GET /appium/device/info] to [GET http://localhost:8200/wd/hub/session/8cd59e80-d08d-46a3-8b64-8b427676ac5b/appium/device/info] with no body
+2019-07-01 11:28:44:440 [WD Proxy] Got response with status 200: "{\"sessionId\":\"8cd59e80-d08d-46a3-8b64-8b427676ac5b\",\"status\":0,\"value\":{\"androidId\":\"86ca509766c78434\",\"manufacturer\":\"motorola\",\"model\":\"Moto G (5)\",\"brand\":\"motorola\",\"apiVersion\":\"27\",\"platformVersion\":\"8.1.0\",\"carrierName\":\"\",\"realDisplaySize\":\"1080x1920\",\"displayDensity\":480,\"networks\":[{\"type\":1,\"typeName\":\"WIFI\",\"subtype\":0,\"subtypeName\":\"\",\"isConnected\":true,\"detailedState\":\"CONNECTED\",\"state\":\"CONNECTED\",\"extraInfo\":\"\\\"Furlenco\\\"\",\"isAvailable\":true,\"isFailover\":false,\"isRoaming\":false,\"capabilities\":{\"transportTypes\":\"NET_CAPABILITY_SUPL\",\"networkCapabilities\":\"\",\"linkUpstreamBandwidthKbps\":1048576,\"linkDownBandwidthKbps\":1048576,\"signalStrength\":-56,\"networkSpecifier\":null,\"SSID\":null}}]}}"
+2019-07-01 11:28:44:441 [ADB] Running '/Users/snehal/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY3222CJF8 shell dumpsys window'
+2019-07-01 11:28:44:535 [AndroidDriver] Screen already unlocked, doing nothing
+2019-07-01 11:28:44:536 [AndroidDriver] Starting a chrome-based browser session
+2019-07-01 11:28:44:564 [AndroidDriver] A port was not given, using random free port: 8015
+2019-07-01 11:28:44:569 [AndroidDriver] Before starting chromedriver, androidPackage is com.android.chrome
+2019-07-01 11:28:44:571 [Chromedriver] Changed state to 'starting'
+2019-07-01 11:28:44:580 [Chromedriver] Found 1 executable in '/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-chromedriver/chromedriver/mac'
+2019-07-01 11:28:44:612 [Chromedriver] The following Chromedriver executables were found:
+2019-07-01 11:28:44:612 [Chromedriver]     /Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-chromedriver/chromedriver/mac/chromedriver (minimum Chrome version '71.0.3578')
+2019-07-01 11:28:44:614 [ADB] Getting package info for 'com.android.chrome'
+2019-07-01 11:28:44:616 [ADB] Running '/Users/snehal/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY3222CJF8 shell dumpsys package com.android.chrome'
+2019-07-01 11:28:44:741 [Chromedriver] Found Chrome bundle 'com.android.chrome' version '75.0.3770'
+2019-07-01 11:28:44:742 [Chromedriver] Found 1 Chromedriver executable capable of automating Chrome '75.0.3770'.
+2019-07-01 11:28:44:742 [Chromedriver] Choosing the most recent, '/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-chromedriver/chromedriver/mac/chromedriver'.
+2019-07-01 11:28:44:742 [Chromedriver] If a specific version is required, specify it with the `chromedriverExecutable`desired capability.
+2019-07-01 11:28:44:743 [Chromedriver] Set chromedriver binary as: /Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-chromedriver/chromedriver/mac/chromedriver
+2019-07-01 11:28:44:743 [Chromedriver] Killing any old chromedrivers, running: pkill -15 -f "/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-chromedriver/chromedriver/mac/chromedriver.*--port=8015"
+2019-07-01 11:28:44:790 [Chromedriver] No old chromedrivers seem to exist
+2019-07-01 11:28:44:790 [Chromedriver] Cleaning any old adb forwarded port socket connections
+2019-07-01 11:28:44:790 [ADB] List forwarding ports
+2019-07-01 11:28:44:790 [ADB] Running '/Users/snehal/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY3222CJF8 forward --list'
+2019-07-01 11:28:44:817 [Chromedriver] Spawning chromedriver with: /Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-chromedriver/chromedriver/mac/chromedriver --url-base=wd/hub --port=8015 --adb-port=5037 --verbose
+2019-07-01 11:28:44:850 [Chromedriver] Chromedriver version: '2.46.628411'
+2019-07-01 11:28:44:852 [WD Proxy] Matched '/status' to command name 'getStatus'
+2019-07-01 11:28:44:852 [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8015/wd/hub/status] with no body
+2019-07-01 11:28:44:858 [WD Proxy] Got an unexpected response: {"errno":"ECONNREFUSED","code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":8015}
+2019-07-01 11:28:45:063 [WD Proxy] Matched '/status' to command name 'getStatus'
+2019-07-01 11:28:45:063 [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8015/wd/hub/status] with no body
+2019-07-01 11:28:45:066 [WD Proxy] Got response with status 200: "{\"sessionId\":\"\",\"status\":0,\"value\":{\"build\":{\"version\":\"2.46.628411 (3324f4c8be9ff2f70a05a30ebc72ffb013e1a71e)\"},\"message\":\"ChromeDriver ready for new sessions.\",\"os\":{\"arch\":\"x86_64\",\"name\":\"Mac OS X\",\"version\":\"10.13.6\"},\"ready\":true}}"
+2019-07-01 11:28:45:067 [WD Proxy] Determined that the downstream protocol for proxy is MJSONWP
+2019-07-01 11:28:45:068 [WD Proxy] Matched '/session' to command name 'createSession'
+2019-07-01 11:28:45:070 [WD Proxy] Proxying [POST /session] to [POST http://127.0.0.1:8015/wd/hub/session] with body: {"desiredCapabilities":{"chromeOptions":{"androidPackage":"com.android.chrome","androidDeviceSerial":"ZY3222CJF8"},"loggingPrefs":{"browser":"ALL"}}}
+2019-07-01 11:28:49:332 [Chromedriver] Webview version: 'Chrome/75.0.3770.101'
+2019-07-01 11:28:49:405 [WD Proxy] Got response with status 200: {"sessionId":"08596cba464f4df3651497fb3d5a3a3a","status":0,"value":{"acceptInsecureCerts":false,"acceptSslCerts":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"browserName":"chrome","chrome":{"chromedriverVersion":"2.46.628411 (3324f4c8be9ff2f70a05a30ebc72ffb013e1a71e)"},"cssSelectorsEnabled":true,"databaseEnabled":false,"goog:chromeOptions":{"debuggerAddress":"localhost:61161"},"handlesAlerts":true,"hasTouchScreen":true,"javascriptEnabled":true,"locationContextEnabled":true,"mobileEmulationEnabled":false,"nativeEvents":true,"pageLoadStrategy":"normal","platform":"ANDROID","proxy":{},"rotatable":false,"setWindowRect":false,"strictFileInteractability":false,"takesHeapSnapshot":true,"takesScreenshot":true,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unexpectedAlertBehaviour":"ignore","version":"75.0.3770.101","webStorageEnabled":true}}
+2019-07-01 11:28:49:405 [Chromedriver] Changed state to 'online'
+2019-07-01 11:28:49:412 [WD Proxy] Proxying [GET /appium/device/pixel_ratio] to [GET http://localhost:8200/wd/hub/session/8cd59e80-d08d-46a3-8b64-8b427676ac5b/appium/device/pixel_ratio] with body: {}
+2019-07-01 11:28:49:452 [WD Proxy] Got response with status 200: "{\"sessionId\":\"8cd59e80-d08d-46a3-8b64-8b427676ac5b\",\"status\":0,\"value\":3}"
+2019-07-01 11:28:49:454 [WD Proxy] Matched '/appium/device/system_bars' to command name 'getSystemBars'
+2019-07-01 11:28:49:454 [WD Proxy] Proxying [GET /appium/device/system_bars] to [GET http://localhost:8200/wd/hub/session/8cd59e80-d08d-46a3-8b64-8b427676ac5b/appium/device/system_bars] with body: {}
+2019-07-01 11:28:49:489 [WD Proxy] Got response with status 200: "{\"sessionId\":\"8cd59e80-d08d-46a3-8b64-8b427676ac5b\",\"status\":0,\"value\":{\"statusBar\":72}}"
+2019-07-01 11:28:49:490 [WD Proxy] Matched '/window/current/size' to command name 'getWindowSize'
+2019-07-01 11:28:49:491 [WD Proxy] Proxying [GET /window/current/size] to [GET http://localhost:8200/wd/hub/session/8cd59e80-d08d-46a3-8b64-8b427676ac5b/window/current/size] with body: {}
+2019-07-01 11:28:49:526 [WD Proxy] Got response with status 200: "{\"sessionId\":\"8cd59e80-d08d-46a3-8b64-8b427676ac5b\",\"status\":0,\"value\":{\"height\":1776,\"width\":1080}}"
+2019-07-01 11:28:49:527 [Appium] New AndroidUiautomator2Driver session created successfully, session 5d0ded8c-c83c-4b10-b37f-c7068373e552 added to master session list
+2019-07-01 11:28:49:528 [BaseDriver] Event 'newSessionStarted' logged at 1561980529528 (16:58:49 GMT+0530 (India Standard Time))
+2019-07-01 11:28:49:529 [W3C (5d0ded8c)] Cached the protocol value 'W3C' for the new session 5d0ded8c-c83c-4b10-b37f-c7068373e552
+2019-07-01 11:28:49:530 [W3C (5d0ded8c)] Responding to client with driver.createSession() result: {"capabilities":{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"browserName":"Chrome","platformName":"android","automationName":"UiAutomator2","deviceName":"ZY3222CJF8","platformVersion":"8.1.0"},"browserName":"Chrome","platformName":"android","automationName":"UiAutomator2","deviceName":"ZY3222CJF8","platformVersion":"8.1.0","appPackage":"com.android.chrome","appActivity":"com.google.android.apps.chrome.Main","deviceUDID":"ZY3222CJF8","deviceApiLevel":27,"deviceScreenSize":"1080x1920","deviceScreenDensity":480,"deviceModel":"Moto G (5)","deviceManufacturer":"motorola","pixelRatio":3,"statBarHeight":72,"viewportRect":{"left":0,"top":72,"width":1080,"height":1704}}}
+2019-07-01 11:28:49:532 [HTTP] <-- POST /wd/hub/session 200 15938 ms - 893
+2019-07-01 11:28:49:532 [HTTP] 
+2019-07-01 11:28:49:632 [HTTP] --> GET /wd/hub/session/5d0ded8c-c83c-4b10-b37f-c7068373e552
+2019-07-01 11:28:49:634 [HTTP] {}
+2019-07-01 11:28:49:640 [W3C (5d0ded8c)] Driver proxy active, passing request on via HTTP proxy
+2019-07-01 11:28:49:678 [WD Proxy] Matched '/wd/hub/session/5d0ded8c-c83c-4b10-b37f-c7068373e552' to command name 'getSession'
+2019-07-01 11:28:49:678 [WD Proxy] Proxying [GET /wd/hub/session/5d0ded8c-c83c-4b10-b37f-c7068373e552] to [GET http://127.0.0.1:8015/wd/hub/session/08596cba464f4df3651497fb3d5a3a3a] with body: {}
+2019-07-01 11:28:49:681 [WD Proxy] Got response with status 200: "{\"sessionId\":\"08596cba464f4df3651497fb3d5a3a3a\",\"status\":0,\"value\":{\"acceptInsecureCerts\":false,\"acceptSslCerts\":false,\"applicationCacheEnabled\":false,\"browserConnectionEnabled\":false,\"browserName\":\"chrome\",\"chrome\":{\"chromedriverVersion\":\"2.46.628411 (3324f4c8be9ff2f70a05a30ebc72ffb013e1a71e)\"},\"cssSelectorsEnabled\":true,\"databaseEnabled\":false,\"goog:chromeOptions\":{\"debuggerAddress\":\"localhost:61161\"},\"handlesAlerts\":true,\"hasTouchScreen\":true,\"javascriptEnabled\":true,\"locationContextEnabled\":true,\"mobileEmulationEnabled\":false,\"nativeEvents\":true,\"pageLoadStrategy\":\"normal\",\"platform\":\"ANDROID\",\"proxy\":{},\"rotatable\":false,\"setWindowRect\":false,\"strictFileInteractability\":false,\"takesHeapSnapshot\":true,\"takesScreenshot\":true,\"timeouts\":{\"implicit\":0,\"pageLoad\":300000,\"script\":30000},\"unexpectedAlertBehaviour\":\"ignore\",\"version\":\"75.0.3770.101\",\"webStorageEnabled\":true}}"
+2019-07-01 11:28:49:681 [WD Proxy] Replacing sessionId 08596cba464f4df3651497fb3d5a3a3a with 5d0ded8c-c83c-4b10-b37f-c7068373e552
+2019-07-01 11:28:49:682 [HTTP] <-- GET /wd/hub/session/5d0ded8c-c83c-4b10-b37f-c7068373e552 200 52 ms - 889
+2019-07-01 11:28:49:683 [HTTP] 
+2019-07-01 11:28:49:689 [HTTP] --> GET /wd/hub/session/5d0ded8c-c83c-4b10-b37f-c7068373e552
+2019-07-01 11:28:49:689 [HTTP] {}
+2019-07-01 11:28:49:690 [W3C (5d0ded8c)] Driver proxy active, passing request on via HTTP proxy
+2019-07-01 11:28:49:694 [WD Proxy] Matched '/wd/hub/session/5d0ded8c-c83c-4b10-b37f-c7068373e552' to command name 'getSession'
+2019-07-01 11:28:49:694 [WD Proxy] Proxying [GET /wd/hub/session/5d0ded8c-c83c-4b10-b37f-c7068373e552] to [GET http://127.0.0.1:8015/wd/hub/session/08596cba464f4df3651497fb3d5a3a3a] with body: {}
+2019-07-01 11:28:49:697 [WD Proxy] Got response with status 200: "{\"sessionId\":\"08596cba464f4df3651497fb3d5a3a3a\",\"status\":0,\"value\":{\"acceptInsecureCerts\":false,\"acceptSslCerts\":false,\"applicationCacheEnabled\":false,\"browserConnectionEnabled\":false,\"browserName\":\"chrome\",\"chrome\":{\"chromedriverVersion\":\"2.46.628411 (3324f4c8be9ff2f70a05a30ebc72ffb013e1a71e)\"},\"cssSelectorsEnabled\":true,\"databaseEnabled\":false,\"goog:chromeOptions\":{\"debuggerAddress\":\"localhost:61161\"},\"handlesAlerts\":true,\"hasTouchScreen\":true,\"javascriptEnabled\":true,\"locationContextEnabled\":true,\"mobileEmulationEnabled\":false,\"nativeEvents\":true,\"pageLoadStrategy\":\"normal\",\"platform\":\"ANDROID\",\"proxy\":{},\"rotatable\":false,\"setWindowRect\":false,\"strictFileInteractability\":false,\"takesHeapSnapshot\":true,\"takesScreenshot\":true,\"timeouts\":{\"implicit\":0,\"pageLoad\":300000,\"script\":30000},\"unexpectedAlertBehaviour\":\"ignore\",\"version\":\"75.0.3770.101\",\"webStorageEnabled\":true}}"
+2019-07-01 11:28:49:697 [WD Proxy] Replacing sessionId 08596cba464f4df3651497fb3d5a3a3a with 5d0ded8c-c83c-4b10-b37f-c7068373e552
+2019-07-01 11:28:49:698 [HTTP] <-- GET /wd/hub/session/5d0ded8c-c83c-4b10-b37f-c7068373e552 200 8 ms - 889
+2019-07-01 11:28:49:698 [HTTP] 
+2019-07-01 11:28:49:706 [HTTP] --> GET /wd/hub/session/5d0ded8c-c83c-4b10-b37f-c7068373e552
+2019-07-01 11:28:49:706 [HTTP] {}
+2019-07-01 11:28:49:706 [W3C (5d0ded8c)] Driver proxy active, passing request on via HTTP proxy
+2019-07-01 11:28:49:707 [WD Proxy] Matched '/wd/hub/session/5d0ded8c-c83c-4b10-b37f-c7068373e552' to command name 'getSession'
+2019-07-01 11:28:49:708 [WD Proxy] Proxying [GET /wd/hub/session/5d0ded8c-c83c-4b10-b37f-c7068373e552] to [GET http://127.0.0.1:8015/wd/hub/session/08596cba464f4df3651497fb3d5a3a3a] with body: {}
+2019-07-01 11:28:49:710 [WD Proxy] Got response with status 200: "{\"sessionId\":\"08596cba464f4df3651497fb3d5a3a3a\",\"status\":0,\"value\":{\"acceptInsecureCerts\":false,\"acceptSslCerts\":false,\"applicationCacheEnabled\":false,\"browserConnectionEnabled\":false,\"browserName\":\"chrome\",\"chrome\":{\"chromedriverVersion\":\"2.46.628411 (3324f4c8be9ff2f70a05a30ebc72ffb013e1a71e)\"},\"cssSelectorsEnabled\":true,\"databaseEnabled\":false,\"goog:chromeOptions\":{\"debuggerAddress\":\"localhost:61161\"},\"handlesAlerts\":true,\"hasTouchScreen\":true,\"javascriptEnabled\":true,\"locationContextEnabled\":true,\"mobileEmulationEnabled\":false,\"nativeEvents\":true,\"pageLoadStrategy\":\"normal\",\"platform\":\"ANDROID\",\"proxy\":{},\"rotatable\":false,\"setWindowRect\":false,\"strictFileInteractability\":false,\"takesHeapSnapshot\":true,\"takesScreenshot\":true,\"timeouts\":{\"implicit\":0,\"pageLoad\":300000,\"script\":30000},\"unexpectedAlertBehaviour\":\"ignore\",\"version\":\"75.0.3770.101\",\"webStorageEnabled\":true}}"
+2019-07-01 11:28:49:710 [WD Proxy] Replacing sessionId 08596cba464f4df3651497fb3d5a3a3a with 5d0ded8c-c83c-4b10-b37f-c7068373e552
+2019-07-01 11:28:49:711 [HTTP] <-- GET /wd/hub/session/5d0ded8c-c83c-4b10-b37f-c7068373e552 200 5 ms - 889
+2019-07-01 11:28:49:711 [HTTP] 
+2019-07-01 11:28:49:719 [HTTP] --> POST /wd/hub/session/5d0ded8c-c83c-4b10-b37f-c7068373e552/timeouts
+2019-07-01 11:28:49:719 [HTTP] {"implicit":10000}
+2019-07-01 11:28:49:719 [W3C (5d0ded8c)] Driver proxy active, passing request on via HTTP proxy
+2019-07-01 11:28:49:721 [WD Proxy] Matched '/wd/hub/session/5d0ded8c-c83c-4b10-b37f-c7068373e552/timeouts' to command name 'timeouts'
+2019-07-01 11:28:49:721 [Protocol Converter] Will send the following request bodies to /timeouts: [{"type":"implicit","ms":10000}]
+2019-07-01 11:28:49:722 [WD Proxy] Proxying [POST /wd/hub/session/5d0ded8c-c83c-4b10-b37f-c7068373e552/timeouts] to [POST http://127.0.0.1:8015/wd/hub/session/08596cba464f4df3651497fb3d5a3a3a/timeouts] with body: {"type":"implicit","ms":10000}
+2019-07-01 11:28:49:724 [WD Proxy] Got response with status 200: {"sessionId":"08596cba464f4df3651497fb3d5a3a3a","status":0,"value":null}
+2019-07-01 11:28:49:724 [WD Proxy] Replacing sessionId 08596cba464f4df3651497fb3d5a3a3a with 5d0ded8c-c83c-4b10-b37f-c7068373e552
+2019-07-01 11:28:49:725 [HTTP] <-- POST /wd/hub/session/5d0ded8c-c83c-4b10-b37f-c7068373e552/timeouts 200 6 ms - 76
+2019-07-01 11:28:49:725 [HTTP] 
+2019-07-01 11:28:49:732 [HTTP] --> POST /wd/hub/session/5d0ded8c-c83c-4b10-b37f-c7068373e552/url
+2019-07-01 11:28:49:733 [HTTP] {"url":"https://www.staging.pefin.com/plan/home"}
+2019-07-01 11:28:49:733 [W3C (5d0ded8c)] Driver proxy active, passing request on via HTTP proxy
+2019-07-01 11:28:49:734 [WD Proxy] Matched '/wd/hub/session/5d0ded8c-c83c-4b10-b37f-c7068373e552/url' to command name 'setUrl'
+2019-07-01 11:28:49:735 [WD Proxy] Proxying [POST /wd/hub/session/5d0ded8c-c83c-4b10-b37f-c7068373e552/url] to [POST http://127.0.0.1:8015/wd/hub/session/08596cba464f4df3651497fb3d5a3a3a/url] with body: {"url":"https://www.staging.pefin.com/plan/home"}
+2019-07-01 11:30:49:742 [HTTP] <-- POST /wd/hub/session/5d0ded8c-c83c-4b10-b37f-c7068373e552/url - - ms - -
+2019-07-01 11:30:49:742 [HTTP] 
+2019-07-01 11:30:49:753 [HTTP] --> POST /wd/hub/session/5d0ded8c-c83c-4b10-b37f-c7068373e552/url
+2019-07-01 11:30:49:755 [HTTP] {"url":"https://www.staging.pefin.com/plan/home"}
+2019-07-01 11:30:49:756 [W3C (5d0ded8c)] Driver proxy active, passing request on via HTTP proxy
+2019-07-01 11:31:19:975 [WD Proxy] Got response with status 200: {"sessionId":"08596cba464f4df3651497fb3d5a3a3a","status":0,"value":null}
+2019-07-01 11:31:19:975 [WD Proxy] Replacing sessionId 08596cba464f4df3651497fb3d5a3a3a with 5d0ded8c-c83c-4b10-b37f-c7068373e552
+2019-07-01 11:31:19:977 [WD Proxy] Matched '/wd/hub/session/5d0ded8c-c83c-4b10-b37f-c7068373e552/url' to command name 'setUrl'
+2019-07-01 11:31:19:977 [WD Proxy] Proxying [POST /wd/hub/session/5d0ded8c-c83c-4b10-b37f-c7068373e552/url] to [POST http://127.0.0.1:8015/wd/hub/session/08596cba464f4df3651497fb3d5a3a3a/url] with body: {"url":"https://www.staging.pefin.com/plan/home"}
+2019-07-01 11:31:21:402 [WD Proxy] Got response with status 200: {"sessionId":"08596cba464f4df3651497fb3d5a3a3a","status":0,"value":null}
+2019-07-01 11:31:21:402 [WD Proxy] Replacing sessionId 08596cba464f4df3651497fb3d5a3a3a with 5d0ded8c-c83c-4b10-b37f-c7068373e552
+2019-07-01 11:31:21:403 [HTTP] <-- POST /wd/hub/session/5d0ded8c-c83c-4b10-b37f-c7068373e552/url 200 31651 ms - 76
+2019-07-01 11:31:21:404 [HTTP] 
+2019-07-01 11:31:24:728 [Appium] Received SIGTERM - shutting down
