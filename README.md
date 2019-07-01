@@ -60,6 +60,15 @@ Whenever appium starts to create session it will re-install/install below apps o
                                     xcode-select --install
                                     ```
 # [Install Intellij] (https://www.jetbrains.com/idea/download/#section=mac]
+
+
+
+# Running Test Scripts 
+
+        1.Go to terminal and type 
+                adb devices
+          Which lists number of device . Since the project only cover single device copy device id and paste on                         `config.properties` file under `deviceName`
+        2. Android device : Go to setting menu ----> System menu option ----> Tap 10 times `About phone` and ----> Check for `Android Version` and value to be paste on same config file under `platformVersion` then just tap on `Build number` option  enable `Developer option` ---> `toggle Use debugging` option for running scripts.
         
         
        
