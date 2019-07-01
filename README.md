@@ -1,4 +1,20 @@
-# mobileWebAppium
+# MobileWebAppium
+
+# After All set UP . PLease DO RUN THESE COMMAND
+                      ```
+                      adb -s uninstall io.appium.settings
+                      adb -s uninstall io.appium.unlock
+                      adb -s uninstall io.appium.uiautomator2
+                      adb -s uninstall io.appium.uiautomator2.server.test```
+Whenever appium starts to create session it will re-install/install below apps on to the device.
+
+                      io.appium.settings
+                      io.appium.unlock
+                      io.appium.uiautomator2
+                      io.appium.uiautomator2.server.test
+
+
+
 
 # Java Install
   # For Mac users 
