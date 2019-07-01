@@ -1,4 +1,4 @@
-package mobileViewPages.homepage;
+package mobileViewPages;
 
 import io.appium.java_client.MobileElement;
 import mobiledriver.BaseClass;

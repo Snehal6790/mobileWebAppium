@@ -1,6 +1,6 @@
 package utils;
 
-import mobileViewPages.homepage.HomePage;
+import mobileViewPages.HomePage;
 import mobiledriver.BaseClass;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;

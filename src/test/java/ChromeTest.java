@@ -1,5 +1,5 @@
 import coremodles.DriverManagers;
-import mobileViewPages.homepage.HomePage;
+import mobileViewPages.HomePage;
 import mobiledriver.BaseClass;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
@@ -22,8 +22,8 @@ public class ChromeTest extends BaseClass {
     @BeforeClass
     public void setup() throws MalformedURLException {
         driverManagers.AppiumStartServer();
-        homePage = new HomePage();
-        utils = new Utils();
+        homePage  = new HomePage();
+        utils  = new Utils();
 
 
     }
