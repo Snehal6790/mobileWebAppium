@@ -1,11 +1,9 @@
 package utils;
 
-import mobileViewPages.HomePage;
-import mobiledriver.BaseClass;
+import coretest.BaseClass;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.*;
 import java.util.concurrent.TimeUnit;
@@ -20,12 +18,17 @@ public class Utils extends BaseClass {
     }
 
 
-    public static void sync(long timeUnit) {
-        driver.manage().timeouts().implicitlyWait(timeUnit, TimeUnit.SECONDS);
-
+    public static void waitforelement(int sec){
+        {
+            try {
+                Thread.sleep(sec * 1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
     }
 
-    public static void waitforelement(long timeUnit) {
+    public static void sync(long timeUnit) {
 
         try {
             Thread.sleep(timeUnit);
@@ -35,12 +38,22 @@ public class Utils extends BaseClass {
     }
 
 
-    public static void scroll(){
+    public static void scroll(int numberoftimes){
         JavascriptExecutor js = (JavascriptExecutor)driver;
-        js.executeScript("window.scrollBy(0,3000)","");
+        js.executeScript("window.scrollBy(0,"+numberoftimes+"*30)","");
 
 
     }
+
+    public String emailid() {
+        String randmemail = "";
+        Random rad = new Random();
+        for (int j = 1; j <= 1; j++) {
+            randmemail = "pefinAutomationTest" + rad.nextInt(100) + "@test.com";
+        }
+        return randmemail;
+    }
+
 
     public static WebElement randomcreditscore() {
 

@@ -1,46 +1,40 @@
-import coremodles.DriverManagers;
+import coretest.BaseClass;
 import mobileViewPages.HomePage;
-import mobiledriver.BaseClass;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import utils.Utils;
 
 import java.net.MalformedURLException;
 import java.nio.charset.MalformedInputException;
 
-import static utils.Utils.sync;
+import static coremodles.DriverManagers.AppiumStartServer;
+import static coremodles.DriverManagers.stopserver;
+import static utils.Utils.waitforelement;
 
-public class ChromeTest extends BaseClass {
+public class BaseHappyTest extends BaseClass{
 
-    DriverManagers driverManagers ;
-    HomePage homePage ;
-    Utils utils;
+    HomePage homePage;
 
-    public ChromeTest(){
+    public BaseHappyTest(){
         super();
     }
 
     @BeforeClass
     public void setup() throws MalformedURLException {
-        driverManagers = new DriverManagers();
-        driverManagers.AppiumStartServer();
+        AppiumStartServer();
         homePage  = new HomePage();
-        utils  = new Utils();
-
-
     }
 
 
     @Test
     public void test() throws MalformedInputException {
-
-        sync(5);
+       waitforelement(5);
         homePage.tapContinueWithEmailButton();
         homePage.tapinputEmailId();
         homePage.tapcontinueButton();
-        homePage.tapselectastatedrop();
+        homePage.tapselectastatedrop("Alabama");
         homePage.tapcityinput();
+        homePage.tapBuyhomemonthyyyy();
         homePage.tapcreditscroe();
         homePage.tapupfrontamountinput();
         homePage.tapmonyhlyspending();
@@ -51,7 +45,7 @@ public class ChromeTest extends BaseClass {
 
     @AfterTest(alwaysRun = true)
     public void tearup(){
-        driverManagers.stopserver();
+        stopserver();
 
     }
 

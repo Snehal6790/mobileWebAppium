@@ -1,17 +1,16 @@
 package mobileViewPages;
 
-import io.appium.java_client.MobileElement;
-import mobiledriver.BaseClass;
+import coretest.BaseClass;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.Assert;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.asserts.SoftAssert;
+import utils.Utils;
 
 import java.nio.charset.MalformedInputException;
-import java.util.List;
-import java.util.Random;
 
 import static utils.Utils.*;
 
@@ -19,93 +18,99 @@ import static utils.Utils.*;
 public class HomePage extends BaseClass {
 
     public HomePage(){
-
         PageFactory.initElements(driver,this);
+
     }
 
+    Utils utils = new Utils();
 
+    @FindBy(how = How.XPATH,
+            using = "//input[@value='Continue With Email']")
+     WebElement continuewithemailButton ;
+
+
+    @FindBy(how = How.XPATH ,
+            using = "//input[@placeholder='What’s your email?']")
+     WebElement inputEmailId ;
+
+    @FindBy(how = How.XPATH,
+            using = "//input[@value='Continue']")
+     WebElement continueButton ;
 
 
     @FindBy(how = How.XPATH,
-            using = "//android.widget.Button[@text='Continue With Email']")
-    WebElement continuewithemailButton ;
-
-
-    @FindBy(how = How.ID,
-            using = "email-signup-email-input")
-    WebElement inputEmailId ;
-
-    @FindBy(how = How.XPATH,
-            using = "//android.widget.Button[@text='Continue']")
-    WebElement continueButton ;
-
-
-    @FindBy(how = How.XPATH,
-            using = "//android.view.View[@text='Log In']")
-    WebElement loginbutton  ;
+            using = "//a[contains(@class,'login-link')]")
+     WebElement loginbutton  ;
 
     @FindBy(how = How.XPATH,
             using = "//android.widget.Spinner[@text='Select a state']")
-    WebElement selectastatedrop ;
-
-    @FindBy(how = How.ID,
-            using = "home-input-city-select")
-    WebElement cityinput ;
+     WebElement selectastatedrop ;
 
     @FindBy(how = How.XPATH,
-            using = "//android.view.View[@text ='Excellent: 750+']")
+            using = "//input[contains(@id,'home-input-city-select')]")
+     WebElement cityinput ;
+
+    @FindBy(how = How.XPATH,
+            using = "//input[contains(@placeholder,'MM / YYYY')]")
+    WebElement buyhomemonthyyyy;
+
+    @FindBy(how = How.XPATH,
+            using = "//span[contains(.,'Excellent: 750+')]")
     static
     WebElement excellentcreditscore ;
 
     @FindBy(how = How.XPATH,
-            using = "//android.view.View[@text ='Good: 700–749']")
+            using = "//span[contains(.,'Good: 700–749')]")
     static
     WebElement goodcreditscore ;
 
     @FindBy(how = How.XPATH,
-            using = "//android.view.View[@text ='Fair: 650–699']")
+            using = "//span[contains(.,'Fair: 650–699')]")
     static
     WebElement faircreditscore ;
 
     @FindBy(how = How.XPATH,
-            using = "//android.view.View[@text ='Poor: 600–649']")
+            using = "//span[contains(.,'Poor: 600–649')]")
     static
     WebElement poorcreditscore ;
 
     @FindBy(how = How.XPATH,
-            using = "//android.view.View[@text ='Bad: Below 600']")
+            using = "//span[contains(.,'Bad: Below 600')]")
     static
     WebElement badcreditscore  ;
 
     @FindBy(how = How.XPATH,
-            using = "//android.view.View[@text='What is your approximate credit score?']")
-    WebElement upfrontamountinput ;
+            using = "(//input[@class='input'])[2]")
+    static WebElement upfrontamountinput ;
 
     @FindBy(how = How.XPATH,
-            using = "//android.widget.EditText[@text ='$']")
-    WebElement monyhlyspending ;
+            using = "(//input[@class='input'])[3]")
+    static WebElement monyhlyspending ;
 
     @FindBy(how = How.XPATH,
-            using = "//android.widget.Button[@text='Get My Plan']")
-    WebElement getmyplanbutton ;
+            using = "//input[@value='Get My Plan']")
+    static WebElement getmyplanbutton ;
+
+    @FindBy(how = How.XPATH,
+            using = "//div[@class='edit-button']")
+    WebElement editbutton;
+
+    @FindBy(how = How.XPATH,
+            using = "//a[contains(.,'Get Started')]")
+    WebElement getstartedbutton;
 
 
-    public String emailid() {
-        String randmemail = "";
-        Random rad = new Random();
-        for (int j = 1; j <= 1; j++) {
-            randmemail = "pefinAutomationTest" + rad.nextInt(100) + "@gmail.com";
-        }
-        return randmemail;
-    }
+
 
 
 // Only Tap action on the buttons or element
+
     public void tapContinueWithEmailButton(){
         waitforelement(3);
         continuewithemailButton.click();
         String s = continuewithemailButton.getText();
-        Assert.assertEquals(BaseClass.prop.getProperty("emailHometext"),s);
+        SoftAssert softAssert = new SoftAssert();
+        softAssert.assertEquals(BaseClass.prop.getProperty("emailHometext"),s);
         waitforelement(3);
 
     }
@@ -114,7 +119,7 @@ public class HomePage extends BaseClass {
     public void tapinputEmailId(){
         waitforelement(3);
         inputEmailId.click();
-        inputEmailId.sendKeys(emailid());
+        inputEmailId.sendKeys(utils.emailid());
         waitforelement(3);
         driver.hideKeyboard();
 
@@ -133,20 +138,12 @@ public class HomePage extends BaseClass {
 
     }
 
-    public void tapselectastatedrop (){
-        waitforelement(3);
-        selectastatedrop.click();
-        List dropdown = driver.findElements(By.id("android:id/text1"));
 
-        // Putting in a loop to select different values every time
-        for (int i = 0; i < dropdown.size(); i++) {
-            // Click on drop down
-            MobileElement listItem = (MobileElement) dropdown.get(i);
-            System.out.println(listItem.getText());
-            listItem.findElement(By.xpath("//android.widget.CheckedTextView[@text='Alabama']")).click();
-        }
-
-        scroll();
+    public void tapselectastatedrop (String cityName){
+        waitforelement(10);
+        Select dropdown = new Select(driver.findElement(By.id("home-input-state-select")));
+        dropdown.selectByVisibleText(cityName);
+        sync(2);
 
     }
 
@@ -157,17 +154,25 @@ public class HomePage extends BaseClass {
         waitforelement(3);
         cityinput.click();
         cityinput.sendKeys("ALABASTER");
+        driver.hideKeyboard();
         waitforelement(3);
-        scroll();
+        scroll(2);
 
+    }
 
+    public void tapBuyhomemonthyyyy(){
+        waitforelement(2);
+        buyhomemonthyyyy.click();
+        buyhomemonthyyyy.sendKeys("122022");
+        driver.hideKeyboard();
+        scroll(2);
     }
 
     public void tapcreditscroe (){
         waitforelement(3);
-        randomcreditscore();
+        randomcreditscore().click();
         waitforelement(3);
-        scroll();
+        scroll(2);
         driver.hideKeyboard();
 
     }
@@ -176,7 +181,7 @@ public class HomePage extends BaseClass {
         waitforelement(3);
         upfrontamountinput.click();
         upfrontamountinput.sendKeys(String.valueOf(getRandomIntegerBetweenRange(1,10)));
-        scroll();
+        scroll(2);
         driver.hideKeyboard();
 
     }
@@ -185,7 +190,7 @@ public class HomePage extends BaseClass {
         waitforelement(3);
         monyhlyspending.click();
         monyhlyspending.sendKeys(String.valueOf(getRandomIntegerBetweenRange(1,10)));
-        scroll();
+        scroll(2);
         driver.hideKeyboard();
 
     }
@@ -197,12 +202,18 @@ public class HomePage extends BaseClass {
 
     }
 
-//
-//    public void tap (){
-//        waitforelement(3);
-//
-//    }
-//
+    public void tapEdit(){
+        waitforelement(2);
+        editbutton.click();
+    }
+
+    public void tapgetstartedbutton (){
+        waitforelement(3);
+        scroll(3);
+        getstartedbutton.click();
+
+    }
+
 
 // Making Webelement public for random choosing plans
 
@@ -227,4 +238,15 @@ public class HomePage extends BaseClass {
         return badcreditscore;
     }
 
+    public  WebElement InputEmailId(){
+        return inputEmailId;
+    }
+    public  WebElement CityInput() {
+        return cityinput ;
+
+    }
+
+    public WebElement BuyHomePlan() {
+        return buyhomemonthyyyy ;
+    }
 }

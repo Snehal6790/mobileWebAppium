@@ -6,7 +6,7 @@ import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
 import io.appium.java_client.service.local.AppiumServiceBuilder;
-import mobiledriver.BaseClass;
+import coretest.BaseClass;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.Assert;
 
@@ -20,24 +20,24 @@ public class DriverManagers extends BaseClass {
     private static String nodeJS = "/usr/local/bin/node";
     private static String appiumJS = "/Applications/Appium.app/Contents/Resources/app/node_modules/appium/build/lib/main.js";
 
-    private  AppiumDriverLocalService service;
-    static AppiumDriver<MobileElement> driver = null;
+    static AppiumDriverLocalService service;
     static DesiredCapabilities caps;
 
 
-    public DesiredCapabilities getcaps() throws MalformedURLException {
+    public static DesiredCapabilities getcaps() throws MalformedURLException {
     caps = new DesiredCapabilities();
     caps.setCapability("deviceName", BaseClass.prop.getProperty("deviceName"));
     caps.setCapability("platformName", BaseClass.prop.getProperty("platformName"));
     caps.setCapability("platformVersion", BaseClass.prop.getProperty("platformVersion"));
     caps.setCapability("browserName", "Chrome");
     caps.setCapability("automationName",BaseClass.prop.getProperty("automationName"));
+    caps.setCapability("noReset",true);
     driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), caps);
     driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     return caps ;
 }
 
-    public void AppiumStartServer() throws MalformedURLException {
+    public static void AppiumStartServer() throws MalformedURLException {
 
         AppiumServiceBuilder builder = new AppiumServiceBuilder();
 
@@ -55,7 +55,7 @@ public class DriverManagers extends BaseClass {
         driver.get(BaseClass.prop.getProperty("baseurl"));
     }
 
-    public void stopserver(){
+    public static void stopserver(){
         service.stop();
         System.out.println("Appium Server has been stopped");
     }
