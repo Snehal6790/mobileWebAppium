@@ -8,16 +8,15 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
-import utils.Utils;
 
 import java.nio.charset.MalformedInputException;
 import java.util.List;
+import java.util.Random;
 
-import static utils.Utils.waitforelement;
+import static utils.Utils.*;
+
 
 public class HomePage extends BaseClass {
-
-    Utils utils = new Utils();
 
     public HomePage(){
 
@@ -55,22 +54,27 @@ public class HomePage extends BaseClass {
 
     @FindBy(how = How.XPATH,
             using = "//android.view.View[@text ='Excellent: 750+']")
+    static
     WebElement excellentcreditscore ;
 
     @FindBy(how = How.XPATH,
             using = "//android.view.View[@text ='Good: 700–749']")
+    static
     WebElement goodcreditscore ;
 
     @FindBy(how = How.XPATH,
             using = "//android.view.View[@text ='Fair: 650–699']")
+    static
     WebElement faircreditscore ;
 
     @FindBy(how = How.XPATH,
             using = "//android.view.View[@text ='Poor: 600–649']")
+    static
     WebElement poorcreditscore ;
 
     @FindBy(how = How.XPATH,
             using = "//android.view.View[@text ='Bad: Below 600']")
+    static
     WebElement badcreditscore  ;
 
     @FindBy(how = How.XPATH,
@@ -86,6 +90,14 @@ public class HomePage extends BaseClass {
     WebElement getmyplanbutton ;
 
 
+    public String emailid() {
+        String randmemail = "";
+        Random rad = new Random();
+        for (int j = 1; j <= 1; j++) {
+            randmemail = "pefinAutomationTest" + rad.nextInt(100) + "@gmail.com";
+        }
+        return randmemail;
+    }
 
 
 // Only Tap action on the buttons or element
@@ -102,7 +114,7 @@ public class HomePage extends BaseClass {
     public void tapinputEmailId(){
         waitforelement(3);
         inputEmailId.click();
-        inputEmailId.sendKeys(utils.emailid());
+        inputEmailId.sendKeys(emailid());
         waitforelement(3);
         driver.hideKeyboard();
 
@@ -134,9 +146,11 @@ public class HomePage extends BaseClass {
             listItem.findElement(By.xpath("//android.widget.CheckedTextView[@text='Alabama']")).click();
         }
 
-        utils.scroll();
+        scroll();
 
     }
+
+
 
 
     public void tapcityinput () throws MalformedInputException{
@@ -144,16 +158,16 @@ public class HomePage extends BaseClass {
         cityinput.click();
         cityinput.sendKeys("ALABASTER");
         waitforelement(3);
-        utils.scroll();
+        scroll();
 
 
     }
 
     public void tapcreditscroe (){
         waitforelement(3);
-        utils.randomcreditscore();
+        randomcreditscore();
         waitforelement(3);
-        utils.scroll();
+        scroll();
         driver.hideKeyboard();
 
     }
@@ -161,8 +175,8 @@ public class HomePage extends BaseClass {
     public void tapupfrontamountinput (){
         waitforelement(3);
         upfrontamountinput.click();
-        upfrontamountinput.sendKeys(String.valueOf(utils.getRandomIntegerBetweenRange(1,10)));
-        utils.scroll();
+        upfrontamountinput.sendKeys(String.valueOf(getRandomIntegerBetweenRange(1,10)));
+        scroll();
         driver.hideKeyboard();
 
     }
@@ -170,8 +184,8 @@ public class HomePage extends BaseClass {
     public void tapmonyhlyspending (){
         waitforelement(3);
         monyhlyspending.click();
-        monyhlyspending.sendKeys(String.valueOf(utils.getRandomIntegerBetweenRange(1,10)));
-        utils.scroll();
+        monyhlyspending.sendKeys(String.valueOf(getRandomIntegerBetweenRange(1,10)));
+        scroll();
         driver.hideKeyboard();
 
     }
@@ -193,23 +207,23 @@ public class HomePage extends BaseClass {
 // Making Webelement public for random choosing plans
 
 
-    public WebElement Excellentcreditscore() {
+    public static WebElement Excellentcreditscore() {
         return excellentcreditscore;
     }
 
-    public WebElement Goodcreditscore(){
+    public static WebElement Goodcreditscore(){
         return goodcreditscore;
     }
 
-    public WebElement Faircreditscore() {
+    public static WebElement Faircreditscore() {
         return faircreditscore;
     }
 
-    public WebElement Poorcreditscore(){
+    public static WebElement Poorcreditscore(){
         return poorcreditscore;
     }
 
-    public WebElement Badcreditscore() {
+    public static WebElement Badcreditscore() {
         return badcreditscore;
     }
 

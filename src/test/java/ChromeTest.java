@@ -9,9 +9,11 @@ import utils.Utils;
 import java.net.MalformedURLException;
 import java.nio.charset.MalformedInputException;
 
+import static utils.Utils.sync;
+
 public class ChromeTest extends BaseClass {
 
-    DriverManagers driverManagers = new DriverManagers();
+    DriverManagers driverManagers ;
     HomePage homePage ;
     Utils utils;
 
@@ -21,6 +23,7 @@ public class ChromeTest extends BaseClass {
 
     @BeforeClass
     public void setup() throws MalformedURLException {
+        driverManagers = new DriverManagers();
         driverManagers.AppiumStartServer();
         homePage  = new HomePage();
         utils  = new Utils();
@@ -32,6 +35,7 @@ public class ChromeTest extends BaseClass {
     @Test
     public void test() throws MalformedInputException {
 
+        sync(5);
         homePage.tapContinueWithEmailButton();
         homePage.tapinputEmailId();
         homePage.tapcontinueButton();

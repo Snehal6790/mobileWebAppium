@@ -10,9 +10,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
 
+import static mobileViewPages.HomePage.*;
+
 public class Utils extends BaseClass {
-    WebDriverWait wait;
-    HomePage homePage = new HomePage();
 
     public Utils() {
 
@@ -35,22 +35,22 @@ public class Utils extends BaseClass {
     }
 
 
-    public void scroll(){
+    public static void scroll(){
         JavascriptExecutor js = (JavascriptExecutor)driver;
         js.executeScript("window.scrollBy(0,3000)","");
 
 
     }
 
-    public WebElement randomcreditscore() {
+    public static WebElement randomcreditscore() {
 
         ArrayList <WebElement> randelement = new ArrayList();
         try {
-            randelement.add(homePage.Excellentcreditscore());
-            randelement.add(homePage.Badcreditscore());
-            randelement.add(homePage.Faircreditscore());
-            randelement.add(homePage.Goodcreditscore());
-            randelement.add(homePage.Poorcreditscore());
+            randelement.add(Excellentcreditscore());
+            randelement.add(Badcreditscore());
+            randelement.add(Faircreditscore());
+            randelement.add(Goodcreditscore());
+            randelement.add(Poorcreditscore());
             for (int i = 0; i <= randelement.size(); i++) {
                 Collections.shuffle(randelement);
                 System.out.println(randelement.get(0));
@@ -62,19 +62,12 @@ public class Utils extends BaseClass {
         return randelement.get(0);
     }
 
-    public double getRandomIntegerBetweenRange(double min, double max){
+    public static double getRandomIntegerBetweenRange(double min, double max){
         double x = (int)(Math.random()*((max-min)+1))+min;
         return x;
     }
 
-    public String emailid() {
-        String randmemail = "";
-        Random rad = new Random();
-        for (int j = 1; j <= 1; j++) {
-            randmemail = "pefinAutomationTest" + rad.nextInt(100) + "@gmail.com";
-        }
-        return randmemail;
-    }
+
 
 
 }
