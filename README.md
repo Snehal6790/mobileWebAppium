@@ -35,7 +35,8 @@
                                     export PATH = /usr/local/bin:PATH```
    3. Now, it’s time to install Xcode from the app store. Just search for Xcode on the app store and hit the install button.
    4.After you have installed Xcode, its time to install homebrew on your system. Copy the code below and paste it into your              terminal.
-          /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+         ``` /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"```
+          
    5.After the above code has run completely run the following commands.
        ``` brew update
         brew doctor
