@@ -32,6 +32,23 @@ Whenever appium starts to create session it will re-install/install below apps o
         Java(TM) SE Runtime Environment (build 1.8.0_161-b12)
         Java HotSpot(TM) 64-Bit Server VM (build 25.161-b12, mixed mode)```
         
+        
+ # How to Set Up Java Environment System Variable/Path on Windows
+      1) Open the Control Panel -> System or Security –> System; the same thing can be done by right-clicking on ‘MyComputer’ and choosing Properties.
+      2) Choose ‘Advanced system settings‘.
+      3) Under the Advanced tab Choose the ‘Environment Variable…‘ option.
+      4) Select New In the System variables.
+      5) Define the Variable name as ‘JAVA_HOME‘ and Variable value as ‘C:\Program Files\Java\jdk1.8.0_45‘ (for this example            JDK version 1.8.0 was installed in ‘C:\Program Files\Java\jdk1.8.0_45‘ folder; if needed, modify this value to                reflect the real location).
+      
+  # Step 2: Setting the PATH Variable
+     6) Now we need to specify the location in the PATH variable.
+     7) In the editor add the value ‘;%JAVA_HOME%\bin‘ or ‘;C:Program Files\Java\jdk1.8.0_45\bin‘.
+     8) Now go to Start and type cmd in the Run and hit Enter. It will launch the Command Prompt. Type ‘java -version‘, it            will display the following information.
+ 
+
+
+       
+        
  # Install Appium GUI 
       # Appium Installation on Windows
  ## Download the following before you start the installation process-
