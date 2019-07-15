@@ -51,6 +51,26 @@ Whenever appium starts to create session it will re-install/install below apps o
         
  # Install Appium GUI 
       # Appium Installation on Windows
+      
+      
+# Step 1: Setting the ANDROID_HOME Variable
+      1) Open the Control Panel -> System or Security –> System; the same thing can be done by right-clicking on ‘MyComputer’           and choosing Properties.
+      2) Choose ‘Advanced system settings‘.
+      3) Under the Advanced tab Choose the ‘Environment Variable…‘ option.
+      4) Select New In the System variables.
+      5) Define the Variable name as ‘ANDROID_HOME‘ and Variable value as ‘C:\Users\snehal\AppData\Local\Android\android-sdk‘.
+ # Step 2: Setting PATH Variables for Android SDK
+      6) Now we need to specify the ‘tools‘ folder location in the PATH variable of android sdk package. For PATH, most               probably it will already exists in your machine. So just select it and choose the Edit option.
+      7) In the editor add the value ‘;%ANDROID_HOME%\tools‘ or ‘;C:\Users\snehal\AppData\Local\Android\android-sdk\tools‘.
+      8) Now we need to specify the ‘platform-tools‘ folder location in the PATH variable of android sdk package. Select the Path variable and choose the Edit option.
+      9) In the editor add the value ‘;%ANDROID_HOME%\platform-tools‘ or ‘;C:\Users\snehal\AppData\Local\Android\android-sdk\platform-tools‘.
+      
+      10) Now go to Start and type cmd in the Run and hit Enter. It will launch the Command Prompt. Type ‘android‘.
+
+
+ 
+ 
+ 
  ## Download the following before you start the installation process-
     [Android Studio] (http://developer.android.com/sdk/installing/index.html)
     [Appium Jar files for Java] (https://search.maven.org/search?q=g:io.appium%20AND%20a:java-client)
