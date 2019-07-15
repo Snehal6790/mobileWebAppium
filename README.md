@@ -1,6 +1,6 @@
 # MobileWebAppium
 
-# After All set UP . PLease DO RUN THESE COMMAND
+## After All set UP . PLease DO RUN THESE COMMAND
                       ```
                       adb kill-server
                       adb uninstall io.appium.settings
@@ -17,15 +17,15 @@ Whenever appium starts to create session it will re-install/install below apps o
 
 
 
-# Java Install
-  # For Mac users 
+## Java Install
+  ## For Mac users 
       1.Go To Terminal and type ("java -version")
         The output should Look like this :- ```
         java version "1.8.0_161"
         Java(TM) SE Runtime Environment (build 1.8.0_161-b12)
         Java HotSpot(TM) 64-Bit Server VM (build 25.161-b12, mixed mode)```
 
-  # For Windows Users
+  ## For Windows Users
       1. GO to command prompt and type("java -version")
         The output should Look like this :- ```
         java version "1.8.0_161"
@@ -33,14 +33,14 @@ Whenever appium starts to create session it will re-install/install below apps o
         Java HotSpot(TM) 64-Bit Server VM (build 25.161-b12, mixed mode)```
         
         
- # How to Set Up Java Environment System Variable/Path on Windows
+ ## How to Set Up Java Environment System Variable/Path on Windows
       1) Open the Control Panel -> System or Security –> System; the same thing can be done by right-clicking on ‘MyComputer’ and choosing Properties.
       2) Choose ‘Advanced system settings‘.
       3) Under the Advanced tab Choose the ‘Environment Variable…‘ option.
       4) Select New In the System variables.
       5) Define the Variable name as ‘JAVA_HOME‘ and Variable value as ‘C:\Program Files\Java\jdk1.8.0_45‘ (for this example            JDK version 1.8.0 was installed in ‘C:\Program Files\Java\jdk1.8.0_45‘ folder; if needed, modify this value to                reflect the real location).
       
-  # Step 2: Setting the PATH Variable
+  ## Step 2: Setting the PATH Variable
      6) Now we need to specify the location in the PATH variable.
      7) In the editor add the value ‘;%JAVA_HOME%\bin‘ or ‘;C:Program Files\Java\jdk1.8.0_45\bin‘.
      8) Now go to Start and type cmd in the Run and hit Enter. It will launch the Command Prompt. Type ‘java -version‘, it            will display the following information.
@@ -49,17 +49,17 @@ Whenever appium starts to create session it will re-install/install below apps o
 
        
         
- # Install Appium GUI 
+ ## Install Appium GUI 
       # Appium Installation on Windows
       
       
-# Step 1: Setting the ANDROID_HOME Variable
+## Step 1: Setting the ANDROID_HOME Variable
       1) Open the Control Panel -> System or Security –> System; the same thing can be done by right-clicking on ‘MyComputer’           and choosing Properties.
       2) Choose ‘Advanced system settings‘.
       3) Under the Advanced tab Choose the ‘Environment Variable…‘ option.
       4) Select New In the System variables.
       5) Define the Variable name as ‘ANDROID_HOME‘ and Variable value as ‘C:\Users\snehal\AppData\Local\Android\android-sdk‘.
- # Step 2: Setting PATH Variables for Android SDK
+ ## Step 2: Setting PATH Variables for Android SDK
       6) Now we need to specify the ‘tools‘ folder location in the PATH variable of android sdk package. For PATH, most               probably it will already exists in your machine. So just select it and choose the Edit option.
       7) In the editor add the value ‘;%ANDROID_HOME%\tools‘ or ‘;C:\Users\snehal\AppData\Local\Android\android-sdk\tools‘.
       8) Now we need to specify the ‘platform-tools‘ folder location in the PATH variable of android sdk package. Select the Path variable and choose the Edit option.
@@ -97,7 +97,27 @@ Whenever appium starts to create session it will re-install/install below apps o
                                     brew doctor
                                     xcode-select --install
                                     ```
-# [Install Intellij] (https://www.jetbrains.com/idea/download/#section=mac]
+# [Install Intellij] (https://www.jetbrains.com/idea/download/#section=mac)
+
+## [Install Node.js] (https://nodejs.org/en/download/) 
+       1) Visit the Node.JS website to download Node.JS. Scroll down little bit  to find the correct installer for your OS version.
+       2).The File Download dialog box appears prompting you to Save the download file.
+       3)  Once the downloading is complete, double click the file to begin the installation of Node.JS.
+       4)  To run the installer, click Run.
+       5)  The installation process starts. Click the Next button to continue the installation.
+       6)  Select the radio button to “Accept the terms in the License Agreement” and click on Next to proceed.
+       7) During the initial installation, window will ask you where you want to install the files. You can choose to change where you want to keep your folder but it’s best to stick with what you were given first. Click Next to continue.
+       8) On the next screen you will encounter some options. Just leave these alone and click Next unless you know what you are doing.
+       9) Click on Next to start the main installation.
+       10)  Let the installation finish and now take the last steps of the installation process; click Close on the last dialog. This will complete Java installation process.
+
+
+
+
+
+
+
+
 
 
 
