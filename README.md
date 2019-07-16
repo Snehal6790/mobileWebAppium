@@ -128,6 +128,9 @@ Whenever appium starts to create session it will re-install/install below apps o
           Which lists number of device . Since the project only cover single device copy device id and paste on                         `config.properties` file under `deviceName`
         2. Android device : Go to setting menu ----> System menu option ----> Tap 10 times `About phone` and ----> Check for `Android Version` and value to be paste on same config file under `platformVersion` then just tap on `Build number` option  enable `Developer option` ---> `toggle Use debugging` option for running scripts.
         
+        3. GO to src-->test--> any of the test class to run the script individually(Right click on class and tap on run as testng or direclty run) or . Directly navigate to "testng.xml" file and run from that . 
+
+        
         
        
 
