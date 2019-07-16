@@ -1,903 +1,101 @@
-2019-07-01 20:42:32:199 [Appium] Welcome to Appium v1.13.0
-2019-07-01 20:42:32:200 [Appium] Non-default server args:
-2019-07-01 20:42:32:201 [Appium]   logFile: /Users/snehal/mobileWebAppium/AppiumLogFile.txt
-2019-07-01 20:42:32:257 [Appium] Appium REST http interface listener started on 0.0.0.0:4723
-2019-07-01 20:42:32:585 [HTTP] --> GET /wd/hub/status
-2019-07-01 20:42:32:585 [HTTP] {}
-2019-07-01 20:42:32:588 [GENERIC] Calling AppiumDriver.getStatus() with args: []
-2019-07-01 20:42:32:592 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.13.0"}}
-2019-07-01 20:42:32:599 [HTTP] <-- GET /wd/hub/status 200 10 ms - 68
-2019-07-01 20:42:32:600 [HTTP] 
-2019-07-01 20:42:33:402 [HTTP] --> POST /wd/hub/session
-2019-07-01 20:42:33:403 [HTTP] {"desiredCapabilities":{"noReset":true,"platformVersion":"8.1.0","automationName":"UiAutomator2","browserName":"Chrome","platformName":"Android","deviceName":"ZY3222CJF8"},"capabilities":{"alwaysMatch":{"appium:automationName":"UiAutomator2","browserName":"Chrome","appium:deviceName":"ZY3222CJF8","appium:noReset":true,"platformName":"android","appium:platformVersion":"8.1.0"},"firstMatch":[{}]}}
-2019-07-01 20:42:33:404 [W3C] Calling AppiumDriver.createSession() with args: [{"noReset":true,"platformVersion":"8.1.0","automationName":"UiAutomator2","browserName":"Chrome","platformName":"Android","deviceName":"ZY3222CJF8"},null,{"alwaysMatch":{"appium:automationName":"UiAutomator2","browserName":"Chrome","appium:deviceName":"ZY3222CJF8","appium:noReset":true,"platformName":"android","appium:platformVersion":"8.1.0"},"firstMatch":[{}]}]
-2019-07-01 20:42:33:405 [BaseDriver] Event 'newSessionRequested' logged at 1562013753404 (02:12:33 GMT+0530 (India Standard Time))
-2019-07-01 20:42:33:556 [Appium] Appium v1.13.0 creating new AndroidUiautomator2Driver (v1.33.1) session
-2019-07-01 20:42:33:556 [Appium] Capabilities:
-2019-07-01 20:42:33:556 [Appium]   browserName: Chrome
-2019-07-01 20:42:33:556 [Appium]   platformName: android
-2019-07-01 20:42:33:556 [Appium]   automationName: UiAutomator2
-2019-07-01 20:42:33:557 [Appium]   deviceName: ZY3222CJF8
-2019-07-01 20:42:33:557 [Appium]   noReset: true
-2019-07-01 20:42:33:557 [Appium]   platformVersion: 8.1.0
-2019-07-01 20:42:33:559 [BaseDriver] W3C capabilities {"alwaysMatch":{"browserNam... and MJSONWP desired capabilities {"noReset":true,"platformVe... were provided
-2019-07-01 20:42:33:560 [BaseDriver] Creating session with W3C capabilities: {"alwaysMatch":{"browserNam...
-2019-07-01 20:42:33:566 [BaseDriver] Session created with session id: 66ed4690-d972-433c-826d-8b853f1bc2c2
-2019-07-01 20:42:33:567 [UiAutomator2] We're going to run a Chrome-based session
-2019-07-01 20:42:33:568 [UiAutomator2] Chrome-type package and activity are com.android.chrome and com.google.android.apps.chrome.Main
-2019-07-01 20:42:33:598 [ADB] Found 1 'build-tools' folders under '/Users/snehal/Library/Android/sdk' (newest first):
-2019-07-01 20:42:33:598 [ADB]     /Users/snehal/Library/Android/sdk/build-tools/27.0.3
-2019-07-01 20:42:33:598 [ADB] Using 'adb' from '/Users/snehal/Library/Android/sdk/platform-tools/adb'
-2019-07-01 20:42:33:599 [AndroidDriver] Retrieving device list
-2019-07-01 20:42:33:599 [ADB] Trying to find a connected android device
-2019-07-01 20:42:33:600 [ADB] Getting connected devices...
-2019-07-01 20:42:36:756 [ADB] 1 device(s) connected
-2019-07-01 20:42:36:756 [AndroidDriver] Looking for a device with Android '8.1.0'
-2019-07-01 20:42:36:756 [ADB] Setting device id to ZY3222CJF8
-2019-07-01 20:42:36:757 [ADB] Getting device platform version
-2019-07-01 20:42:36:758 [ADB] Running '/Users/snehal/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY3222CJF8 shell getprop ro.build.version.release'
-2019-07-01 20:42:36:842 [ADB] Current device property 'ro.build.version.release': 8.1.0
-2019-07-01 20:42:36:843 [AndroidDriver] Using device: ZY3222CJF8
-2019-07-01 20:42:36:844 [ADB] Using 'adb' from '/Users/snehal/Library/Android/sdk/platform-tools/adb'
-2019-07-01 20:42:36:844 [ADB] Setting device id to ZY3222CJF8
-2019-07-01 20:42:36:845 [ADB] Running '/Users/snehal/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY3222CJF8 shell getprop ro.build.version.sdk'
-2019-07-01 20:42:36:930 [ADB] Current device property 'ro.build.version.sdk': 27
-2019-07-01 20:42:36:930 [ADB] Device API level: 27
-2019-07-01 20:42:36:931 [AndroidDriver] No app sent in, not parsing package/activity
-2019-07-01 20:42:36:932 [ADB] Running '/Users/snehal/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY3222CJF8 wait-for-device'
-2019-07-01 20:42:36:948 [ADB] Running '/Users/snehal/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY3222CJF8 shell echo ping'
-2019-07-01 20:42:36:998 [AndroidDriver] Pushing settings apk to device...
-2019-07-01 20:42:37:000 [ADB] Getting install status for io.appium.settings
-2019-07-01 20:42:37:000 [ADB] Running '/Users/snehal/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY3222CJF8 shell dumpsys package io.appium.settings'
-2019-07-01 20:42:37:118 [ADB] 'io.appium.settings' is installed
-2019-07-01 20:42:37:120 [ADB] Getting package info for 'io.appium.settings'
-2019-07-01 20:42:37:121 [ADB] Running '/Users/snehal/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY3222CJF8 shell dumpsys package io.appium.settings'
-2019-07-01 20:42:37:233 [ADB] Using 'aapt' from '/Users/snehal/Library/Android/sdk/build-tools/27.0.3/aapt'
-2019-07-01 20:42:37:247 [ADB] The version name of the installed 'io.appium.settings' is greater or equal to the application version name ('2.14.0' >= '2.14.0')
-2019-07-01 20:42:37:248 [ADB] There is no need to install/upgrade '/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/io.appium.settings/apks/settings_apk-debug.apk'
-2019-07-01 20:42:37:249 [ADB] Getting IDs of all 'io.appium.settings' processes
-2019-07-01 20:42:37:249 [ADB] Running '/Users/snehal/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY3222CJF8 shell 'pgrep --help; echo $?''
-2019-07-01 20:42:37:346 [ADB] Running '/Users/snehal/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY3222CJF8 shell pgrep -f io\\.appium\\.settings'
-2019-07-01 20:42:37:557 [AndroidDriver] io.appium.settings is already running. There is no need to reset its permissions.
-2019-07-01 20:42:37:558 [ADB] Running '/Users/snehal/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY3222CJF8 shell appops set io.appium.settings android\:mock_location allow'
-2019-07-01 20:42:37:687 [Logcat] Starting logcat capture
-2019-07-01 20:42:37:755 [ADB] Getting install status for io.appium.uiautomator2.server
-2019-07-01 20:42:37:756 [ADB] Running '/Users/snehal/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY3222CJF8 shell dumpsys package io.appium.uiautomator2.server'
-2019-07-01 20:42:37:857 [ADB] 'io.appium.uiautomator2.server' is installed
-2019-07-01 20:42:37:857 [ADB] Getting package info for 'io.appium.uiautomator2.server'
-2019-07-01 20:42:37:858 [ADB] Running '/Users/snehal/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY3222CJF8 shell dumpsys package io.appium.uiautomator2.server'
-2019-07-01 20:42:37:955 [ADB] The version name of the installed 'io.appium.uiautomator2.server' is greater or equal to the application version name ('3.5.1' >= '3.5.1')
-2019-07-01 20:42:37:956 [UiAutomator2] io.appium.uiautomator2.server installation state: sameVersionInstalled
-2019-07-01 20:42:37:957 [ADB] Checking app cert for /Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v3.5.1.apk
-2019-07-01 20:42:37:959 [ADB] Using 'apksigner' from '/Users/snehal/Library/Android/sdk/build-tools/27.0.3/apksigner'
-2019-07-01 20:42:37:959 [ADB] Starting '/Users/snehal/Library/Android/sdk/build-tools/27.0.3/apksigner' with args '["verify","--print-certs","/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v3.5.1.apk"]'
-2019-07-01 20:42:38:570 [ADB] apksigner stdout: Signer #1 certificate DN: EMAILADDRESS=android@android.com, CN=Android, OU=Android, O=Android, L=Mountain View, ST=California, C=US
-2019-07-01 20:42:38:570 [ADB] Signer #1 certificate SHA-256 digest: a40da80a59d170caa950cf15c18c454d47a39b26989d8b640ecd745ba71bf5dc
-2019-07-01 20:42:38:570 [ADB] Signer #1 certificate SHA-1 digest: 61ed377e85d386a8dfee6b864bd85b0bfaa5af81
-2019-07-01 20:42:38:570 [ADB] Signer #1 certificate MD5 digest: e89b158e4bcf988ebd09eb83f5378e87
-2019-07-01 20:42:38:571 [ADB] 
-2019-07-01 20:42:38:571 [ADB] '/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v3.5.1.apk' is already signed.
-2019-07-01 20:42:38:571 [ADB] Getting install status for io.appium.uiautomator2.server.test
-2019-07-01 20:42:38:572 [ADB] Running '/Users/snehal/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY3222CJF8 shell dumpsys package io.appium.uiautomator2.server.test'
-2019-07-01 20:42:38:675 [ADB] 'io.appium.uiautomator2.server.test' is installed
-2019-07-01 20:42:38:675 [ADB] Checking app cert for /Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk
-2019-07-01 20:42:38:676 [ADB] Starting '/Users/snehal/Library/Android/sdk/build-tools/27.0.3/apksigner' with args '["verify","--print-certs","/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk"]'
-2019-07-01 20:42:39:140 [ADB] apksigner stdout: Signer #1 certificate DN: EMAILADDRESS=android@android.com, CN=Android, OU=Android, O=Android, L=Mountain View, ST=California, C=US
-2019-07-01 20:42:39:140 [ADB] Signer #1 certificate SHA-256 digest: a40da80a59d170caa950cf15c18c454d47a39b26989d8b640ecd745ba71bf5dc
-2019-07-01 20:42:39:140 [ADB] Signer #1 certificate SHA-1 digest: 61ed377e85d386a8dfee6b864bd85b0bfaa5af81
-2019-07-01 20:42:39:140 [ADB] Signer #1 certificate MD5 digest: e89b158e4bcf988ebd09eb83f5378e87
-2019-07-01 20:42:39:141 [ADB] 
-2019-07-01 20:42:39:141 [ADB] '/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk' is already signed.
-2019-07-01 20:42:39:141 [UiAutomator2] Server packages are not going to be (re)installed
-2019-07-01 20:42:39:142 [UiAutomator2] Waiting up to 30000ms for services to be available
-2019-07-01 20:42:39:142 [ADB] Running '/Users/snehal/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY3222CJF8 shell pm list instrumentation'
-2019-07-01 20:42:40:079 [UiAutomator2] Instrumentation target 'io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner' is available
-2019-07-01 20:42:40:080 [UiAutomator2] Forwarding UiAutomator2 Server port 6790 to 8200
-2019-07-01 20:42:40:080 [ADB] Forwarding system: 8200 to device: 6790
-2019-07-01 20:42:40:080 [ADB] Running '/Users/snehal/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY3222CJF8 forward tcp\:8200 tcp\:6790'
-2019-07-01 20:42:40:096 [UiAutomator2] No app capability. Assuming it is already on the device
-2019-07-01 20:42:40:097 [UiAutomator2] Performing shallow cleanup of automation leftovers
-2019-07-01 20:42:40:307 [UiAutomator2] No obsolete sessions have been detected
-2019-07-01 20:42:40:307 [ADB] Running '/Users/snehal/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY3222CJF8 shell am force-stop io.appium.uiautomator2.server.test'
-2019-07-01 20:42:40:456 [UiAutomator2] Starting UIAutomator2 server 3.5.1
-2019-07-01 20:42:40:457 [UiAutomator2] Using UIAutomator2 server from '/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v3.5.1.apk' and test from '/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk'
-2019-07-01 20:42:40:458 [UiAutomator2] Waiting up to 30000ms for UiAutomator2 to be online...
-2019-07-01 20:42:40:458 [ADB] Creating ADB subprocess with args: ["-P",5037,"-s","ZY3222CJF8","shell","am","instrument","-w","io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner"]
-2019-07-01 20:42:41:473 [WD Proxy] Matched '/status' to command name 'getStatus'
-2019-07-01 20:42:41:478 [WD Proxy] Proxying [GET /status] to [GET http://localhost:8200/wd/hub/status] with no body
-2019-07-01 20:42:41:486 [WD Proxy] Got an unexpected response: {"errno":"ECONNRESET","code":"ECONNRESET","syscall":"read"}
-2019-07-01 20:42:42:492 [WD Proxy] Matched '/status' to command name 'getStatus'
-2019-07-01 20:42:42:494 [WD Proxy] Proxying [GET /status] to [GET http://localhost:8200/wd/hub/status] with no body
-2019-07-01 20:42:42:501 [WD Proxy] Got an unexpected response: {"errno":"ECONNRESET","code":"ECONNRESET","syscall":"read"}
-2019-07-01 20:42:43:043 [Instrumentation] io.appium.uiautomator2.server.test.AppiumUiAutomator2Server:
-2019-07-01 20:42:43:502 [WD Proxy] Matched '/status' to command name 'getStatus'
-2019-07-01 20:42:43:503 [WD Proxy] Proxying [GET /status] to [GET http://localhost:8200/wd/hub/status] with no body
-2019-07-01 20:42:43:513 [WD Proxy] Got an unexpected response: {"errno":"ECONNRESET","code":"ECONNRESET","syscall":"read"}
-2019-07-01 20:42:44:517 [WD Proxy] Matched '/status' to command name 'getStatus'
-2019-07-01 20:42:44:518 [WD Proxy] Proxying [GET /status] to [GET http://localhost:8200/wd/hub/status] with no body
-2019-07-01 20:42:44:524 [WD Proxy] Got an unexpected response: {"errno":"ECONNRESET","code":"ECONNRESET","syscall":"read"}
-2019-07-01 20:42:45:529 [WD Proxy] Matched '/status' to command name 'getStatus'
-2019-07-01 20:42:45:530 [WD Proxy] Proxying [GET /status] to [GET http://localhost:8200/wd/hub/status] with no body
-2019-07-01 20:42:45:731 [WD Proxy] Got response with status 200: "{\"sessionId\":\"None\",\"status\":0,\"value\":\"Status Invoked\"}"
-2019-07-01 20:42:45:731 [WD Proxy] Determined that the downstream protocol for proxy is MJSONWP
-2019-07-01 20:42:45:732 [UiAutomator2] The initialization of the instrumentation process took 5275ms
-2019-07-01 20:42:45:733 [WD Proxy] Matched '/session' to command name 'createSession'
-2019-07-01 20:42:45:733 [WD Proxy] Proxying [POST /session] to [POST http://localhost:8200/wd/hub/session] with body: {"desiredCapabilities":{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"browserName":"Chrome","platformName":"android","automationName":"UiAutomator2","deviceName":"ZY3222CJF8","noReset":true,"platformVersion":"8.1.0"},"browserName":"Chrome","platformName":"android","automationName":"UiAutomator2","deviceName":"ZY3222CJF8","noReset":true,"platformVersion":"8.1.0","appPackage":"com.android.chrome","appActivity":"com.google.android.apps.chrome.Main","deviceUDID":"ZY3222CJF8"}}
-2019-07-01 20:42:45:825 [WD Proxy] Got response with status 200: {"sessionId":"44a47f4d-cdc0-4462-b36d-47202afb417b","status":0,"value":"Created Session"}
-2019-07-01 20:42:45:839 [WD Proxy] Proxying [GET /appium/device/info] to [GET http://localhost:8200/wd/hub/session/44a47f4d-cdc0-4462-b36d-47202afb417b/appium/device/info] with no body
-2019-07-01 20:42:45:956 [WD Proxy] Got response with status 200: "{\"sessionId\":\"44a47f4d-cdc0-4462-b36d-47202afb417b\",\"status\":0,\"value\":{\"androidId\":\"86ca509766c78434\",\"manufacturer\":\"motorola\",\"model\":\"Moto G (5)\",\"brand\":\"motorola\",\"apiVersion\":\"27\",\"platformVersion\":\"8.1.0\",\"carrierName\":\"\",\"realDisplaySize\":\"1080x1920\",\"displayDensity\":480,\"networks\":[{\"type\":1,\"typeName\":\"WIFI\",\"subtype\":0,\"subtypeName\":\"\",\"isConnected\":true,\"detailedState\":\"CONNECTED\",\"state\":\"CONNECTED\",\"extraInfo\":\"\\\"CAAAAMw8OD4AXwHmRedmi Note 6 Pr\\\"\",\"isAvailable\":true,\"isFailover\":false,\"isRoaming\":false,\"capabilities\":{\"transportTypes\":\"NET_CAPABILITY_SUPL\",\"networkCapabilities\":\"\",\"linkUpstreamBandwidthKbps\":1048576,\"linkDownBandwidthKbps\":1048576,\"signalStrength\":-59,\"networkSpecifier\":null,\"SSID\":null}}]}}"
-2019-07-01 20:42:45:957 [ADB] Running '/Users/snehal/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY3222CJF8 shell dumpsys window'
-2019-07-01 20:42:46:070 [AndroidDriver] Screen already unlocked, doing nothing
-2019-07-01 20:42:46:073 [AndroidDriver] Starting a chrome-based browser session
-2019-07-01 20:42:46:108 [AndroidDriver] A port was not given, using random free port: 8025
-2019-07-01 20:42:46:109 [AndroidDriver] Before starting chromedriver, androidPackage is com.android.chrome
-2019-07-01 20:42:46:110 [Chromedriver] Changed state to 'starting'
-2019-07-01 20:42:46:114 [Chromedriver] Found 1 executable in '/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-chromedriver/chromedriver/mac'
-2019-07-01 20:42:46:140 [Chromedriver] The following Chromedriver executables were found:
-2019-07-01 20:42:46:140 [Chromedriver]     /Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-chromedriver/chromedriver/mac/chromedriver (minimum Chrome version '71.0.3578')
-2019-07-01 20:42:46:141 [ADB] Getting package info for 'com.android.chrome'
-2019-07-01 20:42:46:141 [ADB] Running '/Users/snehal/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY3222CJF8 shell dumpsys package com.android.chrome'
-2019-07-01 20:42:46:257 [Chromedriver] Found Chrome bundle 'com.android.chrome' version '75.0.3770'
-2019-07-01 20:42:46:257 [Chromedriver] Found 1 Chromedriver executable capable of automating Chrome '75.0.3770'.
-2019-07-01 20:42:46:257 [Chromedriver] Choosing the most recent, '/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-chromedriver/chromedriver/mac/chromedriver'.
-2019-07-01 20:42:46:258 [Chromedriver] If a specific version is required, specify it with the `chromedriverExecutable`desired capability.
-2019-07-01 20:42:46:258 [Chromedriver] Set chromedriver binary as: /Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-chromedriver/chromedriver/mac/chromedriver
-2019-07-01 20:42:46:259 [Chromedriver] Killing any old chromedrivers, running: pkill -15 -f "/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-chromedriver/chromedriver/mac/chromedriver.*--port=8025"
-2019-07-01 20:42:46:292 [Chromedriver] No old chromedrivers seem to exist
-2019-07-01 20:42:46:293 [Chromedriver] Cleaning any old adb forwarded port socket connections
-2019-07-01 20:42:46:293 [ADB] List forwarding ports
-2019-07-01 20:42:46:293 [ADB] Running '/Users/snehal/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY3222CJF8 forward --list'
-2019-07-01 20:42:46:312 [Chromedriver] Spawning chromedriver with: /Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-chromedriver/chromedriver/mac/chromedriver --url-base=wd/hub --port=8025 --adb-port=5037 --verbose
-2019-07-01 20:42:46:331 [Chromedriver] Chromedriver version: '2.46.628411'
-2019-07-01 20:42:46:334 [WD Proxy] Matched '/status' to command name 'getStatus'
-2019-07-01 20:42:46:337 [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8025/wd/hub/status] with no body
-2019-07-01 20:42:46:340 [WD Proxy] Got response with status 200: "{\"sessionId\":\"\",\"status\":0,\"value\":{\"build\":{\"version\":\"2.46.628411 (3324f4c8be9ff2f70a05a30ebc72ffb013e1a71e)\"},\"message\":\"ChromeDriver ready for new sessions.\",\"os\":{\"arch\":\"x86_64\",\"name\":\"Mac OS X\",\"version\":\"10.13.6\"},\"ready\":true}}"
-2019-07-01 20:42:46:341 [WD Proxy] Determined that the downstream protocol for proxy is MJSONWP
-2019-07-01 20:42:46:341 [WD Proxy] Matched '/session' to command name 'createSession'
-2019-07-01 20:42:46:342 [WD Proxy] Proxying [POST /session] to [POST http://127.0.0.1:8025/wd/hub/session] with body: {"desiredCapabilities":{"chromeOptions":{"androidPackage":"com.android.chrome","androidDeviceSerial":"ZY3222CJF8"},"loggingPrefs":{"browser":"ALL"}}}
-2019-07-01 20:42:51:471 [Chromedriver] Webview version: 'Chrome/75.0.3770.101'
-2019-07-01 20:42:51:527 [WD Proxy] Got response with status 200: {"sessionId":"3b67f98d331100cfbf166daa3798f31d","status":0,"value":{"acceptInsecureCerts":false,"acceptSslCerts":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"browserName":"chrome","chrome":{"chromedriverVersion":"2.46.628411 (3324f4c8be9ff2f70a05a30ebc72ffb013e1a71e)"},"cssSelectorsEnabled":true,"databaseEnabled":false,"goog:chromeOptions":{"debuggerAddress":"localhost:58317"},"handlesAlerts":true,"hasTouchScreen":true,"javascriptEnabled":true,"locationContextEnabled":true,"mobileEmulationEnabled":false,"nativeEvents":true,"pageLoadStrategy":"normal","platform":"ANDROID","proxy":{},"rotatable":false,"setWindowRect":false,"strictFileInteractability":false,"takesHeapSnapshot":true,"takesScreenshot":true,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unexpectedAlertBehaviour":"ignore","version":"75.0.3770.101","webStorageEnabled":true}}
-2019-07-01 20:42:51:527 [Chromedriver] Changed state to 'online'
-2019-07-01 20:42:51:529 [WD Proxy] Proxying [GET /appium/device/pixel_ratio] to [GET http://localhost:8200/wd/hub/session/44a47f4d-cdc0-4462-b36d-47202afb417b/appium/device/pixel_ratio] with body: {}
-2019-07-01 20:42:51:570 [WD Proxy] Got response with status 200: "{\"sessionId\":\"44a47f4d-cdc0-4462-b36d-47202afb417b\",\"status\":0,\"value\":3}"
-2019-07-01 20:42:51:577 [WD Proxy] Matched '/appium/device/system_bars' to command name 'getSystemBars'
-2019-07-01 20:42:51:578 [WD Proxy] Proxying [GET /appium/device/system_bars] to [GET http://localhost:8200/wd/hub/session/44a47f4d-cdc0-4462-b36d-47202afb417b/appium/device/system_bars] with body: {}
-2019-07-01 20:42:51:612 [WD Proxy] Got response with status 200: "{\"sessionId\":\"44a47f4d-cdc0-4462-b36d-47202afb417b\",\"status\":0,\"value\":{\"statusBar\":72}}"
-2019-07-01 20:42:51:614 [WD Proxy] Matched '/window/current/size' to command name 'getWindowSize'
-2019-07-01 20:42:51:614 [WD Proxy] Proxying [GET /window/current/size] to [GET http://localhost:8200/wd/hub/session/44a47f4d-cdc0-4462-b36d-47202afb417b/window/current/size] with body: {}
-2019-07-01 20:42:51:651 [WD Proxy] Got response with status 200: "{\"sessionId\":\"44a47f4d-cdc0-4462-b36d-47202afb417b\",\"status\":0,\"value\":{\"height\":1776,\"width\":1080}}"
-2019-07-01 20:42:51:652 [Appium] New AndroidUiautomator2Driver session created successfully, session 66ed4690-d972-433c-826d-8b853f1bc2c2 added to master session list
-2019-07-01 20:42:51:653 [BaseDriver] Event 'newSessionStarted' logged at 1562013771653 (02:12:51 GMT+0530 (India Standard Time))
-2019-07-01 20:42:51:655 [W3C (66ed4690)] Cached the protocol value 'W3C' for the new session 66ed4690-d972-433c-826d-8b853f1bc2c2
-2019-07-01 20:42:51:655 [W3C (66ed4690)] Responding to client with driver.createSession() result: {"capabilities":{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"browserName":"Chrome","platformName":"android","automationName":"UiAutomator2","deviceName":"ZY3222CJF8","noReset":true,"platformVersion":"8.1.0"},"browserName":"Chrome","platformName":"android","automationName":"UiAutomator2","deviceName":"ZY3222CJF8","noReset":true,"platformVersion":"8.1.0","appPackage":"com.android.chrome","appActivity":"com.google.android.apps.chrome.Main","deviceUDID":"ZY3222CJF8","deviceApiLevel":27,"deviceScreenSize":"1080x1920","deviceScreenDensity":480,"deviceModel":"Moto G (5)","deviceManufacturer":"motorola","pixelRatio":3,"statBarHeight":72,"viewportRect":{"left":0,"top":72,"width":1080,"height":1704}}}
-2019-07-01 20:42:51:657 [HTTP] <-- POST /wd/hub/session 200 18253 ms - 923
-2019-07-01 20:42:51:657 [HTTP] 
-2019-07-01 20:42:51:734 [HTTP] --> GET /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2
-2019-07-01 20:42:51:735 [HTTP] {}
-2019-07-01 20:42:51:736 [W3C (66ed4690)] Driver proxy active, passing request on via HTTP proxy
-2019-07-01 20:42:51:771 [WD Proxy] Matched '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2' to command name 'getSession'
-2019-07-01 20:42:51:771 [WD Proxy] Proxying [GET /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2] to [GET http://127.0.0.1:8025/wd/hub/session/3b67f98d331100cfbf166daa3798f31d] with body: {}
-2019-07-01 20:42:51:774 [WD Proxy] Got response with status 200: "{\"sessionId\":\"3b67f98d331100cfbf166daa3798f31d\",\"status\":0,\"value\":{\"acceptInsecureCerts\":false,\"acceptSslCerts\":false,\"applicationCacheEnabled\":false,\"browserConnectionEnabled\":false,\"browserName\":\"chrome\",\"chrome\":{\"chromedriverVersion\":\"2.46.628411 (3324f4c8be9ff2f70a05a30ebc72ffb013e1a71e)\"},\"cssSelectorsEnabled\":true,\"databaseEnabled\":false,\"goog:chromeOptions\":{\"debuggerAddress\":\"localhost:58317\"},\"handlesAlerts\":true,\"hasTouchScreen\":true,\"javascriptEnabled\":true,\"locationContextEnabled\":true,\"mobileEmulationEnabled\":false,\"nativeEvents\":true,\"pageLoadStrategy\":\"normal\",\"platform\":\"ANDROID\",\"proxy\":{},\"rotatable\":false,\"setWindowRect\":false,\"strictFileInteractability\":false,\"takesHeapSnapshot\":true,\"takesScreenshot\":true,\"timeouts\":{\"implicit\":0,\"pageLoad\":300000,\"script\":30000},\"unexpectedAlertBehaviour\":\"ignore\",\"version\":\"75.0.3770.101\",\"webStorageEnabled\":true}}"
-2019-07-01 20:42:51:775 [WD Proxy] Replacing sessionId 3b67f98d331100cfbf166daa3798f31d with 66ed4690-d972-433c-826d-8b853f1bc2c2
-2019-07-01 20:42:51:777 [HTTP] <-- GET /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2 200 41 ms - 889
-2019-07-01 20:42:51:779 [HTTP] 
-2019-07-01 20:42:51:793 [HTTP] --> GET /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2
-2019-07-01 20:42:51:794 [HTTP] {}
-2019-07-01 20:42:51:794 [W3C (66ed4690)] Driver proxy active, passing request on via HTTP proxy
-2019-07-01 20:42:51:796 [WD Proxy] Matched '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2' to command name 'getSession'
-2019-07-01 20:42:51:799 [WD Proxy] Proxying [GET /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2] to [GET http://127.0.0.1:8025/wd/hub/session/3b67f98d331100cfbf166daa3798f31d] with body: {}
-2019-07-01 20:42:51:801 [WD Proxy] Got response with status 200: "{\"sessionId\":\"3b67f98d331100cfbf166daa3798f31d\",\"status\":0,\"value\":{\"acceptInsecureCerts\":false,\"acceptSslCerts\":false,\"applicationCacheEnabled\":false,\"browserConnectionEnabled\":false,\"browserName\":\"chrome\",\"chrome\":{\"chromedriverVersion\":\"2.46.628411 (3324f4c8be9ff2f70a05a30ebc72ffb013e1a71e)\"},\"cssSelectorsEnabled\":true,\"databaseEnabled\":false,\"goog:chromeOptions\":{\"debuggerAddress\":\"localhost:58317\"},\"handlesAlerts\":true,\"hasTouchScreen\":true,\"javascriptEnabled\":true,\"locationContextEnabled\":true,\"mobileEmulationEnabled\":false,\"nativeEvents\":true,\"pageLoadStrategy\":\"normal\",\"platform\":\"ANDROID\",\"proxy\":{},\"rotatable\":false,\"setWindowRect\":false,\"strictFileInteractability\":false,\"takesHeapSnapshot\":true,\"takesScreenshot\":true,\"timeouts\":{\"implicit\":0,\"pageLoad\":300000,\"script\":30000},\"unexpectedAlertBehaviour\":\"ignore\",\"version\":\"75.0.3770.101\",\"webStorageEnabled\":true}}"
-2019-07-01 20:42:51:802 [WD Proxy] Replacing sessionId 3b67f98d331100cfbf166daa3798f31d with 66ed4690-d972-433c-826d-8b853f1bc2c2
-2019-07-01 20:42:51:803 [HTTP] <-- GET /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2 200 9 ms - 889
-2019-07-01 20:42:51:803 [HTTP] 
-2019-07-01 20:42:51:807 [HTTP] --> GET /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2
-2019-07-01 20:42:51:807 [HTTP] {}
-2019-07-01 20:42:51:808 [W3C (66ed4690)] Driver proxy active, passing request on via HTTP proxy
-2019-07-01 20:42:51:809 [WD Proxy] Matched '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2' to command name 'getSession'
-2019-07-01 20:42:51:809 [WD Proxy] Proxying [GET /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2] to [GET http://127.0.0.1:8025/wd/hub/session/3b67f98d331100cfbf166daa3798f31d] with body: {}
-2019-07-01 20:42:51:812 [WD Proxy] Got response with status 200: "{\"sessionId\":\"3b67f98d331100cfbf166daa3798f31d\",\"status\":0,\"value\":{\"acceptInsecureCerts\":false,\"acceptSslCerts\":false,\"applicationCacheEnabled\":false,\"browserConnectionEnabled\":false,\"browserName\":\"chrome\",\"chrome\":{\"chromedriverVersion\":\"2.46.628411 (3324f4c8be9ff2f70a05a30ebc72ffb013e1a71e)\"},\"cssSelectorsEnabled\":true,\"databaseEnabled\":false,\"goog:chromeOptions\":{\"debuggerAddress\":\"localhost:58317\"},\"handlesAlerts\":true,\"hasTouchScreen\":true,\"javascriptEnabled\":true,\"locationContextEnabled\":true,\"mobileEmulationEnabled\":false,\"nativeEvents\":true,\"pageLoadStrategy\":\"normal\",\"platform\":\"ANDROID\",\"proxy\":{},\"rotatable\":false,\"setWindowRect\":false,\"strictFileInteractability\":false,\"takesHeapSnapshot\":true,\"takesScreenshot\":true,\"timeouts\":{\"implicit\":0,\"pageLoad\":300000,\"script\":30000},\"unexpectedAlertBehaviour\":\"ignore\",\"version\":\"75.0.3770.101\",\"webStorageEnabled\":true}}"
-2019-07-01 20:42:51:812 [WD Proxy] Replacing sessionId 3b67f98d331100cfbf166daa3798f31d with 66ed4690-d972-433c-826d-8b853f1bc2c2
-2019-07-01 20:42:51:813 [HTTP] <-- GET /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2 200 6 ms - 889
-2019-07-01 20:42:51:814 [HTTP] 
-2019-07-01 20:42:51:825 [HTTP] --> POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/timeouts
-2019-07-01 20:42:51:825 [HTTP] {"implicit":10000}
-2019-07-01 20:42:51:826 [W3C (66ed4690)] Driver proxy active, passing request on via HTTP proxy
-2019-07-01 20:42:51:828 [WD Proxy] Matched '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/timeouts' to command name 'timeouts'
-2019-07-01 20:42:51:834 [Protocol Converter] Will send the following request bodies to /timeouts: [{"type":"implicit","ms":10000}]
-2019-07-01 20:42:51:837 [WD Proxy] Proxying [POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/timeouts] to [POST http://127.0.0.1:8025/wd/hub/session/3b67f98d331100cfbf166daa3798f31d/timeouts] with body: {"type":"implicit","ms":10000}
-2019-07-01 20:42:51:843 [WD Proxy] Got response with status 200: {"sessionId":"3b67f98d331100cfbf166daa3798f31d","status":0,"value":null}
-2019-07-01 20:42:51:844 [WD Proxy] Replacing sessionId 3b67f98d331100cfbf166daa3798f31d with 66ed4690-d972-433c-826d-8b853f1bc2c2
-2019-07-01 20:42:51:848 [HTTP] <-- POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/timeouts 200 21 ms - 76
-2019-07-01 20:42:51:849 [HTTP] 
-2019-07-01 20:42:51:868 [HTTP] --> POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/url
-2019-07-01 20:42:51:868 [HTTP] {"url":"https://www.pefin.com/plan/home"}
-2019-07-01 20:42:51:870 [W3C (66ed4690)] Driver proxy active, passing request on via HTTP proxy
-2019-07-01 20:42:51:876 [WD Proxy] Matched '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/url' to command name 'setUrl'
-2019-07-01 20:42:51:877 [WD Proxy] Proxying [POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/url] to [POST http://127.0.0.1:8025/wd/hub/session/3b67f98d331100cfbf166daa3798f31d/url] with body: {"url":"https://www.pefin.com/plan/home"}
-2019-07-01 20:42:58:685 [WD Proxy] Got response with status 200: {"sessionId":"3b67f98d331100cfbf166daa3798f31d","status":0,"value":null}
-2019-07-01 20:42:58:686 [WD Proxy] Replacing sessionId 3b67f98d331100cfbf166daa3798f31d with 66ed4690-d972-433c-826d-8b853f1bc2c2
-2019-07-01 20:42:58:687 [HTTP] <-- POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/url 200 6819 ms - 76
-2019-07-01 20:42:58:688 [HTTP] 
-2019-07-01 20:43:06:749 [HTTP] --> POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element
-2019-07-01 20:43:06:749 [HTTP] {"using":"xpath","value":"//input[@value='Continue With Email']"}
-2019-07-01 20:43:06:751 [W3C (66ed4690)] Driver proxy active, passing request on via HTTP proxy
-2019-07-01 20:43:06:753 [WD Proxy] Matched '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element' to command name 'findElement'
-2019-07-01 20:43:06:754 [WD Proxy] Proxying [POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element] to [POST http://127.0.0.1:8025/wd/hub/session/3b67f98d331100cfbf166daa3798f31d/element] with body: {"using":"xpath","value":"//input[@value='Continue With Email']"}
-2019-07-01 20:43:06:847 [WD Proxy] Got response with status 200: {"sessionId":"3b67f98d331100cfbf166daa3798f31d","status":0,"value":{"ELEMENT":"0.14205868735224159-1"}}
-2019-07-01 20:43:06:848 [WD Proxy] Replacing sessionId 3b67f98d331100cfbf166daa3798f31d with 66ed4690-d972-433c-826d-8b853f1bc2c2
-2019-07-01 20:43:06:849 [HTTP] <-- POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element 200 99 ms - 107
-2019-07-01 20:43:06:849 [HTTP] 
-2019-07-01 20:43:06:860 [HTTP] --> POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.14205868735224159-1/click
-2019-07-01 20:43:06:860 [HTTP] {"id":"0.14205868735224159-1"}
-2019-07-01 20:43:06:861 [W3C (66ed4690)] Driver proxy active, passing request on via HTTP proxy
-2019-07-01 20:43:06:862 [WD Proxy] Matched '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.14205868735224159-1/click' to command name 'click'
-2019-07-01 20:43:06:863 [WD Proxy] Proxying [POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.14205868735224159-1/click] to [POST http://127.0.0.1:8025/wd/hub/session/3b67f98d331100cfbf166daa3798f31d/element/0.14205868735224159-1/click] with body: {"id":"0.14205868735224159-1"}
-2019-07-01 20:43:07:197 [WD Proxy] Got response with status 200: {"sessionId":"3b67f98d331100cfbf166daa3798f31d","status":0,"value":null}
-2019-07-01 20:43:07:198 [WD Proxy] Replacing sessionId 3b67f98d331100cfbf166daa3798f31d with 66ed4690-d972-433c-826d-8b853f1bc2c2
-2019-07-01 20:43:07:200 [HTTP] <-- POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.14205868735224159-1/click 200 339 ms - 76
-2019-07-01 20:43:07:200 [HTTP] 
-2019-07-01 20:43:07:207 [HTTP] --> POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element
-2019-07-01 20:43:07:207 [HTTP] {"using":"xpath","value":"//input[@value='Continue With Email']"}
-2019-07-01 20:43:07:208 [W3C (66ed4690)] Driver proxy active, passing request on via HTTP proxy
-2019-07-01 20:43:07:210 [WD Proxy] Matched '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element' to command name 'findElement'
-2019-07-01 20:43:07:210 [WD Proxy] Proxying [POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element] to [POST http://127.0.0.1:8025/wd/hub/session/3b67f98d331100cfbf166daa3798f31d/element] with body: {"using":"xpath","value":"//input[@value='Continue With Email']"}
-2019-07-01 20:43:07:255 [WD Proxy] Got response with status 200: {"sessionId":"3b67f98d331100cfbf166daa3798f31d","status":0,"value":{"ELEMENT":"0.14205868735224159-1"}}
-2019-07-01 20:43:07:255 [WD Proxy] Replacing sessionId 3b67f98d331100cfbf166daa3798f31d with 66ed4690-d972-433c-826d-8b853f1bc2c2
-2019-07-01 20:43:07:257 [HTTP] <-- POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element 200 49 ms - 107
-2019-07-01 20:43:07:260 [HTTP] 
-2019-07-01 20:43:07:261 [HTTP] --> GET /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.14205868735224159-1/text
-2019-07-01 20:43:07:261 [HTTP] {}
-2019-07-01 20:43:07:262 [W3C (66ed4690)] Driver proxy active, passing request on via HTTP proxy
-2019-07-01 20:43:07:263 [WD Proxy] Matched '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.14205868735224159-1/text' to command name 'getText'
-2019-07-01 20:43:07:263 [WD Proxy] Proxying [GET /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.14205868735224159-1/text] to [GET http://127.0.0.1:8025/wd/hub/session/3b67f98d331100cfbf166daa3798f31d/element/0.14205868735224159-1/text] with body: {}
-2019-07-01 20:43:07:349 [WD Proxy] Got response with status 200: "{\"sessionId\":\"3b67f98d331100cfbf166daa3798f31d\",\"status\":0,\"value\":\"\"}"
-2019-07-01 20:43:07:350 [WD Proxy] Replacing sessionId 3b67f98d331100cfbf166daa3798f31d with 66ed4690-d972-433c-826d-8b853f1bc2c2
-2019-07-01 20:43:07:351 [HTTP] <-- GET /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.14205868735224159-1/text 200 89 ms - 74
-2019-07-01 20:43:07:351 [HTTP] 
-2019-07-01 20:43:13:365 [HTTP] --> POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element
-2019-07-01 20:43:13:365 [HTTP] {"using":"xpath","value":"//input[@value='Continue']"}
-2019-07-01 20:43:13:366 [W3C (66ed4690)] Driver proxy active, passing request on via HTTP proxy
-2019-07-01 20:43:13:367 [WD Proxy] Matched '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element' to command name 'findElement'
-2019-07-01 20:43:13:367 [WD Proxy] Proxying [POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element] to [POST http://127.0.0.1:8025/wd/hub/session/3b67f98d331100cfbf166daa3798f31d/element] with body: {"using":"xpath","value":"//input[@value='Continue']"}
-2019-07-01 20:43:13:447 [WD Proxy] Got response with status 200: {"sessionId":"3b67f98d331100cfbf166daa3798f31d","status":0,"value":{"ELEMENT":"0.14205868735224159-2"}}
-2019-07-01 20:43:13:448 [WD Proxy] Replacing sessionId 3b67f98d331100cfbf166daa3798f31d with 66ed4690-d972-433c-826d-8b853f1bc2c2
-2019-07-01 20:43:13:450 [HTTP] <-- POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element 200 84 ms - 107
-2019-07-01 20:43:13:451 [HTTP] 
-2019-07-01 20:43:13:457 [HTTP] --> POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.14205868735224159-2/click
-2019-07-01 20:43:13:457 [HTTP] {"id":"0.14205868735224159-2"}
-2019-07-01 20:43:13:458 [W3C (66ed4690)] Driver proxy active, passing request on via HTTP proxy
-2019-07-01 20:43:13:459 [WD Proxy] Matched '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.14205868735224159-2/click' to command name 'click'
-2019-07-01 20:43:13:459 [WD Proxy] Proxying [POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.14205868735224159-2/click] to [POST http://127.0.0.1:8025/wd/hub/session/3b67f98d331100cfbf166daa3798f31d/element/0.14205868735224159-2/click] with body: {"id":"0.14205868735224159-2"}
-2019-07-01 20:43:13:754 [WD Proxy] Got response with status 200: {"sessionId":"3b67f98d331100cfbf166daa3798f31d","status":0,"value":null}
-2019-07-01 20:43:13:755 [WD Proxy] Replacing sessionId 3b67f98d331100cfbf166daa3798f31d with 66ed4690-d972-433c-826d-8b853f1bc2c2
-2019-07-01 20:43:13:758 [HTTP] <-- POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.14205868735224159-2/click 200 300 ms - 76
-2019-07-01 20:43:13:758 [HTTP] 
-2019-07-01 20:43:16:768 [HTTP] --> POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element
-2019-07-01 20:43:16:768 [HTTP] {"using":"xpath","value":"//div[@class='error-msg'][contains(.,'Please enter a valid email')]"}
-2019-07-01 20:43:16:769 [W3C (66ed4690)] Driver proxy active, passing request on via HTTP proxy
-2019-07-01 20:43:16:770 [WD Proxy] Matched '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element' to command name 'findElement'
-2019-07-01 20:43:16:770 [WD Proxy] Proxying [POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element] to [POST http://127.0.0.1:8025/wd/hub/session/3b67f98d331100cfbf166daa3798f31d/element] with body: {"using":"xpath","value":"//div[@class='error-msg'][contains(.,'Please enter a valid email')]"}
-2019-07-01 20:43:16:852 [WD Proxy] Got response with status 200: {"sessionId":"3b67f98d331100cfbf166daa3798f31d","status":0,"value":{"ELEMENT":"0.14205868735224159-3"}}
-2019-07-01 20:43:16:852 [WD Proxy] Replacing sessionId 3b67f98d331100cfbf166daa3798f31d with 66ed4690-d972-433c-826d-8b853f1bc2c2
-2019-07-01 20:43:16:853 [HTTP] <-- POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element 200 85 ms - 107
-2019-07-01 20:43:16:853 [HTTP] 
-2019-07-01 20:43:16:857 [HTTP] --> GET /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.14205868735224159-3/text
-2019-07-01 20:43:16:857 [HTTP] {}
-2019-07-01 20:43:16:857 [W3C (66ed4690)] Driver proxy active, passing request on via HTTP proxy
-2019-07-01 20:43:16:858 [WD Proxy] Matched '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.14205868735224159-3/text' to command name 'getText'
-2019-07-01 20:43:16:859 [WD Proxy] Proxying [GET /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.14205868735224159-3/text] to [GET http://127.0.0.1:8025/wd/hub/session/3b67f98d331100cfbf166daa3798f31d/element/0.14205868735224159-3/text] with body: {}
-2019-07-01 20:43:16:943 [WD Proxy] Got response with status 200: "{\"sessionId\":\"3b67f98d331100cfbf166daa3798f31d\",\"status\":0,\"value\":\"Please enter a valid email\"}"
-2019-07-01 20:43:16:943 [WD Proxy] Replacing sessionId 3b67f98d331100cfbf166daa3798f31d with 66ed4690-d972-433c-826d-8b853f1bc2c2
-2019-07-01 20:43:16:943 [HTTP] <-- GET /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.14205868735224159-3/text 200 87 ms - 100
-2019-07-01 20:43:16:945 [HTTP] 
-2019-07-01 20:43:16:949 [HTTP] --> POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element
-2019-07-01 20:43:16:949 [HTTP] {"using":"xpath","value":"//div[@class='error-msg'][contains(.,'Please enter a valid email')]"}
-2019-07-01 20:43:16:949 [W3C (66ed4690)] Driver proxy active, passing request on via HTTP proxy
-2019-07-01 20:43:16:951 [WD Proxy] Matched '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element' to command name 'findElement'
-2019-07-01 20:43:16:951 [WD Proxy] Proxying [POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element] to [POST http://127.0.0.1:8025/wd/hub/session/3b67f98d331100cfbf166daa3798f31d/element] with body: {"using":"xpath","value":"//div[@class='error-msg'][contains(.,'Please enter a valid email')]"}
-2019-07-01 20:43:16:993 [WD Proxy] Got response with status 200: {"sessionId":"3b67f98d331100cfbf166daa3798f31d","status":0,"value":{"ELEMENT":"0.14205868735224159-3"}}
-2019-07-01 20:43:16:993 [WD Proxy] Replacing sessionId 3b67f98d331100cfbf166daa3798f31d with 66ed4690-d972-433c-826d-8b853f1bc2c2
-2019-07-01 20:43:16:994 [HTTP] <-- POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element 200 45 ms - 107
-2019-07-01 20:43:16:994 [HTTP] 
-2019-07-01 20:43:16:999 [HTTP] --> GET /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.14205868735224159-3/text
-2019-07-01 20:43:17:000 [HTTP] {}
-2019-07-01 20:43:17:001 [W3C (66ed4690)] Driver proxy active, passing request on via HTTP proxy
-2019-07-01 20:43:17:004 [WD Proxy] Matched '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.14205868735224159-3/text' to command name 'getText'
-2019-07-01 20:43:17:004 [WD Proxy] Proxying [GET /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.14205868735224159-3/text] to [GET http://127.0.0.1:8025/wd/hub/session/3b67f98d331100cfbf166daa3798f31d/element/0.14205868735224159-3/text] with body: {}
-2019-07-01 20:43:17:052 [WD Proxy] Got response with status 200: "{\"sessionId\":\"3b67f98d331100cfbf166daa3798f31d\",\"status\":0,\"value\":\"Please enter a valid email\"}"
-2019-07-01 20:43:17:052 [WD Proxy] Replacing sessionId 3b67f98d331100cfbf166daa3798f31d with 66ed4690-d972-433c-826d-8b853f1bc2c2
-2019-07-01 20:43:17:054 [HTTP] <-- GET /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.14205868735224159-3/text 200 54 ms - 100
-2019-07-01 20:43:17:054 [HTTP] 
-2019-07-01 20:43:20:065 [HTTP] --> POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element
-2019-07-01 20:43:20:067 [HTTP] {"using":"xpath","value":"//input[@placeholder='What’s your email?']"}
-2019-07-01 20:43:20:067 [W3C (66ed4690)] Driver proxy active, passing request on via HTTP proxy
-2019-07-01 20:43:20:068 [WD Proxy] Matched '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element' to command name 'findElement'
-2019-07-01 20:43:20:069 [WD Proxy] Proxying [POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element] to [POST http://127.0.0.1:8025/wd/hub/session/3b67f98d331100cfbf166daa3798f31d/element] with body: {"using":"xpath","value":"//input[@placeholder='What’s your email?']"}
-2019-07-01 20:43:20:153 [WD Proxy] Got response with status 200: {"sessionId":"3b67f98d331100cfbf166daa3798f31d","status":0,"value":{"ELEMENT":"0.14205868735224159-4"}}
-2019-07-01 20:43:20:154 [WD Proxy] Replacing sessionId 3b67f98d331100cfbf166daa3798f31d with 66ed4690-d972-433c-826d-8b853f1bc2c2
-2019-07-01 20:43:20:155 [HTTP] <-- POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element 200 89 ms - 107
-2019-07-01 20:43:20:155 [HTTP] 
-2019-07-01 20:43:20:160 [HTTP] --> POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.14205868735224159-4/click
-2019-07-01 20:43:20:160 [HTTP] {"id":"0.14205868735224159-4"}
-2019-07-01 20:43:20:162 [W3C (66ed4690)] Driver proxy active, passing request on via HTTP proxy
-2019-07-01 20:43:20:165 [WD Proxy] Matched '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.14205868735224159-4/click' to command name 'click'
-2019-07-01 20:43:20:165 [WD Proxy] Proxying [POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.14205868735224159-4/click] to [POST http://127.0.0.1:8025/wd/hub/session/3b67f98d331100cfbf166daa3798f31d/element/0.14205868735224159-4/click] with body: {"id":"0.14205868735224159-4"}
-2019-07-01 20:43:20:441 [WD Proxy] Got response with status 200: {"sessionId":"3b67f98d331100cfbf166daa3798f31d","status":0,"value":null}
-2019-07-01 20:43:20:442 [WD Proxy] Replacing sessionId 3b67f98d331100cfbf166daa3798f31d with 66ed4690-d972-433c-826d-8b853f1bc2c2
-2019-07-01 20:43:20:443 [HTTP] <-- POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.14205868735224159-4/click 200 283 ms - 76
-2019-07-01 20:43:20:443 [HTTP] 
-2019-07-01 20:43:20:448 [HTTP] --> POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element
-2019-07-01 20:43:20:448 [HTTP] {"using":"xpath","value":"//input[@placeholder='What’s your email?']"}
-2019-07-01 20:43:20:449 [W3C (66ed4690)] Driver proxy active, passing request on via HTTP proxy
-2019-07-01 20:43:20:451 [WD Proxy] Matched '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element' to command name 'findElement'
-2019-07-01 20:43:20:451 [WD Proxy] Proxying [POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element] to [POST http://127.0.0.1:8025/wd/hub/session/3b67f98d331100cfbf166daa3798f31d/element] with body: {"using":"xpath","value":"//input[@placeholder='What’s your email?']"}
-2019-07-01 20:43:20:628 [WD Proxy] Got response with status 200: {"sessionId":"3b67f98d331100cfbf166daa3798f31d","status":0,"value":{"ELEMENT":"0.14205868735224159-4"}}
-2019-07-01 20:43:20:629 [WD Proxy] Replacing sessionId 3b67f98d331100cfbf166daa3798f31d with 66ed4690-d972-433c-826d-8b853f1bc2c2
-2019-07-01 20:43:20:630 [HTTP] <-- POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element 200 182 ms - 107
-2019-07-01 20:43:20:630 [HTTP] 
-2019-07-01 20:43:20:640 [HTTP] --> POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.14205868735224159-4/value
-2019-07-01 20:43:20:640 [HTTP] {"id":"0.14205868735224159-4","text":"pefinAutomationTest0@test.com","value":["p","e","f","i","n","A","u","t","o","m","a","t","i","o","n","T","e","s","t","0","@","t","e","s","t",".","c","o","m"]}
-2019-07-01 20:43:20:641 [W3C (66ed4690)] Driver proxy active, passing request on via HTTP proxy
-2019-07-01 20:43:20:642 [WD Proxy] Matched '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.14205868735224159-4/value' to command name 'setValue'
-2019-07-01 20:43:20:643 [WD Proxy] Proxying [POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.14205868735224159-4/value] to [POST http://127.0.0.1:8025/wd/hub/session/3b67f98d331100cfbf166daa3798f31d/element/0.14205868735224159-4/value] with body: {"id":"0.14205868735224159-4","text":"pefinAutomationTest0@test.com","value":["p","e","f","i","n","A","u","t","o","m","a","t","i","o","n","T","e","s","t","0","@","t","e","s","t",".","c","o","m"]}
-2019-07-01 20:43:21:619 [WD Proxy] Got response with status 200: {"sessionId":"3b67f98d331100cfbf166daa3798f31d","status":0,"value":null}
-2019-07-01 20:43:21:619 [WD Proxy] Replacing sessionId 3b67f98d331100cfbf166daa3798f31d with 66ed4690-d972-433c-826d-8b853f1bc2c2
-2019-07-01 20:43:21:619 [HTTP] <-- POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.14205868735224159-4/value 200 979 ms - 76
-2019-07-01 20:43:21:620 [HTTP] 
-2019-07-01 20:43:24:630 [HTTP] --> POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/appium/device/hide_keyboard
-2019-07-01 20:43:24:630 [HTTP] {}
-2019-07-01 20:43:24:634 [W3C (66ed4690)] Calling AppiumDriver.hideKeyboard() with args: [null,null,null,null,"66ed4690-d972-433c-826d-8b853f1bc2c2"]
-2019-07-01 20:43:24:635 [ADB] Running '/Users/snehal/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY3222CJF8 shell dumpsys input_method'
-2019-07-01 20:43:25:227 [ADB] Running '/Users/snehal/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY3222CJF8 shell input keyevent 111'
-2019-07-01 20:43:26:223 [ADB] Running '/Users/snehal/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY3222CJF8 shell dumpsys input_method'
-2019-07-01 20:43:26:776 [W3C (66ed4690)] Responding to client with driver.hideKeyboard() result: true
-2019-07-01 20:43:26:779 [HTTP] <-- POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/appium/device/hide_keyboard 200 2148 ms - 14
-2019-07-01 20:43:26:779 [HTTP] 
-2019-07-01 20:43:29:792 [HTTP] --> POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element
-2019-07-01 20:43:29:792 [HTTP] {"using":"xpath","value":"//input[@value='Continue']"}
-2019-07-01 20:43:29:792 [W3C (66ed4690)] Driver proxy active, passing request on via HTTP proxy
-2019-07-01 20:43:29:793 [WD Proxy] Matched '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element' to command name 'findElement'
-2019-07-01 20:43:29:794 [WD Proxy] Proxying [POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element] to [POST http://127.0.0.1:8025/wd/hub/session/3b67f98d331100cfbf166daa3798f31d/element] with body: {"using":"xpath","value":"//input[@value='Continue']"}
-2019-07-01 20:43:29:850 [WD Proxy] Got response with status 200: {"sessionId":"3b67f98d331100cfbf166daa3798f31d","status":0,"value":{"ELEMENT":"0.14205868735224159-2"}}
-2019-07-01 20:43:29:850 [WD Proxy] Replacing sessionId 3b67f98d331100cfbf166daa3798f31d with 66ed4690-d972-433c-826d-8b853f1bc2c2
-2019-07-01 20:43:29:851 [HTTP] <-- POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element 200 59 ms - 107
-2019-07-01 20:43:29:852 [HTTP] 
-2019-07-01 20:43:29:856 [HTTP] --> POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.14205868735224159-2/click
-2019-07-01 20:43:29:856 [HTTP] {"id":"0.14205868735224159-2"}
-2019-07-01 20:43:29:856 [W3C (66ed4690)] Driver proxy active, passing request on via HTTP proxy
-2019-07-01 20:43:29:857 [WD Proxy] Matched '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.14205868735224159-2/click' to command name 'click'
-2019-07-01 20:43:29:858 [WD Proxy] Proxying [POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.14205868735224159-2/click] to [POST http://127.0.0.1:8025/wd/hub/session/3b67f98d331100cfbf166daa3798f31d/element/0.14205868735224159-2/click] with body: {"id":"0.14205868735224159-2"}
-2019-07-01 20:43:31:738 [WD Proxy] Got response with status 200: {"sessionId":"3b67f98d331100cfbf166daa3798f31d","status":0,"value":null}
-2019-07-01 20:43:31:738 [WD Proxy] Replacing sessionId 3b67f98d331100cfbf166daa3798f31d with 66ed4690-d972-433c-826d-8b853f1bc2c2
-2019-07-01 20:43:31:739 [HTTP] <-- POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.14205868735224159-2/click 200 1882 ms - 76
-2019-07-01 20:43:31:739 [HTTP] 
-2019-07-01 20:43:34:751 [HTTP] --> POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/execute/sync
-2019-07-01 20:43:34:751 [HTTP] {"script":"window.scrollBy(0,5*30)","args":[""]}
-2019-07-01 20:43:34:753 [W3C (66ed4690)] Driver proxy active, passing request on via HTTP proxy
-2019-07-01 20:43:34:758 [WD Proxy] Matched '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/execute/sync' to command name 'execute'
-2019-07-01 20:43:34:758 [Protocol Converter] Rewrote the original URL '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/execute/sync' to '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/execute' for MJSONWP protocol
-2019-07-01 20:43:34:758 [WD Proxy] Proxying [POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/execute] to [POST http://127.0.0.1:8025/wd/hub/session/3b67f98d331100cfbf166daa3798f31d/execute] with body: {"script":"window.scrollBy(0,5*30)","args":[""]}
-2019-07-01 20:43:34:785 [WD Proxy] Got response with status 200: {"sessionId":"3b67f98d331100cfbf166daa3798f31d","status":0,"value":null}
-2019-07-01 20:43:34:786 [WD Proxy] Replacing sessionId 3b67f98d331100cfbf166daa3798f31d with 66ed4690-d972-433c-826d-8b853f1bc2c2
-2019-07-01 20:43:34:787 [HTTP] <-- POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/execute/sync 200 36 ms - 76
-2019-07-01 20:43:34:787 [HTTP] 
-2019-07-01 20:43:37:797 [HTTP] --> POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element
-2019-07-01 20:43:37:797 [HTTP] {"using":"xpath","value":"//input[@value='Get My Plan']"}
-2019-07-01 20:43:37:797 [W3C (66ed4690)] Driver proxy active, passing request on via HTTP proxy
-2019-07-01 20:43:37:800 [WD Proxy] Matched '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element' to command name 'findElement'
-2019-07-01 20:43:37:800 [WD Proxy] Proxying [POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element] to [POST http://127.0.0.1:8025/wd/hub/session/3b67f98d331100cfbf166daa3798f31d/element] with body: {"using":"xpath","value":"//input[@value='Get My Plan']"}
-2019-07-01 20:43:37:884 [WD Proxy] Got response with status 200: {"sessionId":"3b67f98d331100cfbf166daa3798f31d","status":0,"value":{"ELEMENT":"0.0070703744521201095-1"}}
-2019-07-01 20:43:37:885 [WD Proxy] Replacing sessionId 3b67f98d331100cfbf166daa3798f31d with 66ed4690-d972-433c-826d-8b853f1bc2c2
-2019-07-01 20:43:37:886 [HTTP] <-- POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element 200 89 ms - 109
-2019-07-01 20:43:37:886 [HTTP] 
-2019-07-01 20:43:37:891 [HTTP] --> POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-1/click
-2019-07-01 20:43:37:891 [HTTP] {"id":"0.0070703744521201095-1"}
-2019-07-01 20:43:37:892 [W3C (66ed4690)] Driver proxy active, passing request on via HTTP proxy
-2019-07-01 20:43:37:893 [WD Proxy] Matched '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-1/click' to command name 'click'
-2019-07-01 20:43:37:894 [WD Proxy] Proxying [POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-1/click] to [POST http://127.0.0.1:8025/wd/hub/session/3b67f98d331100cfbf166daa3798f31d/element/0.0070703744521201095-1/click] with body: {"id":"0.0070703744521201095-1"}
-2019-07-01 20:43:38:277 [WD Proxy] Got response with status 200: {"sessionId":"3b67f98d331100cfbf166daa3798f31d","status":0,"value":null}
-2019-07-01 20:43:38:277 [WD Proxy] Replacing sessionId 3b67f98d331100cfbf166daa3798f31d with 66ed4690-d972-433c-826d-8b853f1bc2c2
-2019-07-01 20:43:38:278 [HTTP] <-- POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-1/click 200 387 ms - 76
-2019-07-01 20:43:38:278 [HTTP] 
-2019-07-01 20:43:41:291 [HTTP] --> POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element
-2019-07-01 20:43:41:292 [HTTP] {"using":"xpath","value":"//div[@class='error-msg'][contains(.,'Please select a state')]"}
-2019-07-01 20:43:41:292 [W3C (66ed4690)] Driver proxy active, passing request on via HTTP proxy
-2019-07-01 20:43:41:294 [WD Proxy] Matched '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element' to command name 'findElement'
-2019-07-01 20:43:41:294 [WD Proxy] Proxying [POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element] to [POST http://127.0.0.1:8025/wd/hub/session/3b67f98d331100cfbf166daa3798f31d/element] with body: {"using":"xpath","value":"//div[@class='error-msg'][contains(.,'Please select a state')]"}
-2019-07-01 20:43:41:380 [WD Proxy] Got response with status 200: {"sessionId":"3b67f98d331100cfbf166daa3798f31d","status":0,"value":{"ELEMENT":"0.0070703744521201095-2"}}
-2019-07-01 20:43:41:381 [WD Proxy] Replacing sessionId 3b67f98d331100cfbf166daa3798f31d with 66ed4690-d972-433c-826d-8b853f1bc2c2
-2019-07-01 20:43:41:381 [HTTP] <-- POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element 200 90 ms - 109
-2019-07-01 20:43:41:382 [HTTP] 
-2019-07-01 20:43:41:384 [HTTP] --> GET /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-2/text
-2019-07-01 20:43:41:384 [HTTP] {}
-2019-07-01 20:43:41:384 [W3C (66ed4690)] Driver proxy active, passing request on via HTTP proxy
-2019-07-01 20:43:41:387 [WD Proxy] Matched '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-2/text' to command name 'getText'
-2019-07-01 20:43:41:387 [WD Proxy] Proxying [GET /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-2/text] to [GET http://127.0.0.1:8025/wd/hub/session/3b67f98d331100cfbf166daa3798f31d/element/0.0070703744521201095-2/text] with body: {}
-2019-07-01 20:43:41:498 [WD Proxy] Got response with status 200: "{\"sessionId\":\"3b67f98d331100cfbf166daa3798f31d\",\"status\":0,\"value\":\"Please select a state\"}"
-2019-07-01 20:43:41:498 [WD Proxy] Replacing sessionId 3b67f98d331100cfbf166daa3798f31d with 66ed4690-d972-433c-826d-8b853f1bc2c2
-2019-07-01 20:43:41:500 [HTTP] <-- GET /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-2/text 200 116 ms - 95
-2019-07-01 20:43:41:501 [HTTP] 
-2019-07-01 20:43:51:506 [HTTP] --> POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element
-2019-07-01 20:43:51:506 [HTTP] {"using":"id","value":"home-input-state-select"}
-2019-07-01 20:43:51:506 [W3C (66ed4690)] Driver proxy active, passing request on via HTTP proxy
-2019-07-01 20:43:51:509 [WD Proxy] Matched '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element' to command name 'findElement'
-2019-07-01 20:43:51:509 [WD Proxy] Proxying [POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element] to [POST http://127.0.0.1:8025/wd/hub/session/3b67f98d331100cfbf166daa3798f31d/element] with body: {"using":"id","value":"home-input-state-select"}
-2019-07-01 20:43:51:577 [WD Proxy] Got response with status 200: {"sessionId":"3b67f98d331100cfbf166daa3798f31d","status":0,"value":{"ELEMENT":"0.0070703744521201095-3"}}
-2019-07-01 20:43:51:577 [WD Proxy] Replacing sessionId 3b67f98d331100cfbf166daa3798f31d with 66ed4690-d972-433c-826d-8b853f1bc2c2
-2019-07-01 20:43:51:578 [HTTP] <-- POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element 200 72 ms - 109
-2019-07-01 20:43:51:578 [HTTP] 
-2019-07-01 20:43:51:580 [HTTP] --> GET /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-3/name
-2019-07-01 20:43:51:581 [HTTP] {}
-2019-07-01 20:43:51:581 [W3C (66ed4690)] Driver proxy active, passing request on via HTTP proxy
-2019-07-01 20:43:51:583 [WD Proxy] Matched '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-3/name' to command name 'getName'
-2019-07-01 20:43:51:583 [WD Proxy] Proxying [GET /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-3/name] to [GET http://127.0.0.1:8025/wd/hub/session/3b67f98d331100cfbf166daa3798f31d/element/0.0070703744521201095-3/name] with body: {}
-2019-07-01 20:43:51:603 [WD Proxy] Got response with status 200: "{\"sessionId\":\"3b67f98d331100cfbf166daa3798f31d\",\"status\":0,\"value\":\"select\"}"
-2019-07-01 20:43:51:604 [WD Proxy] Replacing sessionId 3b67f98d331100cfbf166daa3798f31d with 66ed4690-d972-433c-826d-8b853f1bc2c2
-2019-07-01 20:43:51:605 [HTTP] <-- GET /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-3/name 200 24 ms - 80
-2019-07-01 20:43:51:605 [HTTP] 
-2019-07-01 20:43:51:608 [HTTP] --> GET /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-3/attribute/multiple
-2019-07-01 20:43:51:608 [HTTP] {}
-2019-07-01 20:43:51:609 [W3C (66ed4690)] Driver proxy active, passing request on via HTTP proxy
-2019-07-01 20:43:51:610 [WD Proxy] Matched '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-3/attribute/multiple' to command name 'getAttribute'
-2019-07-01 20:43:51:610 [WD Proxy] Proxying [GET /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-3/attribute/multiple] to [GET http://127.0.0.1:8025/wd/hub/session/3b67f98d331100cfbf166daa3798f31d/element/0.0070703744521201095-3/attribute/multiple] with body: {}
-2019-07-01 20:43:51:639 [WD Proxy] Got response with status 200: "{\"sessionId\":\"3b67f98d331100cfbf166daa3798f31d\",\"status\":0,\"value\":null}"
-2019-07-01 20:43:51:640 [WD Proxy] Replacing sessionId 3b67f98d331100cfbf166daa3798f31d with 66ed4690-d972-433c-826d-8b853f1bc2c2
-2019-07-01 20:43:51:642 [HTTP] <-- GET /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-3/attribute/multiple 200 33 ms - 76
-2019-07-01 20:43:51:643 [HTTP] 
-2019-07-01 20:43:51:648 [HTTP] --> POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-3/elements
-2019-07-01 20:43:51:648 [HTTP] {"id":"0.0070703744521201095-3","using":"xpath","value":".//option[normalize-space(.) = \"Alabama\"]"}
-2019-07-01 20:43:51:648 [W3C (66ed4690)] Driver proxy active, passing request on via HTTP proxy
-2019-07-01 20:43:51:650 [WD Proxy] Matched '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-3/elements' to command name 'findElementsFromElement'
-2019-07-01 20:43:51:650 [WD Proxy] Proxying [POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-3/elements] to [POST http://127.0.0.1:8025/wd/hub/session/3b67f98d331100cfbf166daa3798f31d/element/0.0070703744521201095-3/elements] with body: {"id":"0.0070703744521201095-3","using":"xpath","value":".//option[normalize-space(.) = \"Alabama\"]"}
-2019-07-01 20:43:51:973 [WD Proxy] Got response with status 200: {"sessionId":"3b67f98d331100cfbf166daa3798f31d","status":0,"value":[{"ELEMENT":"0.0070703744521201095-4"}]}
-2019-07-01 20:43:51:975 [WD Proxy] Replacing sessionId 3b67f98d331100cfbf166daa3798f31d with 66ed4690-d972-433c-826d-8b853f1bc2c2
-2019-07-01 20:43:51:979 [HTTP] <-- POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-3/elements 200 329 ms - 111
-2019-07-01 20:43:51:980 [HTTP] 
-2019-07-01 20:43:51:992 [HTTP] --> GET /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-4/selected
-2019-07-01 20:43:51:993 [HTTP] {}
-2019-07-01 20:43:51:994 [W3C (66ed4690)] Driver proxy active, passing request on via HTTP proxy
-2019-07-01 20:43:51:996 [WD Proxy] Matched '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-4/selected' to command name 'elementSelected'
-2019-07-01 20:43:51:996 [WD Proxy] Proxying [GET /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-4/selected] to [GET http://127.0.0.1:8025/wd/hub/session/3b67f98d331100cfbf166daa3798f31d/element/0.0070703744521201095-4/selected] with body: {}
-2019-07-01 20:43:52:062 [WD Proxy] Got response with status 200: "{\"sessionId\":\"3b67f98d331100cfbf166daa3798f31d\",\"status\":0,\"value\":false}"
-2019-07-01 20:43:52:063 [WD Proxy] Replacing sessionId 3b67f98d331100cfbf166daa3798f31d with 66ed4690-d972-433c-826d-8b853f1bc2c2
-2019-07-01 20:43:52:064 [HTTP] <-- GET /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-4/selected 200 71 ms - 77
-2019-07-01 20:43:52:064 [HTTP] 
-2019-07-01 20:43:52:069 [HTTP] --> POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-4/click
-2019-07-01 20:43:52:069 [HTTP] {"id":"0.0070703744521201095-4"}
-2019-07-01 20:43:52:069 [W3C (66ed4690)] Driver proxy active, passing request on via HTTP proxy
-2019-07-01 20:43:52:071 [WD Proxy] Matched '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-4/click' to command name 'click'
-2019-07-01 20:43:52:072 [WD Proxy] Proxying [POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-4/click] to [POST http://127.0.0.1:8025/wd/hub/session/3b67f98d331100cfbf166daa3798f31d/element/0.0070703744521201095-4/click] with body: {"id":"0.0070703744521201095-4"}
-2019-07-01 20:43:52:487 [WD Proxy] Got response with status 200: {"sessionId":"3b67f98d331100cfbf166daa3798f31d","status":0,"value":null}
-2019-07-01 20:43:52:488 [WD Proxy] Replacing sessionId 3b67f98d331100cfbf166daa3798f31d with 66ed4690-d972-433c-826d-8b853f1bc2c2
-2019-07-01 20:43:52:489 [HTTP] <-- POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-4/click 200 420 ms - 76
-2019-07-01 20:43:52:489 [HTTP] 
-2019-07-01 20:43:52:496 [HTTP] --> POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element
-2019-07-01 20:43:52:496 [HTTP] {"using":"xpath","value":"//div[@class='error-msg'][contains(.,'Please enter a valid city')]"}
-2019-07-01 20:43:52:497 [W3C (66ed4690)] Driver proxy active, passing request on via HTTP proxy
-2019-07-01 20:43:52:498 [WD Proxy] Matched '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element' to command name 'findElement'
-2019-07-01 20:43:52:498 [WD Proxy] Proxying [POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element] to [POST http://127.0.0.1:8025/wd/hub/session/3b67f98d331100cfbf166daa3798f31d/element] with body: {"using":"xpath","value":"//div[@class='error-msg'][contains(.,'Please enter a valid city')]"}
-2019-07-01 20:43:52:583 [WD Proxy] Got response with status 200: {"sessionId":"3b67f98d331100cfbf166daa3798f31d","status":0,"value":{"ELEMENT":"0.0070703744521201095-5"}}
-2019-07-01 20:43:52:584 [WD Proxy] Replacing sessionId 3b67f98d331100cfbf166daa3798f31d with 66ed4690-d972-433c-826d-8b853f1bc2c2
-2019-07-01 20:43:52:585 [HTTP] <-- POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element 200 88 ms - 109
-2019-07-01 20:43:52:585 [HTTP] 
-2019-07-01 20:43:52:588 [HTTP] --> GET /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-5/text
-2019-07-01 20:43:52:588 [HTTP] {}
-2019-07-01 20:43:52:588 [W3C (66ed4690)] Driver proxy active, passing request on via HTTP proxy
-2019-07-01 20:43:52:589 [WD Proxy] Matched '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-5/text' to command name 'getText'
-2019-07-01 20:43:52:590 [WD Proxy] Proxying [GET /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-5/text] to [GET http://127.0.0.1:8025/wd/hub/session/3b67f98d331100cfbf166daa3798f31d/element/0.0070703744521201095-5/text] with body: {}
-2019-07-01 20:43:52:702 [WD Proxy] Got response with status 200: "{\"sessionId\":\"3b67f98d331100cfbf166daa3798f31d\",\"status\":0,\"value\":\"\"}"
-2019-07-01 20:43:52:702 [WD Proxy] Replacing sessionId 3b67f98d331100cfbf166daa3798f31d with 66ed4690-d972-433c-826d-8b853f1bc2c2
-2019-07-01 20:43:52:703 [HTTP] <-- GET /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-5/text 200 115 ms - 74
-2019-07-01 20:43:52:703 [HTTP] 
-2019-07-01 20:43:55:710 [HTTP] --> POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element
-2019-07-01 20:43:55:713 [HTTP] {"using":"xpath","value":"//input[contains(@id,'home-input-city-select')]"}
-2019-07-01 20:43:55:713 [W3C (66ed4690)] Driver proxy active, passing request on via HTTP proxy
-2019-07-01 20:43:55:714 [WD Proxy] Matched '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element' to command name 'findElement'
-2019-07-01 20:43:55:714 [WD Proxy] Proxying [POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element] to [POST http://127.0.0.1:8025/wd/hub/session/3b67f98d331100cfbf166daa3798f31d/element] with body: {"using":"xpath","value":"//input[contains(@id,'home-input-city-select')]"}
-2019-07-01 20:43:55:802 [WD Proxy] Got response with status 200: {"sessionId":"3b67f98d331100cfbf166daa3798f31d","status":0,"value":{"ELEMENT":"0.0070703744521201095-6"}}
-2019-07-01 20:43:55:804 [WD Proxy] Replacing sessionId 3b67f98d331100cfbf166daa3798f31d with 66ed4690-d972-433c-826d-8b853f1bc2c2
-2019-07-01 20:43:55:805 [HTTP] <-- POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element 200 95 ms - 109
-2019-07-01 20:43:55:805 [HTTP] 
-2019-07-01 20:43:55:809 [HTTP] --> POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-6/click
-2019-07-01 20:43:55:809 [HTTP] {"id":"0.0070703744521201095-6"}
-2019-07-01 20:43:55:809 [W3C (66ed4690)] Driver proxy active, passing request on via HTTP proxy
-2019-07-01 20:43:55:811 [WD Proxy] Matched '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-6/click' to command name 'click'
-2019-07-01 20:43:55:811 [WD Proxy] Proxying [POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-6/click] to [POST http://127.0.0.1:8025/wd/hub/session/3b67f98d331100cfbf166daa3798f31d/element/0.0070703744521201095-6/click] with body: {"id":"0.0070703744521201095-6"}
-2019-07-01 20:43:56:101 [WD Proxy] Got response with status 200: {"sessionId":"3b67f98d331100cfbf166daa3798f31d","status":0,"value":null}
-2019-07-01 20:43:56:102 [WD Proxy] Replacing sessionId 3b67f98d331100cfbf166daa3798f31d with 66ed4690-d972-433c-826d-8b853f1bc2c2
-2019-07-01 20:43:56:103 [HTTP] <-- POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-6/click 200 293 ms - 76
-2019-07-01 20:43:56:103 [HTTP] 
-2019-07-01 20:43:56:107 [HTTP] --> POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element
-2019-07-01 20:43:56:107 [HTTP] {"using":"xpath","value":"//input[contains(@id,'home-input-city-select')]"}
-2019-07-01 20:43:56:108 [W3C (66ed4690)] Driver proxy active, passing request on via HTTP proxy
-2019-07-01 20:43:56:109 [WD Proxy] Matched '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element' to command name 'findElement'
-2019-07-01 20:43:56:109 [WD Proxy] Proxying [POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element] to [POST http://127.0.0.1:8025/wd/hub/session/3b67f98d331100cfbf166daa3798f31d/element] with body: {"using":"xpath","value":"//input[contains(@id,'home-input-city-select')]"}
-2019-07-01 20:43:56:180 [WD Proxy] Got response with status 200: {"sessionId":"3b67f98d331100cfbf166daa3798f31d","status":0,"value":{"ELEMENT":"0.0070703744521201095-6"}}
-2019-07-01 20:43:56:181 [WD Proxy] Replacing sessionId 3b67f98d331100cfbf166daa3798f31d with 66ed4690-d972-433c-826d-8b853f1bc2c2
-2019-07-01 20:43:56:182 [HTTP] <-- POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element 200 74 ms - 109
-2019-07-01 20:43:56:182 [HTTP] 
-2019-07-01 20:43:56:187 [HTTP] --> POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-6/value
-2019-07-01 20:43:56:188 [HTTP] {"id":"0.0070703744521201095-6","text":"ALABASTER","value":["A","L","A","B","A","S","T","E","R"]}
-2019-07-01 20:43:56:188 [W3C (66ed4690)] Driver proxy active, passing request on via HTTP proxy
-2019-07-01 20:43:56:189 [WD Proxy] Matched '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-6/value' to command name 'setValue'
-2019-07-01 20:43:56:189 [WD Proxy] Proxying [POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-6/value] to [POST http://127.0.0.1:8025/wd/hub/session/3b67f98d331100cfbf166daa3798f31d/element/0.0070703744521201095-6/value] with body: {"id":"0.0070703744521201095-6","text":"ALABASTER","value":["A","L","A","B","A","S","T","E","R"]}
-2019-07-01 20:43:56:984 [WD Proxy] Got response with status 200: {"sessionId":"3b67f98d331100cfbf166daa3798f31d","status":0,"value":null}
-2019-07-01 20:43:56:984 [WD Proxy] Replacing sessionId 3b67f98d331100cfbf166daa3798f31d with 66ed4690-d972-433c-826d-8b853f1bc2c2
-2019-07-01 20:43:56:985 [HTTP] <-- POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-6/value 200 798 ms - 76
-2019-07-01 20:43:56:985 [HTTP] 
-2019-07-01 20:43:56:989 [HTTP] --> POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/appium/device/hide_keyboard
-2019-07-01 20:43:56:990 [HTTP] {}
-2019-07-01 20:43:56:990 [W3C (66ed4690)] Calling AppiumDriver.hideKeyboard() with args: [null,null,null,null,"66ed4690-d972-433c-826d-8b853f1bc2c2"]
-2019-07-01 20:43:56:991 [ADB] Running '/Users/snehal/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY3222CJF8 shell dumpsys input_method'
-2019-07-01 20:43:57:575 [ADB] Running '/Users/snehal/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY3222CJF8 shell input keyevent 111'
-2019-07-01 20:43:58:669 [ADB] Running '/Users/snehal/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY3222CJF8 shell dumpsys input_method'
-2019-07-01 20:43:59:257 [W3C (66ed4690)] Responding to client with driver.hideKeyboard() result: true
-2019-07-01 20:43:59:259 [HTTP] <-- POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/appium/device/hide_keyboard 200 2268 ms - 14
-2019-07-01 20:43:59:259 [HTTP] 
-2019-07-01 20:44:02:267 [HTTP] --> POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/execute/sync
-2019-07-01 20:44:02:267 [HTTP] {"script":"window.scrollBy(0,2*30)","args":[""]}
-2019-07-01 20:44:02:268 [W3C (66ed4690)] Driver proxy active, passing request on via HTTP proxy
-2019-07-01 20:44:02:270 [WD Proxy] Matched '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/execute/sync' to command name 'execute'
-2019-07-01 20:44:02:270 [Protocol Converter] Rewrote the original URL '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/execute/sync' to '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/execute' for MJSONWP protocol
-2019-07-01 20:44:02:270 [WD Proxy] Proxying [POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/execute] to [POST http://127.0.0.1:8025/wd/hub/session/3b67f98d331100cfbf166daa3798f31d/execute] with body: {"script":"window.scrollBy(0,2*30)","args":[""]}
-2019-07-01 20:44:02:297 [WD Proxy] Got response with status 200: {"sessionId":"3b67f98d331100cfbf166daa3798f31d","status":0,"value":null}
-2019-07-01 20:44:02:297 [WD Proxy] Replacing sessionId 3b67f98d331100cfbf166daa3798f31d with 66ed4690-d972-433c-826d-8b853f1bc2c2
-2019-07-01 20:44:02:298 [HTTP] <-- POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/execute/sync 200 31 ms - 76
-2019-07-01 20:44:02:299 [HTTP] 
-2019-07-01 20:44:02:303 [HTTP] --> POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/execute/sync
-2019-07-01 20:44:02:303 [HTTP] {"script":"window.scrollBy(0,2*30)","args":[""]}
-2019-07-01 20:44:02:304 [W3C (66ed4690)] Driver proxy active, passing request on via HTTP proxy
-2019-07-01 20:44:02:305 [WD Proxy] Matched '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/execute/sync' to command name 'execute'
-2019-07-01 20:44:02:305 [Protocol Converter] Rewrote the original URL '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/execute/sync' to '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/execute' for MJSONWP protocol
-2019-07-01 20:44:02:307 [WD Proxy] Proxying [POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/execute] to [POST http://127.0.0.1:8025/wd/hub/session/3b67f98d331100cfbf166daa3798f31d/execute] with body: {"script":"window.scrollBy(0,2*30)","args":[""]}
-2019-07-01 20:44:02:331 [WD Proxy] Got response with status 200: {"sessionId":"3b67f98d331100cfbf166daa3798f31d","status":0,"value":null}
-2019-07-01 20:44:02:332 [WD Proxy] Replacing sessionId 3b67f98d331100cfbf166daa3798f31d with 66ed4690-d972-433c-826d-8b853f1bc2c2
-2019-07-01 20:44:02:334 [HTTP] <-- POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/execute/sync 200 30 ms - 76
-2019-07-01 20:44:02:334 [HTTP] 
-2019-07-01 20:44:02:350 [HTTP] --> POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element
-2019-07-01 20:44:02:352 [HTTP] {"using":"xpath","value":"//div[@class='error-msg'][contains(.,'Please enter a future date')]"}
-2019-07-01 20:44:02:353 [W3C (66ed4690)] Driver proxy active, passing request on via HTTP proxy
-2019-07-01 20:44:02:356 [WD Proxy] Matched '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element' to command name 'findElement'
-2019-07-01 20:44:02:358 [WD Proxy] Proxying [POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element] to [POST http://127.0.0.1:8025/wd/hub/session/3b67f98d331100cfbf166daa3798f31d/element] with body: {"using":"xpath","value":"//div[@class='error-msg'][contains(.,'Please enter a future date')]"}
-2019-07-01 20:44:02:451 [WD Proxy] Got response with status 200: {"sessionId":"3b67f98d331100cfbf166daa3798f31d","status":0,"value":{"ELEMENT":"0.0070703744521201095-7"}}
-2019-07-01 20:44:02:452 [WD Proxy] Replacing sessionId 3b67f98d331100cfbf166daa3798f31d with 66ed4690-d972-433c-826d-8b853f1bc2c2
-2019-07-01 20:44:02:453 [HTTP] <-- POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element 200 103 ms - 109
-2019-07-01 20:44:02:453 [HTTP] 
-2019-07-01 20:44:02:455 [HTTP] --> GET /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-7/text
-2019-07-01 20:44:02:456 [HTTP] {}
-2019-07-01 20:44:02:456 [W3C (66ed4690)] Driver proxy active, passing request on via HTTP proxy
-2019-07-01 20:44:02:457 [WD Proxy] Matched '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-7/text' to command name 'getText'
-2019-07-01 20:44:02:457 [WD Proxy] Proxying [GET /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-7/text] to [GET http://127.0.0.1:8025/wd/hub/session/3b67f98d331100cfbf166daa3798f31d/element/0.0070703744521201095-7/text] with body: {}
-2019-07-01 20:44:02:563 [WD Proxy] Got response with status 200: "{\"sessionId\":\"3b67f98d331100cfbf166daa3798f31d\",\"status\":0,\"value\":\"Please enter a future date\"}"
-2019-07-01 20:44:02:564 [WD Proxy] Replacing sessionId 3b67f98d331100cfbf166daa3798f31d with 66ed4690-d972-433c-826d-8b853f1bc2c2
-2019-07-01 20:44:02:566 [HTTP] <-- GET /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-7/text 200 109 ms - 100
-2019-07-01 20:44:02:567 [HTTP] 
-2019-07-01 20:44:04:582 [HTTP] --> POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element
-2019-07-01 20:44:04:584 [HTTP] {"using":"xpath","value":"//input[contains(@placeholder,'MM / YYYY')]"}
-2019-07-01 20:44:04:586 [W3C (66ed4690)] Driver proxy active, passing request on via HTTP proxy
-2019-07-01 20:44:04:588 [WD Proxy] Matched '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element' to command name 'findElement'
-2019-07-01 20:44:04:590 [WD Proxy] Proxying [POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element] to [POST http://127.0.0.1:8025/wd/hub/session/3b67f98d331100cfbf166daa3798f31d/element] with body: {"using":"xpath","value":"//input[contains(@placeholder,'MM / YYYY')]"}
-2019-07-01 20:44:04:681 [WD Proxy] Got response with status 200: {"sessionId":"3b67f98d331100cfbf166daa3798f31d","status":0,"value":{"ELEMENT":"0.0070703744521201095-8"}}
-2019-07-01 20:44:04:681 [WD Proxy] Replacing sessionId 3b67f98d331100cfbf166daa3798f31d with 66ed4690-d972-433c-826d-8b853f1bc2c2
-2019-07-01 20:44:04:682 [HTTP] <-- POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element 200 100 ms - 109
-2019-07-01 20:44:04:683 [HTTP] 
-2019-07-01 20:44:04:687 [HTTP] --> POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-8/click
-2019-07-01 20:44:04:688 [HTTP] {"id":"0.0070703744521201095-8"}
-2019-07-01 20:44:04:688 [W3C (66ed4690)] Driver proxy active, passing request on via HTTP proxy
-2019-07-01 20:44:04:689 [WD Proxy] Matched '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-8/click' to command name 'click'
-2019-07-01 20:44:04:689 [WD Proxy] Proxying [POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-8/click] to [POST http://127.0.0.1:8025/wd/hub/session/3b67f98d331100cfbf166daa3798f31d/element/0.0070703744521201095-8/click] with body: {"id":"0.0070703744521201095-8"}
-2019-07-01 20:44:05:018 [WD Proxy] Got response with status 200: {"sessionId":"3b67f98d331100cfbf166daa3798f31d","status":0,"value":null}
-2019-07-01 20:44:05:018 [WD Proxy] Replacing sessionId 3b67f98d331100cfbf166daa3798f31d with 66ed4690-d972-433c-826d-8b853f1bc2c2
-2019-07-01 20:44:05:019 [HTTP] <-- POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-8/click 200 331 ms - 76
-2019-07-01 20:44:05:021 [HTTP] 
-2019-07-01 20:44:05:023 [HTTP] --> POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element
-2019-07-01 20:44:05:024 [HTTP] {"using":"xpath","value":"//input[contains(@placeholder,'MM / YYYY')]"}
-2019-07-01 20:44:05:025 [W3C (66ed4690)] Driver proxy active, passing request on via HTTP proxy
-2019-07-01 20:44:05:029 [WD Proxy] Matched '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element' to command name 'findElement'
-2019-07-01 20:44:05:029 [WD Proxy] Proxying [POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element] to [POST http://127.0.0.1:8025/wd/hub/session/3b67f98d331100cfbf166daa3798f31d/element] with body: {"using":"xpath","value":"//input[contains(@placeholder,'MM / YYYY')]"}
-2019-07-01 20:44:05:119 [WD Proxy] Got response with status 200: {"sessionId":"3b67f98d331100cfbf166daa3798f31d","status":0,"value":{"ELEMENT":"0.0070703744521201095-8"}}
-2019-07-01 20:44:05:120 [WD Proxy] Replacing sessionId 3b67f98d331100cfbf166daa3798f31d with 66ed4690-d972-433c-826d-8b853f1bc2c2
-2019-07-01 20:44:05:121 [HTTP] <-- POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element 200 97 ms - 109
-2019-07-01 20:44:05:121 [HTTP] 
-2019-07-01 20:44:05:127 [HTTP] --> POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-8/value
-2019-07-01 20:44:05:127 [HTTP] {"id":"0.0070703744521201095-8","text":"122022","value":["1","2","2","0","2","2"]}
-2019-07-01 20:44:05:128 [W3C (66ed4690)] Driver proxy active, passing request on via HTTP proxy
-2019-07-01 20:44:05:129 [WD Proxy] Matched '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-8/value' to command name 'setValue'
-2019-07-01 20:44:05:130 [WD Proxy] Proxying [POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-8/value] to [POST http://127.0.0.1:8025/wd/hub/session/3b67f98d331100cfbf166daa3798f31d/element/0.0070703744521201095-8/value] with body: {"id":"0.0070703744521201095-8","text":"122022","value":["1","2","2","0","2","2"]}
-2019-07-01 20:44:05:671 [WD Proxy] Got response with status 200: {"sessionId":"3b67f98d331100cfbf166daa3798f31d","status":0,"value":null}
-2019-07-01 20:44:05:671 [WD Proxy] Replacing sessionId 3b67f98d331100cfbf166daa3798f31d with 66ed4690-d972-433c-826d-8b853f1bc2c2
-2019-07-01 20:44:05:672 [HTTP] <-- POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-8/value 200 545 ms - 76
-2019-07-01 20:44:05:672 [HTTP] 
-2019-07-01 20:44:05:677 [HTTP] --> POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/appium/device/hide_keyboard
-2019-07-01 20:44:05:677 [HTTP] {}
-2019-07-01 20:44:05:678 [W3C (66ed4690)] Calling AppiumDriver.hideKeyboard() with args: [null,null,null,null,"66ed4690-d972-433c-826d-8b853f1bc2c2"]
-2019-07-01 20:44:05:679 [ADB] Running '/Users/snehal/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY3222CJF8 shell dumpsys input_method'
-2019-07-01 20:44:06:310 [ADB] Running '/Users/snehal/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY3222CJF8 shell input keyevent 111'
-2019-07-01 20:44:07:281 [ADB] Running '/Users/snehal/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY3222CJF8 shell dumpsys input_method'
-2019-07-01 20:44:07:880 [W3C (66ed4690)] Responding to client with driver.hideKeyboard() result: true
-2019-07-01 20:44:07:888 [HTTP] <-- POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/appium/device/hide_keyboard 200 2204 ms - 14
-2019-07-01 20:44:07:889 [HTTP] 
-2019-07-01 20:44:07:896 [HTTP] --> POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/execute/sync
-2019-07-01 20:44:07:897 [HTTP] {"script":"window.scrollBy(0,2*30)","args":[""]}
-2019-07-01 20:44:07:899 [W3C (66ed4690)] Driver proxy active, passing request on via HTTP proxy
-2019-07-01 20:44:07:902 [WD Proxy] Matched '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/execute/sync' to command name 'execute'
-2019-07-01 20:44:07:902 [Protocol Converter] Rewrote the original URL '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/execute/sync' to '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/execute' for MJSONWP protocol
-2019-07-01 20:44:07:902 [WD Proxy] Proxying [POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/execute] to [POST http://127.0.0.1:8025/wd/hub/session/3b67f98d331100cfbf166daa3798f31d/execute] with body: {"script":"window.scrollBy(0,2*30)","args":[""]}
-2019-07-01 20:44:07:923 [WD Proxy] Got response with status 200: {"sessionId":"3b67f98d331100cfbf166daa3798f31d","status":0,"value":null}
-2019-07-01 20:44:07:923 [WD Proxy] Replacing sessionId 3b67f98d331100cfbf166daa3798f31d with 66ed4690-d972-433c-826d-8b853f1bc2c2
-2019-07-01 20:44:07:927 [HTTP] <-- POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/execute/sync 200 28 ms - 76
-2019-07-01 20:44:07:928 [HTTP] 
-2019-07-01 20:44:07:935 [HTTP] --> POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/execute/sync
-2019-07-01 20:44:07:935 [HTTP] {"script":"window.scrollBy(0,4*30)","args":[""]}
-2019-07-01 20:44:07:935 [W3C (66ed4690)] Driver proxy active, passing request on via HTTP proxy
-2019-07-01 20:44:07:938 [WD Proxy] Matched '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/execute/sync' to command name 'execute'
-2019-07-01 20:44:07:939 [Protocol Converter] Rewrote the original URL '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/execute/sync' to '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/execute' for MJSONWP protocol
-2019-07-01 20:44:07:939 [WD Proxy] Proxying [POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/execute] to [POST http://127.0.0.1:8025/wd/hub/session/3b67f98d331100cfbf166daa3798f31d/execute] with body: {"script":"window.scrollBy(0,4*30)","args":[""]}
-2019-07-01 20:44:07:974 [WD Proxy] Got response with status 200: {"sessionId":"3b67f98d331100cfbf166daa3798f31d","status":0,"value":null}
-2019-07-01 20:44:07:974 [WD Proxy] Replacing sessionId 3b67f98d331100cfbf166daa3798f31d with 66ed4690-d972-433c-826d-8b853f1bc2c2
-2019-07-01 20:44:07:978 [HTTP] <-- POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/execute/sync 200 40 ms - 76
-2019-07-01 20:44:07:979 [HTTP] 
-2019-07-01 20:44:10:988 [HTTP] --> POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element
-2019-07-01 20:44:10:988 [HTTP] {"using":"xpath","value":"//span[contains(.,'Fair: 650–699')]"}
-2019-07-01 20:44:10:989 [W3C (66ed4690)] Driver proxy active, passing request on via HTTP proxy
-2019-07-01 20:44:10:990 [WD Proxy] Matched '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element' to command name 'findElement'
-2019-07-01 20:44:10:990 [WD Proxy] Proxying [POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element] to [POST http://127.0.0.1:8025/wd/hub/session/3b67f98d331100cfbf166daa3798f31d/element] with body: {"using":"xpath","value":"//span[contains(.,'Fair: 650–699')]"}
-2019-07-01 20:44:11:079 [WD Proxy] Got response with status 200: {"sessionId":"3b67f98d331100cfbf166daa3798f31d","status":0,"value":{"ELEMENT":"0.0070703744521201095-9"}}
-2019-07-01 20:44:11:079 [WD Proxy] Replacing sessionId 3b67f98d331100cfbf166daa3798f31d with 66ed4690-d972-433c-826d-8b853f1bc2c2
-2019-07-01 20:44:11:080 [HTTP] <-- POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element 200 92 ms - 109
-2019-07-01 20:44:11:081 [HTTP] 
-2019-07-01 20:44:11:085 [HTTP] --> POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element
-2019-07-01 20:44:11:085 [HTTP] {"using":"xpath","value":"//span[contains(.,'Good: 700–749')]"}
-2019-07-01 20:44:11:085 [W3C (66ed4690)] Driver proxy active, passing request on via HTTP proxy
-2019-07-01 20:44:11:086 [WD Proxy] Matched '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element' to command name 'findElement'
-2019-07-01 20:44:11:087 [WD Proxy] Proxying [POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element] to [POST http://127.0.0.1:8025/wd/hub/session/3b67f98d331100cfbf166daa3798f31d/element] with body: {"using":"xpath","value":"//span[contains(.,'Good: 700–749')]"}
-2019-07-01 20:44:11:170 [WD Proxy] Got response with status 200: {"sessionId":"3b67f98d331100cfbf166daa3798f31d","status":0,"value":{"ELEMENT":"0.0070703744521201095-10"}}
-2019-07-01 20:44:11:171 [WD Proxy] Replacing sessionId 3b67f98d331100cfbf166daa3798f31d with 66ed4690-d972-433c-826d-8b853f1bc2c2
-2019-07-01 20:44:11:172 [HTTP] <-- POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element 200 86 ms - 110
-2019-07-01 20:44:11:172 [HTTP] 
-2019-07-01 20:44:11:175 [HTTP] --> POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element
-2019-07-01 20:44:11:176 [HTTP] {"using":"xpath","value":"//span[contains(.,'Good: 700–749')]"}
-2019-07-01 20:44:11:176 [W3C (66ed4690)] Driver proxy active, passing request on via HTTP proxy
-2019-07-01 20:44:11:177 [WD Proxy] Matched '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element' to command name 'findElement'
-2019-07-01 20:44:11:177 [WD Proxy] Proxying [POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element] to [POST http://127.0.0.1:8025/wd/hub/session/3b67f98d331100cfbf166daa3798f31d/element] with body: {"using":"xpath","value":"//span[contains(.,'Good: 700–749')]"}
-2019-07-01 20:44:11:228 [WD Proxy] Got response with status 200: {"sessionId":"3b67f98d331100cfbf166daa3798f31d","status":0,"value":{"ELEMENT":"0.0070703744521201095-10"}}
-2019-07-01 20:44:11:230 [WD Proxy] Replacing sessionId 3b67f98d331100cfbf166daa3798f31d with 66ed4690-d972-433c-826d-8b853f1bc2c2
-2019-07-01 20:44:11:232 [HTTP] <-- POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element 200 56 ms - 110
-2019-07-01 20:44:11:233 [HTTP] 
-2019-07-01 20:44:11:237 [HTTP] --> POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element
-2019-07-01 20:44:11:237 [HTTP] {"using":"xpath","value":"//span[contains(.,'Fair: 650–699')]"}
-2019-07-01 20:44:11:238 [W3C (66ed4690)] Driver proxy active, passing request on via HTTP proxy
-2019-07-01 20:44:11:240 [WD Proxy] Matched '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element' to command name 'findElement'
-2019-07-01 20:44:11:241 [WD Proxy] Proxying [POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element] to [POST http://127.0.0.1:8025/wd/hub/session/3b67f98d331100cfbf166daa3798f31d/element] with body: {"using":"xpath","value":"//span[contains(.,'Fair: 650–699')]"}
-2019-07-01 20:44:11:300 [WD Proxy] Got response with status 200: {"sessionId":"3b67f98d331100cfbf166daa3798f31d","status":0,"value":{"ELEMENT":"0.0070703744521201095-9"}}
-2019-07-01 20:44:11:301 [WD Proxy] Replacing sessionId 3b67f98d331100cfbf166daa3798f31d with 66ed4690-d972-433c-826d-8b853f1bc2c2
-2019-07-01 20:44:11:301 [HTTP] <-- POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element 200 64 ms - 109
-2019-07-01 20:44:11:302 [HTTP] 
-2019-07-01 20:44:11:307 [HTTP] --> POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element
-2019-07-01 20:44:11:307 [HTTP] {"using":"xpath","value":"//span[contains(.,'Fair: 650–699')]"}
-2019-07-01 20:44:11:308 [W3C (66ed4690)] Driver proxy active, passing request on via HTTP proxy
-2019-07-01 20:44:11:312 [WD Proxy] Matched '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element' to command name 'findElement'
-2019-07-01 20:44:11:313 [WD Proxy] Proxying [POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element] to [POST http://127.0.0.1:8025/wd/hub/session/3b67f98d331100cfbf166daa3798f31d/element] with body: {"using":"xpath","value":"//span[contains(.,'Fair: 650–699')]"}
-2019-07-01 20:44:11:373 [WD Proxy] Got response with status 200: {"sessionId":"3b67f98d331100cfbf166daa3798f31d","status":0,"value":{"ELEMENT":"0.0070703744521201095-9"}}
-2019-07-01 20:44:11:374 [WD Proxy] Replacing sessionId 3b67f98d331100cfbf166daa3798f31d with 66ed4690-d972-433c-826d-8b853f1bc2c2
-2019-07-01 20:44:11:377 [HTTP] <-- POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element 200 68 ms - 109
-2019-07-01 20:44:11:377 [HTTP] 
-2019-07-01 20:44:11:386 [HTTP] --> POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element
-2019-07-01 20:44:11:387 [HTTP] {"using":"xpath","value":"//span[contains(.,'Good: 700–749')]"}
-2019-07-01 20:44:11:387 [W3C (66ed4690)] Driver proxy active, passing request on via HTTP proxy
-2019-07-01 20:44:11:388 [WD Proxy] Matched '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element' to command name 'findElement'
-2019-07-01 20:44:11:388 [WD Proxy] Proxying [POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element] to [POST http://127.0.0.1:8025/wd/hub/session/3b67f98d331100cfbf166daa3798f31d/element] with body: {"using":"xpath","value":"//span[contains(.,'Good: 700–749')]"}
-2019-07-01 20:44:11:440 [WD Proxy] Got response with status 200: {"sessionId":"3b67f98d331100cfbf166daa3798f31d","status":0,"value":{"ELEMENT":"0.0070703744521201095-10"}}
-2019-07-01 20:44:11:440 [WD Proxy] Replacing sessionId 3b67f98d331100cfbf166daa3798f31d with 66ed4690-d972-433c-826d-8b853f1bc2c2
-2019-07-01 20:44:11:441 [HTTP] <-- POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element 200 55 ms - 110
-2019-07-01 20:44:11:441 [HTTP] 
-2019-07-01 20:44:11:446 [HTTP] --> POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element
-2019-07-01 20:44:11:446 [HTTP] {"using":"xpath","value":"//span[contains(.,'Good: 700–749')]"}
-2019-07-01 20:44:11:447 [W3C (66ed4690)] Driver proxy active, passing request on via HTTP proxy
-2019-07-01 20:44:11:449 [WD Proxy] Matched '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element' to command name 'findElement'
-2019-07-01 20:44:11:449 [WD Proxy] Proxying [POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element] to [POST http://127.0.0.1:8025/wd/hub/session/3b67f98d331100cfbf166daa3798f31d/element] with body: {"using":"xpath","value":"//span[contains(.,'Good: 700–749')]"}
-2019-07-01 20:44:11:505 [WD Proxy] Got response with status 200: {"sessionId":"3b67f98d331100cfbf166daa3798f31d","status":0,"value":{"ELEMENT":"0.0070703744521201095-10"}}
-2019-07-01 20:44:11:505 [WD Proxy] Replacing sessionId 3b67f98d331100cfbf166daa3798f31d with 66ed4690-d972-433c-826d-8b853f1bc2c2
-2019-07-01 20:44:11:508 [HTTP] <-- POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element 200 60 ms - 110
-2019-07-01 20:44:11:510 [HTTP] 
-2019-07-01 20:44:11:513 [HTTP] --> POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-10/click
-2019-07-01 20:44:11:513 [HTTP] {"id":"0.0070703744521201095-10"}
-2019-07-01 20:44:11:513 [W3C (66ed4690)] Driver proxy active, passing request on via HTTP proxy
-2019-07-01 20:44:11:514 [WD Proxy] Matched '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-10/click' to command name 'click'
-2019-07-01 20:44:11:514 [WD Proxy] Proxying [POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-10/click] to [POST http://127.0.0.1:8025/wd/hub/session/3b67f98d331100cfbf166daa3798f31d/element/0.0070703744521201095-10/click] with body: {"id":"0.0070703744521201095-10"}
-2019-07-01 20:44:11:886 [WD Proxy] Got response with status 200: {"sessionId":"3b67f98d331100cfbf166daa3798f31d","status":0,"value":null}
-2019-07-01 20:44:11:886 [WD Proxy] Replacing sessionId 3b67f98d331100cfbf166daa3798f31d with 66ed4690-d972-433c-826d-8b853f1bc2c2
-2019-07-01 20:44:11:887 [HTTP] <-- POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-10/click 200 373 ms - 76
-2019-07-01 20:44:11:887 [HTTP] 
-2019-07-01 20:44:14:896 [HTTP] --> POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/execute/sync
-2019-07-01 20:44:14:896 [HTTP] {"script":"window.scrollBy(0,2*30)","args":[""]}
-2019-07-01 20:44:14:897 [W3C (66ed4690)] Driver proxy active, passing request on via HTTP proxy
-2019-07-01 20:44:14:899 [WD Proxy] Matched '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/execute/sync' to command name 'execute'
-2019-07-01 20:44:14:900 [Protocol Converter] Rewrote the original URL '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/execute/sync' to '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/execute' for MJSONWP protocol
-2019-07-01 20:44:14:900 [WD Proxy] Proxying [POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/execute] to [POST http://127.0.0.1:8025/wd/hub/session/3b67f98d331100cfbf166daa3798f31d/execute] with body: {"script":"window.scrollBy(0,2*30)","args":[""]}
-2019-07-01 20:44:14:923 [WD Proxy] Got response with status 200: {"sessionId":"3b67f98d331100cfbf166daa3798f31d","status":0,"value":null}
-2019-07-01 20:44:14:924 [WD Proxy] Replacing sessionId 3b67f98d331100cfbf166daa3798f31d with 66ed4690-d972-433c-826d-8b853f1bc2c2
-2019-07-01 20:44:14:924 [HTTP] <-- POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/execute/sync 200 28 ms - 76
-2019-07-01 20:44:14:925 [HTTP] 
-2019-07-01 20:44:14:930 [HTTP] --> POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/appium/device/hide_keyboard
-2019-07-01 20:44:14:931 [HTTP] {}
-2019-07-01 20:44:14:931 [W3C (66ed4690)] Calling AppiumDriver.hideKeyboard() with args: [null,null,null,null,"66ed4690-d972-433c-826d-8b853f1bc2c2"]
-2019-07-01 20:44:14:932 [ADB] Running '/Users/snehal/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY3222CJF8 shell dumpsys input_method'
-2019-07-01 20:44:15:509 [AndroidDriver] Keyboard has no UI; no closing necessary
-2019-07-01 20:44:15:511 [W3C (66ed4690)] Responding to client with driver.hideKeyboard() result: null
-2019-07-01 20:44:15:513 [HTTP] <-- POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/appium/device/hide_keyboard 200 582 ms - 14
-2019-07-01 20:44:15:515 [HTTP] 
-2019-07-01 20:44:15:519 [HTTP] --> POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element
-2019-07-01 20:44:15:519 [HTTP] {"using":"xpath","value":"//div[@class='error-msg'][contains(.,'Please enter your expected down payment')]"}
-2019-07-01 20:44:15:519 [W3C (66ed4690)] Driver proxy active, passing request on via HTTP proxy
-2019-07-01 20:44:15:521 [WD Proxy] Matched '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element' to command name 'findElement'
-2019-07-01 20:44:15:522 [WD Proxy] Proxying [POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element] to [POST http://127.0.0.1:8025/wd/hub/session/3b67f98d331100cfbf166daa3798f31d/element] with body: {"using":"xpath","value":"//div[@class='error-msg'][contains(.,'Please enter your expected down payment')]"}
-2019-07-01 20:44:15:611 [WD Proxy] Got response with status 200: {"sessionId":"3b67f98d331100cfbf166daa3798f31d","status":0,"value":{"ELEMENT":"0.0070703744521201095-11"}}
-2019-07-01 20:44:15:611 [WD Proxy] Replacing sessionId 3b67f98d331100cfbf166daa3798f31d with 66ed4690-d972-433c-826d-8b853f1bc2c2
-2019-07-01 20:44:15:612 [HTTP] <-- POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element 200 93 ms - 110
-2019-07-01 20:44:15:612 [HTTP] 
-2019-07-01 20:44:15:614 [HTTP] --> GET /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-11/text
-2019-07-01 20:44:15:615 [HTTP] {}
-2019-07-01 20:44:15:615 [W3C (66ed4690)] Driver proxy active, passing request on via HTTP proxy
-2019-07-01 20:44:15:617 [WD Proxy] Matched '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-11/text' to command name 'getText'
-2019-07-01 20:44:15:617 [WD Proxy] Proxying [GET /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-11/text] to [GET http://127.0.0.1:8025/wd/hub/session/3b67f98d331100cfbf166daa3798f31d/element/0.0070703744521201095-11/text] with body: {}
-2019-07-01 20:44:15:719 [WD Proxy] Got response with status 200: "{\"sessionId\":\"3b67f98d331100cfbf166daa3798f31d\",\"status\":0,\"value\":\"Please enter your expected down payment\"}"
-2019-07-01 20:44:15:720 [WD Proxy] Replacing sessionId 3b67f98d331100cfbf166daa3798f31d with 66ed4690-d972-433c-826d-8b853f1bc2c2
-2019-07-01 20:44:15:725 [HTTP] <-- GET /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-11/text 200 107 ms - 113
-2019-07-01 20:44:15:727 [HTTP] 
-2019-07-01 20:44:18:740 [HTTP] --> POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element
-2019-07-01 20:44:18:740 [HTTP] {"using":"xpath","value":"(//input[@class='input'])[2]"}
-2019-07-01 20:44:18:741 [W3C (66ed4690)] Driver proxy active, passing request on via HTTP proxy
-2019-07-01 20:44:18:742 [WD Proxy] Matched '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element' to command name 'findElement'
-2019-07-01 20:44:18:742 [WD Proxy] Proxying [POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element] to [POST http://127.0.0.1:8025/wd/hub/session/3b67f98d331100cfbf166daa3798f31d/element] with body: {"using":"xpath","value":"(//input[@class='input'])[2]"}
-2019-07-01 20:44:18:826 [WD Proxy] Got response with status 200: {"sessionId":"3b67f98d331100cfbf166daa3798f31d","status":0,"value":{"ELEMENT":"0.0070703744521201095-12"}}
-2019-07-01 20:44:18:826 [WD Proxy] Replacing sessionId 3b67f98d331100cfbf166daa3798f31d with 66ed4690-d972-433c-826d-8b853f1bc2c2
-2019-07-01 20:44:18:827 [HTTP] <-- POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element 200 87 ms - 110
-2019-07-01 20:44:18:827 [HTTP] 
-2019-07-01 20:44:18:832 [HTTP] --> POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-12/click
-2019-07-01 20:44:18:832 [HTTP] {"id":"0.0070703744521201095-12"}
-2019-07-01 20:44:18:833 [W3C (66ed4690)] Driver proxy active, passing request on via HTTP proxy
-2019-07-01 20:44:18:835 [WD Proxy] Matched '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-12/click' to command name 'click'
-2019-07-01 20:44:18:835 [WD Proxy] Proxying [POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-12/click] to [POST http://127.0.0.1:8025/wd/hub/session/3b67f98d331100cfbf166daa3798f31d/element/0.0070703744521201095-12/click] with body: {"id":"0.0070703744521201095-12"}
-2019-07-01 20:44:19:158 [WD Proxy] Got response with status 200: {"sessionId":"3b67f98d331100cfbf166daa3798f31d","status":0,"value":null}
-2019-07-01 20:44:19:159 [WD Proxy] Replacing sessionId 3b67f98d331100cfbf166daa3798f31d with 66ed4690-d972-433c-826d-8b853f1bc2c2
-2019-07-01 20:44:19:160 [HTTP] <-- POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-12/click 200 328 ms - 76
-2019-07-01 20:44:19:161 [HTTP] 
-2019-07-01 20:44:19:164 [HTTP] --> POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element
-2019-07-01 20:44:19:165 [HTTP] {"using":"xpath","value":"(//input[@class='input'])[2]"}
-2019-07-01 20:44:19:165 [W3C (66ed4690)] Driver proxy active, passing request on via HTTP proxy
-2019-07-01 20:44:19:166 [WD Proxy] Matched '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element' to command name 'findElement'
-2019-07-01 20:44:19:166 [WD Proxy] Proxying [POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element] to [POST http://127.0.0.1:8025/wd/hub/session/3b67f98d331100cfbf166daa3798f31d/element] with body: {"using":"xpath","value":"(//input[@class='input'])[2]"}
-2019-07-01 20:44:19:237 [WD Proxy] Got response with status 200: {"sessionId":"3b67f98d331100cfbf166daa3798f31d","status":0,"value":{"ELEMENT":"0.0070703744521201095-12"}}
-2019-07-01 20:44:19:238 [WD Proxy] Replacing sessionId 3b67f98d331100cfbf166daa3798f31d with 66ed4690-d972-433c-826d-8b853f1bc2c2
-2019-07-01 20:44:19:241 [HTTP] <-- POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element 200 74 ms - 110
-2019-07-01 20:44:19:241 [HTTP] 
-2019-07-01 20:44:19:247 [HTTP] --> POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-12/value
-2019-07-01 20:44:19:247 [HTTP] {"id":"0.0070703744521201095-12","text":"1.0","value":["1",".","0"]}
-2019-07-01 20:44:19:247 [W3C (66ed4690)] Driver proxy active, passing request on via HTTP proxy
-2019-07-01 20:44:19:248 [WD Proxy] Matched '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-12/value' to command name 'setValue'
-2019-07-01 20:44:19:249 [WD Proxy] Proxying [POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-12/value] to [POST http://127.0.0.1:8025/wd/hub/session/3b67f98d331100cfbf166daa3798f31d/element/0.0070703744521201095-12/value] with body: {"id":"0.0070703744521201095-12","text":"1.0","value":["1",".","0"]}
-2019-07-01 20:44:19:629 [WD Proxy] Got response with status 200: {"sessionId":"3b67f98d331100cfbf166daa3798f31d","status":0,"value":null}
-2019-07-01 20:44:19:629 [WD Proxy] Replacing sessionId 3b67f98d331100cfbf166daa3798f31d with 66ed4690-d972-433c-826d-8b853f1bc2c2
-2019-07-01 20:44:19:630 [HTTP] <-- POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-12/value 200 383 ms - 76
-2019-07-01 20:44:19:630 [HTTP] 
-2019-07-01 20:44:19:634 [HTTP] --> POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/execute/sync
-2019-07-01 20:44:19:635 [HTTP] {"script":"window.scrollBy(0,2*30)","args":[""]}
-2019-07-01 20:44:19:635 [W3C (66ed4690)] Driver proxy active, passing request on via HTTP proxy
-2019-07-01 20:44:19:640 [WD Proxy] Matched '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/execute/sync' to command name 'execute'
-2019-07-01 20:44:19:640 [Protocol Converter] Rewrote the original URL '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/execute/sync' to '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/execute' for MJSONWP protocol
-2019-07-01 20:44:19:641 [WD Proxy] Proxying [POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/execute] to [POST http://127.0.0.1:8025/wd/hub/session/3b67f98d331100cfbf166daa3798f31d/execute] with body: {"script":"window.scrollBy(0,2*30)","args":[""]}
-2019-07-01 20:44:19:665 [WD Proxy] Got response with status 200: {"sessionId":"3b67f98d331100cfbf166daa3798f31d","status":0,"value":null}
-2019-07-01 20:44:19:666 [WD Proxy] Replacing sessionId 3b67f98d331100cfbf166daa3798f31d with 66ed4690-d972-433c-826d-8b853f1bc2c2
-2019-07-01 20:44:19:666 [HTTP] <-- POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/execute/sync 200 32 ms - 76
-2019-07-01 20:44:19:667 [HTTP] 
-2019-07-01 20:44:19:670 [HTTP] --> POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/appium/device/hide_keyboard
-2019-07-01 20:44:19:671 [HTTP] {}
-2019-07-01 20:44:19:671 [W3C (66ed4690)] Calling AppiumDriver.hideKeyboard() with args: [null,null,null,null,"66ed4690-d972-433c-826d-8b853f1bc2c2"]
-2019-07-01 20:44:19:672 [ADB] Running '/Users/snehal/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY3222CJF8 shell dumpsys input_method'
-2019-07-01 20:44:20:270 [ADB] Running '/Users/snehal/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY3222CJF8 shell input keyevent 111'
-2019-07-01 20:44:21:228 [ADB] Running '/Users/snehal/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY3222CJF8 shell dumpsys input_method'
-2019-07-01 20:44:21:843 [W3C (66ed4690)] Responding to client with driver.hideKeyboard() result: true
-2019-07-01 20:44:21:845 [HTTP] <-- POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/appium/device/hide_keyboard 200 2173 ms - 14
-2019-07-01 20:44:21:845 [HTTP] 
-2019-07-01 20:44:21:849 [HTTP] --> POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element
-2019-07-01 20:44:21:849 [HTTP] {"using":"xpath","value":"//div[@class='error-msg'][contains(.,'Please enter your expected monthly payment')]"}
-2019-07-01 20:44:21:850 [W3C (66ed4690)] Driver proxy active, passing request on via HTTP proxy
-2019-07-01 20:44:21:853 [WD Proxy] Matched '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element' to command name 'findElement'
-2019-07-01 20:44:21:853 [WD Proxy] Proxying [POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element] to [POST http://127.0.0.1:8025/wd/hub/session/3b67f98d331100cfbf166daa3798f31d/element] with body: {"using":"xpath","value":"//div[@class='error-msg'][contains(.,'Please enter your expected monthly payment')]"}
-2019-07-01 20:44:21:925 [WD Proxy] Got response with status 200: {"sessionId":"3b67f98d331100cfbf166daa3798f31d","status":0,"value":{"ELEMENT":"0.0070703744521201095-13"}}
-2019-07-01 20:44:21:926 [WD Proxy] Replacing sessionId 3b67f98d331100cfbf166daa3798f31d with 66ed4690-d972-433c-826d-8b853f1bc2c2
-2019-07-01 20:44:21:927 [HTTP] <-- POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element 200 77 ms - 110
-2019-07-01 20:44:21:927 [HTTP] 
-2019-07-01 20:44:21:929 [HTTP] --> GET /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-13/text
-2019-07-01 20:44:21:930 [HTTP] {}
-2019-07-01 20:44:21:930 [W3C (66ed4690)] Driver proxy active, passing request on via HTTP proxy
-2019-07-01 20:44:21:932 [WD Proxy] Matched '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-13/text' to command name 'getText'
-2019-07-01 20:44:21:933 [WD Proxy] Proxying [GET /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-13/text] to [GET http://127.0.0.1:8025/wd/hub/session/3b67f98d331100cfbf166daa3798f31d/element/0.0070703744521201095-13/text] with body: {}
-2019-07-01 20:44:22:023 [WD Proxy] Got response with status 200: "{\"sessionId\":\"3b67f98d331100cfbf166daa3798f31d\",\"status\":0,\"value\":\"Please enter your expected monthly payment\"}"
-2019-07-01 20:44:22:024 [WD Proxy] Replacing sessionId 3b67f98d331100cfbf166daa3798f31d with 66ed4690-d972-433c-826d-8b853f1bc2c2
-2019-07-01 20:44:22:025 [HTTP] <-- GET /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-13/text 200 95 ms - 116
-2019-07-01 20:44:22:025 [HTTP] 
-2019-07-01 20:44:25:033 [HTTP] --> POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element
-2019-07-01 20:44:25:034 [HTTP] {"using":"xpath","value":"(//input[@class='input'])[3]"}
-2019-07-01 20:44:25:037 [W3C (66ed4690)] Driver proxy active, passing request on via HTTP proxy
-2019-07-01 20:44:25:042 [WD Proxy] Matched '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element' to command name 'findElement'
-2019-07-01 20:44:25:043 [WD Proxy] Proxying [POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element] to [POST http://127.0.0.1:8025/wd/hub/session/3b67f98d331100cfbf166daa3798f31d/element] with body: {"using":"xpath","value":"(//input[@class='input'])[3]"}
-2019-07-01 20:44:25:129 [WD Proxy] Got response with status 200: {"sessionId":"3b67f98d331100cfbf166daa3798f31d","status":0,"value":{"ELEMENT":"0.0070703744521201095-14"}}
-2019-07-01 20:44:25:129 [WD Proxy] Replacing sessionId 3b67f98d331100cfbf166daa3798f31d with 66ed4690-d972-433c-826d-8b853f1bc2c2
-2019-07-01 20:44:25:130 [HTTP] <-- POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element 200 97 ms - 110
-2019-07-01 20:44:25:130 [HTTP] 
-2019-07-01 20:44:25:145 [HTTP] --> POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-14/click
-2019-07-01 20:44:25:145 [HTTP] {"id":"0.0070703744521201095-14"}
-2019-07-01 20:44:25:146 [W3C (66ed4690)] Driver proxy active, passing request on via HTTP proxy
-2019-07-01 20:44:25:152 [WD Proxy] Matched '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-14/click' to command name 'click'
-2019-07-01 20:44:25:153 [WD Proxy] Proxying [POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-14/click] to [POST http://127.0.0.1:8025/wd/hub/session/3b67f98d331100cfbf166daa3798f31d/element/0.0070703744521201095-14/click] with body: {"id":"0.0070703744521201095-14"}
-2019-07-01 20:44:25:454 [WD Proxy] Got response with status 200: {"sessionId":"3b67f98d331100cfbf166daa3798f31d","status":0,"value":null}
-2019-07-01 20:44:25:454 [WD Proxy] Replacing sessionId 3b67f98d331100cfbf166daa3798f31d with 66ed4690-d972-433c-826d-8b853f1bc2c2
-2019-07-01 20:44:25:455 [HTTP] <-- POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-14/click 200 311 ms - 76
-2019-07-01 20:44:25:455 [HTTP] 
-2019-07-01 20:44:25:459 [HTTP] --> POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element
-2019-07-01 20:44:25:459 [HTTP] {"using":"xpath","value":"(//input[@class='input'])[3]"}
-2019-07-01 20:44:25:460 [W3C (66ed4690)] Driver proxy active, passing request on via HTTP proxy
-2019-07-01 20:44:25:461 [WD Proxy] Matched '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element' to command name 'findElement'
-2019-07-01 20:44:25:461 [WD Proxy] Proxying [POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element] to [POST http://127.0.0.1:8025/wd/hub/session/3b67f98d331100cfbf166daa3798f31d/element] with body: {"using":"xpath","value":"(//input[@class='input'])[3]"}
-2019-07-01 20:44:25:538 [WD Proxy] Got response with status 200: {"sessionId":"3b67f98d331100cfbf166daa3798f31d","status":0,"value":{"ELEMENT":"0.0070703744521201095-14"}}
-2019-07-01 20:44:25:538 [WD Proxy] Replacing sessionId 3b67f98d331100cfbf166daa3798f31d with 66ed4690-d972-433c-826d-8b853f1bc2c2
-2019-07-01 20:44:25:539 [HTTP] <-- POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element 200 79 ms - 110
-2019-07-01 20:44:25:539 [HTTP] 
-2019-07-01 20:44:25:543 [HTTP] --> POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-14/value
-2019-07-01 20:44:25:543 [HTTP] {"id":"0.0070703744521201095-14","text":"9.0","value":["9",".","0"]}
-2019-07-01 20:44:25:543 [W3C (66ed4690)] Driver proxy active, passing request on via HTTP proxy
-2019-07-01 20:44:25:544 [WD Proxy] Matched '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-14/value' to command name 'setValue'
-2019-07-01 20:44:25:545 [WD Proxy] Proxying [POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-14/value] to [POST http://127.0.0.1:8025/wd/hub/session/3b67f98d331100cfbf166daa3798f31d/element/0.0070703744521201095-14/value] with body: {"id":"0.0070703744521201095-14","text":"9.0","value":["9",".","0"]}
-2019-07-01 20:44:25:871 [WD Proxy] Got response with status 200: {"sessionId":"3b67f98d331100cfbf166daa3798f31d","status":0,"value":null}
-2019-07-01 20:44:25:871 [WD Proxy] Replacing sessionId 3b67f98d331100cfbf166daa3798f31d with 66ed4690-d972-433c-826d-8b853f1bc2c2
-2019-07-01 20:44:25:872 [HTTP] <-- POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-14/value 200 329 ms - 76
-2019-07-01 20:44:25:872 [HTTP] 
-2019-07-01 20:44:25:876 [HTTP] --> POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/execute/sync
-2019-07-01 20:44:25:876 [HTTP] {"script":"window.scrollBy(0,2*30)","args":[""]}
-2019-07-01 20:44:25:876 [W3C (66ed4690)] Driver proxy active, passing request on via HTTP proxy
-2019-07-01 20:44:25:879 [WD Proxy] Matched '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/execute/sync' to command name 'execute'
-2019-07-01 20:44:25:879 [Protocol Converter] Rewrote the original URL '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/execute/sync' to '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/execute' for MJSONWP protocol
-2019-07-01 20:44:25:879 [WD Proxy] Proxying [POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/execute] to [POST http://127.0.0.1:8025/wd/hub/session/3b67f98d331100cfbf166daa3798f31d/execute] with body: {"script":"window.scrollBy(0,2*30)","args":[""]}
-2019-07-01 20:44:25:905 [WD Proxy] Got response with status 200: {"sessionId":"3b67f98d331100cfbf166daa3798f31d","status":0,"value":null}
-2019-07-01 20:44:25:906 [WD Proxy] Replacing sessionId 3b67f98d331100cfbf166daa3798f31d with 66ed4690-d972-433c-826d-8b853f1bc2c2
-2019-07-01 20:44:25:907 [HTTP] <-- POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/execute/sync 200 31 ms - 76
-2019-07-01 20:44:25:908 [HTTP] 
-2019-07-01 20:44:25:912 [HTTP] --> POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/appium/device/hide_keyboard
-2019-07-01 20:44:25:913 [HTTP] {}
-2019-07-01 20:44:25:913 [W3C (66ed4690)] Calling AppiumDriver.hideKeyboard() with args: [null,null,null,null,"66ed4690-d972-433c-826d-8b853f1bc2c2"]
-2019-07-01 20:44:25:915 [ADB] Running '/Users/snehal/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY3222CJF8 shell dumpsys input_method'
-2019-07-01 20:44:26:544 [ADB] Running '/Users/snehal/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY3222CJF8 shell input keyevent 111'
-2019-07-01 20:44:27:489 [ADB] Running '/Users/snehal/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY3222CJF8 shell dumpsys input_method'
-2019-07-01 20:44:28:043 [W3C (66ed4690)] Responding to client with driver.hideKeyboard() result: true
-2019-07-01 20:44:28:045 [HTTP] <-- POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/appium/device/hide_keyboard 200 2131 ms - 14
-2019-07-01 20:44:28:045 [HTTP] 
-2019-07-01 20:44:31:054 [HTTP] --> POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element
-2019-07-01 20:44:31:054 [HTTP] {"using":"xpath","value":"//input[@value='Get My Plan']"}
-2019-07-01 20:44:31:054 [W3C (66ed4690)] Driver proxy active, passing request on via HTTP proxy
-2019-07-01 20:44:31:056 [WD Proxy] Matched '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element' to command name 'findElement'
-2019-07-01 20:44:31:056 [WD Proxy] Proxying [POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element] to [POST http://127.0.0.1:8025/wd/hub/session/3b67f98d331100cfbf166daa3798f31d/element] with body: {"using":"xpath","value":"//input[@value='Get My Plan']"}
-2019-07-01 20:44:31:107 [WD Proxy] Got response with status 200: {"sessionId":"3b67f98d331100cfbf166daa3798f31d","status":0,"value":{"ELEMENT":"0.0070703744521201095-1"}}
-2019-07-01 20:44:31:108 [WD Proxy] Replacing sessionId 3b67f98d331100cfbf166daa3798f31d with 66ed4690-d972-433c-826d-8b853f1bc2c2
-2019-07-01 20:44:31:109 [HTTP] <-- POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element 200 54 ms - 109
-2019-07-01 20:44:31:109 [HTTP] 
-2019-07-01 20:44:31:113 [HTTP] --> POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-1/click
-2019-07-01 20:44:31:113 [HTTP] {"id":"0.0070703744521201095-1"}
-2019-07-01 20:44:31:113 [W3C (66ed4690)] Driver proxy active, passing request on via HTTP proxy
-2019-07-01 20:44:31:114 [WD Proxy] Matched '/wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-1/click' to command name 'click'
-2019-07-01 20:44:31:115 [WD Proxy] Proxying [POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-1/click] to [POST http://127.0.0.1:8025/wd/hub/session/3b67f98d331100cfbf166daa3798f31d/element/0.0070703744521201095-1/click] with body: {"id":"0.0070703744521201095-1"}
-2019-07-01 20:44:33:366 [WD Proxy] Got response with status 200: {"sessionId":"3b67f98d331100cfbf166daa3798f31d","status":0,"value":null}
-2019-07-01 20:44:33:367 [WD Proxy] Replacing sessionId 3b67f98d331100cfbf166daa3798f31d with 66ed4690-d972-433c-826d-8b853f1bc2c2
-2019-07-01 20:44:33:368 [HTTP] <-- POST /wd/hub/session/66ed4690-d972-433c-826d-8b853f1bc2c2/element/0.0070703744521201095-1/click 200 2255 ms - 76
-2019-07-01 20:44:33:368 [HTTP] 
-2019-07-01 20:45:33:373 [BaseDriver] Shutting down because we waited 60 seconds for a command
-2019-07-01 20:45:33:376 [UiAutomator2] Deleting UiAutomator2 session
-2019-07-01 20:45:33:377 [Appium] Closing session, cause was 'New Command Timeout of 60 seconds expired. Try customizing the timeout using the 'newCommandTimeout' desired capability'
-2019-07-01 20:45:33:377 [Appium] Removing session 66ed4690-d972-433c-826d-8b853f1bc2c2 from our master session list
-2019-07-01 20:45:33:377 [AndroidDriver] Stopping chromedriver for context CHROMIUM
-2019-07-01 20:45:33:378 [Chromedriver] Changed state to 'stopping'
-2019-07-01 20:45:33:379 [WD Proxy] Proxying [DELETE /] to [DELETE http://127.0.0.1:8025/wd/hub/session/3b67f98d331100cfbf166daa3798f31d] with no body
-2019-07-01 20:45:33:384 uncaughtException: write EPIPE
+2019-07-16 11:30:06:856 [Appium] Welcome to Appium v1.13.0
+2019-07-16 11:30:06:858 [Appium] Non-default server args:
+2019-07-16 11:30:06:859 [Appium]   logFile: /Users/snehal/mobileWebAppium/AppiumLogFile.txt
+2019-07-16 11:30:06:929 [Appium] Appium REST http interface listener started on 0.0.0.0:4723
+2019-07-16 11:30:07:061 [HTTP] --> GET /wd/hub/status
+2019-07-16 11:30:07:061 [HTTP] {}
+2019-07-16 11:30:07:065 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2019-07-16 11:30:07:069 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.13.0"}}
+2019-07-16 11:30:07:080 [HTTP] <-- GET /wd/hub/status 200 15 ms - 68
+2019-07-16 11:30:07:081 [HTTP] 
+2019-07-16 11:30:07:646 [HTTP] --> POST /wd/hub/session
+2019-07-16 11:30:07:646 [HTTP] {"desiredCapabilities":{"noReset":true,"platformVersion":"8.1.0","automationName":"UiAutomator2","browserName":"Chrome","platformName":"Android","deviceName":"ZY3222CJF8"},"capabilities":{"alwaysMatch":{"appium:automationName":"UiAutomator2","browserName":"Chrome","appium:deviceName":"ZY3222CJF8","appium:noReset":true,"platformName":"android","appium:platformVersion":"8.1.0"},"firstMatch":[{}]}}
+2019-07-16 11:30:07:647 [W3C] Calling AppiumDriver.createSession() with args: [{"noReset":true,"platformVersion":"8.1.0","automationName":"UiAutomator2","browserName":"Chrome","platformName":"Android","deviceName":"ZY3222CJF8"},null,{"alwaysMatch":{"appium:automationName":"UiAutomator2","browserName":"Chrome","appium:deviceName":"ZY3222CJF8","appium:noReset":true,"platformName":"android","appium:platformVersion":"8.1.0"},"firstMatch":[{}]}]
+2019-07-16 11:30:07:648 [BaseDriver] Event 'newSessionRequested' logged at 1563276607648 (17:00:07 GMT+0530 (India Standard Time))
+2019-07-16 11:30:07:864 [Appium] Appium v1.13.0 creating new AndroidUiautomator2Driver (v1.33.1) session
+2019-07-16 11:30:07:864 [Appium] Capabilities:
+2019-07-16 11:30:07:864 [Appium]   browserName: Chrome
+2019-07-16 11:30:07:864 [Appium]   platformName: android
+2019-07-16 11:30:07:865 [Appium]   automationName: UiAutomator2
+2019-07-16 11:30:07:865 [Appium]   deviceName: ZY3222CJF8
+2019-07-16 11:30:07:865 [Appium]   noReset: true
+2019-07-16 11:30:07:866 [Appium]   platformVersion: 8.1.0
+2019-07-16 11:30:07:868 [BaseDriver] W3C capabilities {"alwaysMatch":{"browserNam... and MJSONWP desired capabilities {"noReset":true,"platformVe... were provided
+2019-07-16 11:30:07:869 [BaseDriver] Creating session with W3C capabilities: {"alwaysMatch":{"browserNam...
+2019-07-16 11:30:07:875 [BaseDriver] Session created with session id: 1f2b4132-7601-45ae-89f0-a8929b335332
+2019-07-16 11:30:07:876 [UiAutomator2] We're going to run a Chrome-based session
+2019-07-16 11:30:07:876 [UiAutomator2] Chrome-type package and activity are com.android.chrome and com.google.android.apps.chrome.Main
+2019-07-16 11:30:07:918 [ADB] Found 1 'build-tools' folders under '/Users/snehal/Library/Android/sdk' (newest first):
+2019-07-16 11:30:07:919 [ADB]     /Users/snehal/Library/Android/sdk/build-tools/27.0.3
+2019-07-16 11:30:07:919 [ADB] Using 'adb' from '/Users/snehal/Library/Android/sdk/platform-tools/adb'
+2019-07-16 11:30:07:920 [AndroidDriver] Retrieving device list
+2019-07-16 11:30:07:921 [ADB] Trying to find a connected android device
+2019-07-16 11:30:07:924 [ADB] Getting connected devices...
+2019-07-16 11:30:11:091 [ADB] 0 device(s) connected
+2019-07-16 11:30:11:092 [ADB] Could not find devices, restarting adb server...
+2019-07-16 11:30:11:092 [ADB] Restarting adb
+2019-07-16 11:30:11:093 [ADB] Killing adb server on port 5037
+2019-07-16 11:30:11:316 [ADB] Getting connected devices...
+2019-07-16 11:30:14:460 [ADB] 0 device(s) connected
+2019-07-16 11:30:14:462 [ADB] Could not find devices, restarting adb server...
+2019-07-16 11:30:14:462 [ADB] Restarting adb
+2019-07-16 11:30:14:463 [ADB] Killing adb server on port 5037
+2019-07-16 11:30:14:687 [ADB] Getting connected devices...
+2019-07-16 11:30:17:833 [ADB] 0 device(s) connected
+2019-07-16 11:30:17:834 [ADB] Could not find devices, restarting adb server...
+2019-07-16 11:30:17:834 [ADB] Restarting adb
+2019-07-16 11:30:17:835 [ADB] Killing adb server on port 5037
+2019-07-16 11:30:18:054 [ADB] Getting connected devices...
+2019-07-16 11:30:21:196 [ADB] 0 device(s) connected
+2019-07-16 11:30:21:196 [ADB] Could not find devices, restarting adb server...
+2019-07-16 11:30:21:197 [ADB] Restarting adb
+2019-07-16 11:30:21:197 [ADB] Killing adb server on port 5037
+2019-07-16 11:30:21:426 [ADB] Getting connected devices...
+2019-07-16 11:30:24:576 [ADB] 0 device(s) connected
+2019-07-16 11:30:24:576 [ADB] Could not find devices, restarting adb server...
+2019-07-16 11:30:24:576 [ADB] Restarting adb
+2019-07-16 11:30:24:577 [ADB] Killing adb server on port 5037
+2019-07-16 11:30:24:814 [ADB] Getting connected devices...
+2019-07-16 11:30:27:967 [ADB] 0 device(s) connected
+2019-07-16 11:30:27:967 [ADB] Could not find devices, restarting adb server...
+2019-07-16 11:30:27:968 [ADB] Restarting adb
+2019-07-16 11:30:27:968 [ADB] Killing adb server on port 5037
+2019-07-16 11:30:28:204 [ADB] Could not find devices, restarting adb server...
+2019-07-16 11:30:28:205 [ADB] Restarting adb
+2019-07-16 11:30:28:205 [ADB] Killing adb server on port 5037
+2019-07-16 11:30:28:444 [ADB] Could not find devices, restarting adb server...
+2019-07-16 11:30:28:444 [ADB] Restarting adb
+2019-07-16 11:30:28:445 [ADB] Killing adb server on port 5037
+2019-07-16 11:30:28:694 [ADB] Could not find devices, restarting adb server...
+2019-07-16 11:30:28:694 [ADB] Restarting adb
+2019-07-16 11:30:28:695 [ADB] Killing adb server on port 5037
+2019-07-16 11:30:28:945 [ADB] Could not find devices, restarting adb server...
+2019-07-16 11:30:28:945 [ADB] Restarting adb
+2019-07-16 11:30:28:945 [ADB] Killing adb server on port 5037
+2019-07-16 11:30:29:175 [ADB] Could not find devices, restarting adb server...
+2019-07-16 11:30:29:175 [ADB] Restarting adb
+2019-07-16 11:30:29:176 [ADB] Killing adb server on port 5037
+2019-07-16 11:30:29:466 [ADB] Could not find devices, restarting adb server...
+2019-07-16 11:30:29:467 [ADB] Restarting adb
+2019-07-16 11:30:29:467 [ADB] Killing adb server on port 5037
+2019-07-16 11:30:29:732 [UiAutomator2] Deleting UiAutomator2 session
+2019-07-16 11:30:29:735 [BaseDriver] Event 'newSessionStarted' logged at 1563276629734 (17:00:29 GMT+0530 (India Standard Time))
+2019-07-16 11:30:29:826 [W3C] Encountered internal error running command: Error: Could not find a connected Android device.
+2019-07-16 11:30:29:827 [W3C]     at /Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-adb/lib/tools/system-calls.js:199:13
+2019-07-16 11:30:29:827 [W3C]     at Generator.next (<anonymous>)
+2019-07-16 11:30:29:827 [W3C]     at asyncGeneratorStep (/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:24)
+2019-07-16 11:30:29:828 [W3C]     at _next (/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/@babel/runtime/helpers/asyncToGenerator.js:25:9)
+2019-07-16 11:30:29:828 [W3C]     at /Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/@babel/runtime/helpers/asyncToGenerator.js:32:7
+2019-07-16 11:30:29:828 [W3C]     at new Promise (<anonymous>)
+2019-07-16 11:30:29:828 [W3C]     at /Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/@babel/runtime/helpers/asyncToGenerator.js:21:12
+2019-07-16 11:30:29:829 [W3C]     at getDevices (/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-adb/lib/tools/system-calls.js:197:17)
+2019-07-16 11:30:29:829 [W3C]     at getDevices (/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-adb/lib/tools/system-calls.js:216:20)
+2019-07-16 11:30:29:830 [W3C]     at Generator.next (<anonymous>)
+2019-07-16 11:30:29:830 [W3C]     at asyncGeneratorStep (/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:24)
+2019-07-16 11:30:29:830 [W3C]     at _next (/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/@babel/runtime/helpers/asyncToGenerator.js:25:9)
+2019-07-16 11:30:29:898 [HTTP] <-- POST /wd/hub/session 500 22249 ms - 647
+2019-07-16 11:30:29:902 [HTTP] 
+2019-07-16 11:30:30:046 [Appium] Received SIGTERM - shutting down
+2019-07-16 11:30:30:052 uncaughtException: write EPIPE
 Error: write EPIPE
     at WriteWrap.afterWrite (net.js:779:14)
