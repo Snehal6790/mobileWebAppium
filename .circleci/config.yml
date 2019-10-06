@@ -1,40 +1,82 @@
 version: 2
 jobs:
-  one:
+  build:
     docker:
-      - image: circleci/ruby:2.4.1
+    - image: adityai/rest-assured-docker # primary container
+#    branches:
+#      only:
+#      - master
+#      - staging
+    working_directory: ~/mobileWebAppium
     steps:
-      - checkout
-      - run: echo "A first hello"
-      - run: mkdir -p my_workspace
-      - run: echo "Trying out workspaces" > my_workspace/echo-output
-      - persist_to_workspace:
-          # Must be an absolute path, or relative path from working_directory
-          root: my_workspace
-          # Must be relative path from root
-          paths:
-            - echo-output
-  two:
-    docker:
-      - image: circleci/ruby:2.4.1
-    steps:
-      - checkout
-      - run: echo "A more familiar hi"
-      - attach_workspace:
-          # Must be absolute path or relative path from working_directory
-          at: my_workspace
 
-      - run: |
-          if [[ $(cat my_workspace/echo-output) == "Trying out workspaces" ]]; then
-            echo "It worked!";
-          else
-            echo "Nope!"; exit 1
-          fi
+    - checkout
+
+    - setup_remote_docker
+
+    - run:
+        name: Install Docker client
+        command: |
+          set -x
+          VER="17.03.0-ce"
+          curl -L -o /tmp/docker-$VER.tgz https://download.docker.com/linux/static/stable/x86_64/docker-$VER.tgz
+          tar -xz -C /tmp -f /tmp/docker-$VER.tgz
+          mv /tmp/docker/* /usr/bin
+
+#    - run:
+#        # We are going to install kubectl on the machine
+#        # And we've checked in the kubeconfig encrypted via (Symmetric) PGP
+#        # Kudos to: https://dzone.com/articles/continuous-delivery-with-kubernetes-docker-and-cir
+#        name: Install Kubectl
+#        command: |
+#          apt-get -y install gnupg
+#          curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
+#          chmod +x kubectl
+#
+#    - run:
+#        name: Decrypt Kubernetes Configuration File
+#        command: ./decrypt_kubeconfig.sh $CIRCLE_BRANCH
+
+
+    - run:
+        name: Build Docker Containers
+        command: |
+          docker login -u $DOCKER_USER -p $DOCKER_PASS
+          docker build --rm=false -f Dockerfile -t furlenco/mobileWebAppium:$CIRCLE_SHA1 .
+
+    - run:
+        name: Push Docker Containers to hub.docker.com
+        command: |
+          docker push furlenco/mobileWebAppium:$CIRCLE_SHA1
+
 workflows:
   version: 2
-  one_and_two:
+  commit-workflow:
     jobs:
-      - one
-      - two:
-          requires:
-            - one
+      - build
+  scheduled-workflow:
+    triggers:
+      - schedule:
+          cron: "21 * * * *"
+          filters:
+            branches:
+              only: master
+
+    jobs:
+      - build
+#    - run:
+#            name: Generate actual deployment file
+#            command: |
+#              set -x
+#              for i in k8s-deployment*;
+#              do
+#                  sed -i.bak "s/<CIAAPI_APPLICATION_VERSION>/$CIRCLE_SHA1/g" $i
+#                  done
+#
+#    - run:
+#        name: Deploy Kubernetes Cluster
+#        environment:
+#          KUBECONFIG: kubeconfig
+#        command: |
+#          set -x
+#          ./deploy.sh $CIRCLE_BRANCH
